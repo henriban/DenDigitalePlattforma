@@ -55,10 +55,10 @@ var Fødselstidspunkt = [
     { value: '2001 –',            label: '2001 –' }
 ];
 
-var Informant = [
+/*var Informant = [
     { value: 'trend',       label: 'Trend' },
     { value: 'panel',       label: 'Panel' }
-];
+];*/
 
 class Search extends React.Component {
 
@@ -69,12 +69,12 @@ class Search extends React.Component {
                 <SelectItem  label="Stad"               data={stad}/>
                 <SelectItem  label="Kjønn"              data={kjønn}/>
                 <SelectItem  label="Alder"              data={alder}/>
+                <SelectItem  label="Fødselstidspunkt"   data={Fødselstidspunkt}/>
                 <SelectItem  label="Opptakstidspunkt"   data={Opptakstidspunkt}/>
                 <SelectItem  label="Utdanning"          data={Utdanning}/>
                 <SelectItem  label="Yrke"               data={Yrke}/>
                 <SelectItem  label="Foreldrebakgrunn"   data={Foreldrebakgrunn}/>
-                <SelectItem  label="Fødselstidspunkt"   data={Fødselstidspunkt}/>
-                <SelectItem  label="Informant"          data={Informant}/>
+                {/*<SelectItem  label="Informant"          data={Informant}/>*/}
             </div>
         );
     }

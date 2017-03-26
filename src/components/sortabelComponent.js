@@ -6,7 +6,7 @@ const Sortable = React.createClass({
         this._columns = [
             {
                 key: 'name',
-                name: 'Navn',
+                name: 'Inf.',
                 width: 50,
                 locked: true
             },

@@ -5,7 +5,9 @@ import Result from './resultComponent';
 
 import Sortabel from './sortabelComponent';
 
+
 import '../styles/main.css';
+
 
 class Main extends React.Component {
     render(){
