@@ -3,6 +3,9 @@ import ReactAudioPlayer from 'react-audio-player';
 
 import '../styles/result.css';
 
+var url = require("../static/test.mp3");
+var audio = new Audio(url);
+
 const Result = () => (
     <div>
     <div className="resultContainer">
@@ -18,7 +21,7 @@ const Result = () => (
         </div>
 
         <ReactAudioPlayer
-            src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg"
+            src={url}
         />
 
         <div className="text">
