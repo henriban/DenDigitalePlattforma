@@ -32,3 +32,5 @@ const informanter =
             audio: "inf_9og10.mp3"
         },
     ];
+
+export default informanter;
