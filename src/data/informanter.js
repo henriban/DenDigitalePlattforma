@@ -17,3 +17,18 @@ exports.X = [
     {informant:"", stad:"", kjonn:"", aldersgruppe:"", fodselstidspunkt:"", opptakstidspunkt:"", utdanning:"", yrke:"", foreldrebakgrunn:""}
 ]
 */
+const informanter =
+    [
+        {
+            id: 9,
+            place: "Dalen",
+            gender: "Mann",
+            age: "Middelaldra 41 - 60",
+            birth: "1212",
+            date_of_recording: "1996",
+            education: 0,
+            occupation: 0,
+            parents_background: 0
+
+        },
+    ];
