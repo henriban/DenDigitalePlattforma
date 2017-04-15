@@ -1,9 +1,24 @@
+.resultBackground{
+    position: fixed;
+    visibility: visible;
+
+    height: 100%;
+    z-index: 100;
+
+    background: rgba(34, 34, 34, 0.75);
+}
+
 .resultContainer{
+    margin: auto;
+    margin-top: 50px;
+    width: 85%;
 
     background-color: #FAFAFA;
     border-radius: 5px;
+
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-end;
 
     box-shadow: 0 0 1px #222222;
 
