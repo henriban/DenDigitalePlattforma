@@ -1,58 +1,88 @@
 import React from 'react';
 import ReactDataGrid from 'react-data-grid';
+/*import Toolbar from 'react-data-grid-addons';*/
+
+import Result from './resultComponent';
+
+const rowRenderer = React.createClass({
+    log: function(e) {
+        console.log(e);
+    },
+    render: function() {
+        return (<div onClick={this.log}><ReactDataGrid.Row ref="row" {...this.props}/></div>)
+    }
+});
+
 
 const Sortable = React.createClass({
     getInitialState() {
         this._columns = [
             {
                 key: 'name',
-                name: 'Navn',
-                width: 50,
-                locked: true
+                name: 'Inf.',
+                width: 30,
+
+            },
+            {
+                key: 'area',
+                name: 'Stad',
+                width: 100,
+                filterable: true,
+                sortable: true
             },
             {
                 key: 'gender',
                 name: 'Kjønn',
-                width: 200,
+                width: 100,
+                filterable: true,
                 sortable: true
             },
             {
                 key: 'age',
                 name: 'Alder',
-                width: 200,
+                width: 100,
+                filterable: true,
                 sortable: true
             },
             {
                 key: 'born',
                 name: 'Fødselstidspunkt',
-                width: 200,
+                width: 150,
+                filterable: true,
                 sortable: true
             },
             {
                 key: 'recordingTime',
                 name: 'Opptakstidspunkt',
-                width: 200,
+                width: 150,
+                filterable: true,
                 sortable: true
             },
             {
                 key: 'education',
                 name: 'Utdanning',
-                width: 200,
+                width: 150,
+                filterable: true,
                 sortable: true
             },
             {
                 key: 'profession',
                 name: 'Yrke',
-                width: 200,
+                width: 100,
+                filterable: true,
                 sortable: true
             },
             {
                 key: 'parents',
                 name: 'Foreldrebakgrunn',
-                width: 200,
+                filterable: true,
                 sortable: true
             }
         ];
+
+        this.state = {
+            showResult: false
+        };
 
         let originalRows = this.createRows(100);
         let rows = originalRows.slice(0);
@@ -64,11 +94,17 @@ const Sortable = React.createClass({
         return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime())).toLocaleDateString();
     },
 
+    onClick(e){
+        e.preventDefault();
+        this.setState({showResult: !this.state.showResult})
+    },
+
     createRows() {
         let rows = [];
-        for (let i = 1; i < 100; i++) {
+        for (let i = 1; i < 11; i++) {
             rows.push({
                 name: i,
+                area: ['', 'Fjøra', 'Dalen', 'Norane'][Math.floor((Math.random() * 3) + 1)],
                 gender: ['', 'Kvinne', 'Mann'][Math.floor((Math.random() * 2) + 1)],
                 age: ['13-25', '26-40', '41-60', '60-'][Math.floor((Math.random() * 4))],
                 born: ['1910-1940', '1941-1970', '1971-2000', '2001-'][Math.floor((Math.random() * 4))],
@@ -100,17 +136,43 @@ const Sortable = React.createClass({
         return this.state.rows[i];
     },
 
+    handleFilterChange(filter) {
+        let newFilters = Object.assign({}, this.state.filters);
+        if (filter.filterTerm) {
+            newFilters[filter.column.key] = filter;
+        } else {
+            delete newFilters[filter.column.key];
+        }
+
+        this.setState({ filters: newFilters });
+    },
+
+    onClearFilters() {
+        this.setState({ filters: {} });
+    },
+
     render() {
         return  (
-            <ReactDataGrid
-                onGridSort={this.handleGridSort}
-                columns={this._columns}
-                rowGetter={this.rowGetter}
-                rowsCount={this.state.rows.length}
-                minHeight={500} />);
+            <div>
+                <ReactDataGrid
+                    onGridSort={this.handleGridSort}
+                    columns={this._columns}
+                    rowGetter={this.rowGetter}
+                    rowsCount={this.state.rows.length}
+                    minHeight={500}
+                    rowRenderer={rowRenderer}
+
+
+                />
+                {this.state.showResult && < Result />}
+            </div>
+        );
     }
 });
 
+/*toolbar={<Toolbar enableFilter={true}/>}
+ onAddFilter={this.handleFilterChange}
+ onClearFilters={this.onClearFilters}*/
 
 export default Sortable;
 
