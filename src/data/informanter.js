@@ -32,3 +32,5 @@ const informanter =
 
         },
     ];
+
+export default informanter;
