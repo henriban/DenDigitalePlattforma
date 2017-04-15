@@ -24,11 +24,11 @@ const informanter =
             place: "Dalen",
             gender: "Mann",
             age: "Middelaldra 41 - 60",
-            birth: "1212",
+            birth: "1941 - 1970",
             date_of_recording: "1996",
-            education: 0,
-            occupation: 0,
-            parents_background: 0
-
+            education: "Vg.skule",
+            occupation: "Tertiær",
+            parents_background: "Begge frå Sogndal",
+            audio: "inf_9og10.mp3"
         },
     ];
