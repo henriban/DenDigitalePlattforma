@@ -3,8 +3,6 @@ import Select from 'react-select';
 
 import 'react-select/dist/react-select.css';
 
-const INFORMANTER = require('../data/informanter.js');
-
 const select = React.createClass({
 
     getInitialState () {
@@ -15,11 +13,6 @@ const select = React.createClass({
 
     updateValue (newValue) {
         console.log('State changed to ' + newValue);
-        //INFORMANTER['INF9'].map((number) => (number.contain(newValue)));
-        console.log(INFORMANTER['ALL_INF'][0]['all'].length);
-
-        const inf = INFORMANTER['INF9'];
-        console.log(inf[0]['audio']);
 
         this.setState({
             selectValue: newValue
@@ -42,5 +35,6 @@ const select = React.createClass({
             </div>
         );
     }
-})
+});
+
 module.exports = select;

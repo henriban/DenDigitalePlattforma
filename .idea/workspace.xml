@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fbe7c91-3441-46bd-9e37-fcdfe2442775" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/informanter.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/inf 17 og 18.mp3" afterPath="$PROJECT_DIR$/src/static/inf_17og18.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/inf. 13 og 14.mp3" afterPath="$PROJECT_DIR$/src/static/inf_13og14.mp3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/inf. 9 og 10.mp3" afterPath="$PROJECT_DIR$/src/static/inf_9og10.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/mainComponent.js" afterPath="$PROJECT_DIR$/src/components/mainComponent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/resultComponent.js" afterPath="$PROJECT_DIR$/src/components/resultComponent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/searchComponent.js" afterPath="$PROJECT_DIR$/src/components/searchComponent.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/selectComponent.js" afterPath="$PROJECT_DIR$/src/components/selectComponent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/sortabelComponent.js" afterPath="$PROJECT_DIR$/src/components/sortabelComponent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/main.css" afterPath="$PROJECT_DIR$/src/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/result.css" afterPath="$PROJECT_DIR$/src/styles/result.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,14 +20,26 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sortabelComponent.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sortabelComponent.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/sortabelComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="104" column="23" lean-forward="true" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
+            <state relative-caret-position="-1097">
+              <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#474#2087#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="selectComponent.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/selectComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="44" lean-forward="false" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,12 +57,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="informanter.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/data/informanter.js">
+      <file leaf-file-name="searchComponent.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/searchComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-              <folding />
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,10 +108,10 @@
         <option value="$PROJECT_DIR$/src/styles/main.css" />
         <option value="$PROJECT_DIR$/src/styles/result.css" />
         <option value="$PROJECT_DIR$/src/components/resultComponent.js" />
-        <option value="$PROJECT_DIR$/src/components/selectComponent.js" />
         <option value="$PROJECT_DIR$/src/data/informanter.js" />
         <option value="$PROJECT_DIR$/src/components/sortabelComponent.js" />
         <option value="$PROJECT_DIR$/src/components/mainComponent.js" />
+        <option value="$PROJECT_DIR$/src/components/selectComponent.js" />
       </list>
     </option>
   </component>
@@ -382,12 +385,12 @@
       <workItem from="1491228778488" duration="1049000" />
       <workItem from="1491485930054" duration="6920000" />
       <workItem from="1491998348355" duration="10361000" />
-      <workItem from="1492261486598" duration="1190000" />
+      <workItem from="1492261486598" duration="2089000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81379000" />
+    <option name="totallyTimeSpent" value="82278000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -732,16 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/selectComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -760,11 +753,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/searchComponent.js">
+    <entry file="file://$PROJECT_DIR$/src/components/selectComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="38" />
-          <folding />
+        <state relative-caret-position="51">
+          <caret line="3" column="44" lean-forward="false" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -778,22 +773,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/sortabelComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="104" column="23" lean-forward="true" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#474#2087#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/informanter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/searchComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/sortabelComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1097">
+          <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#474#2087#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
