@@ -1,45 +1,62 @@
 import React from 'react';
 import ReactAudioPlayer from 'react-audio-player';
 
+import Informanter from '../data/informanter';
 import '../styles/result.css';
 
-var url = require("../static/inf_9og10.mp3");
-var audio = new Audio(url);
 
 class Result extends React.Component {
-    constructor() {
-        super()
-        this.state = {
-            showReply: false
-        }
+    constructor(props) {
+        super(props);
+        this.onCloseClick = this.onCloseClick.bind(this);
     }
 
-    onClick(e){
+    onCloseClick(e){
         e.preventDefault();
-        this.setState({showReply: !this.state.showResult})
+        this.props.onCloseClick();
     }
 
     render(){
+
+        const id = 18;
+        let item = Informanter.find(x => x.id === id);
+
+        const inf = item.id;
+        const place = item.place;
+        const gender = item.gender;
+        const age = item.age;
+        const birth = item.birth;
+        const date_of_recording = item.date_of_recording;
+        const education = item.education;
+        const occupation = item.occupation;
+        const parents_background = item.parents_background;
+
+        const url = require("../static/" + item.audio);
+
         return(
             <div className="resultBackground">
-                {/*<button onClick={this.onClick.bind(this)} href='#'>X</button>
-                {this.state.showResult && < Results />}
-*/}
 
                 <div className="resultContainer">
-                    <h2 id="headline">Eldre mann frå Dalen</h2>
-                    <div className="infoText">
-                        <span>Opptakstidspunkt: </span>
-                        <span>Utdanning: </span>
-                        <span>Yrke: </span>
-                        <span>Foreldrebakgrunn: </span>
-                        <span>Fødselstidspunkt: </span>
-                        <span>Informant: </span>
+                    <div className="line1">
+                        <button className="closeButton" onClick={this.onCloseClick} href='#'>x</button>
                     </div>
 
-                    <ReactAudioPlayer
-                        src={url}
-                    />
+                    <div className="line2">
+                        <h2 id="headline">{age.split(" ")[0]} {gender.toLowerCase()} frå {place}</h2>
+                        <div className="infoText">
+                            <span>Opptakstidspunkt: {date_of_recording} </span>
+                            <span>Fødselstidspunkt: {birth} </span>
+                            <span>Alder: {age} </span>
+                            <span>Utdanning: {education} </span>
+                            <span>Yrke: {occupation}</span>
+                            <span>Foreldrebakgrunn: {parents_background}</span>
+                            <span>Informant: {inf}</span>
+                        </div>
+                    </div>
+
+                    <div className="line3">
+                        <ReactAudioPlayer src={url} />
+                    </div>
 
                     <div className="text">
 
@@ -129,26 +146,5 @@ class Result extends React.Component {
         )
     }
 }
-/*
-class Result extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            showResult: false
-        }
-    }
-    onClick(e){
-        e.preventDefault();
-        this.setState({showResult: !this.state.showResult})
-    }
-    render() {
-        return (
-            <div>
-                <button onClick={this.onClick.bind(this)} href='#'>Post a reply to this comment</button>
-                {this.state.showResult && < ReplyForm />}
-            </div>
-        )
-    }
-}*/
 
 export default Result;

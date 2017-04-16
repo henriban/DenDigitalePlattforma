@@ -1,18 +1,18 @@
 import React from 'react';
 import ReactDataGrid from 'react-data-grid';
-/*import Toolbar from 'react-data-grid-addons';*/
+//import Toolbar from 'react-data-grid-addons';
 
-import Result from './resultComponent';
+import Informater from '../data/informanter';
 
-const rowRenderer = React.createClass({
-    log: function(e) {
-        console.log(e);
-    },
-    render: function() {
-        return (<div onClick={this.log}><ReactDataGrid.Row ref="row" {...this.props}/></div>)
+class RowRenderer extends React.Component {
+    log(){
+
     }
-});
 
+    render() {
+        return (<div style={{cursor: "pointer"}} onClick={this.log}><ReactDataGrid.Row ref="row" {...this.props}/></div>)
+    }
+}
 
 const Sortable = React.createClass({
     getInitialState() {
@@ -61,7 +61,7 @@ const Sortable = React.createClass({
             {
                 key: 'education',
                 name: 'Utdanning',
-                width: 150,
+                width: 125,
                 filterable: true,
                 sortable: true
             },
@@ -80,11 +80,7 @@ const Sortable = React.createClass({
             }
         ];
 
-        this.state = {
-            showResult: false
-        };
-
-        let originalRows = this.createRows(100);
+        let originalRows = this.createRows();
         let rows = originalRows.slice(0);
         // Store the original rows array, and make a copy that can be used for modifying eg.filtering, sorting
         return { originalRows, rows };
@@ -94,26 +90,26 @@ const Sortable = React.createClass({
         return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime())).toLocaleDateString();
     },
 
-    onClick(e){
-        e.preventDefault();
-        this.setState({showResult: !this.state.showResult})
+    onClick(){
+        console.log("clicked")
     },
 
     createRows() {
         let rows = [];
-        for (let i = 1; i < 11; i++) {
+
+        Informater.map(item =>
             rows.push({
-                name: i,
-                area: ['', 'Fjøra', 'Dalen', 'Norane'][Math.floor((Math.random() * 3) + 1)],
-                gender: ['', 'Kvinne', 'Mann'][Math.floor((Math.random() * 2) + 1)],
-                age: ['13-25', '26-40', '41-60', '60-'][Math.floor((Math.random() * 4))],
-                born: ['1910-1940', '1941-1970', '1971-2000', '2001-'][Math.floor((Math.random() * 4))],
-                recordingTime: ['1996', '2001', '2016', '2017'][Math.floor((Math.random() * 4))],
-                education: ['Grunnskule', 'Vidaregåande', 'Høgskule'][Math.floor(Math.random() * 3)],
-                profession: ['Elev', 'Primær', 'Sekundær', 'Tertiær'][Math.floor(Math.random() * 4)],
-                parents: ['Ingen frå Sogndal', 'Mor frå Sogndal', 'Far frå Sogndal', 'Begge frå Sogndal'][Math.floor(Math.random() * 4)]
-            });
-        }
+                name: item.id,
+                area: item.place,
+                gender: item.gender,
+                age: item.age.split(" ").slice(1).join(" "),
+                born: item.birth,
+                recordingTime: item.date_of_recording,
+                education: item.education,
+                profession: item.occupation,
+                parents: item.parents_background
+            })
+        );
 
         return rows;
     },
@@ -159,12 +155,9 @@ const Sortable = React.createClass({
                     columns={this._columns}
                     rowGetter={this.rowGetter}
                     rowsCount={this.state.rows.length}
-                    minHeight={500}
-                    rowRenderer={rowRenderer}
-
-
+                    minHeight={275}
+                    rowRenderer={RowRenderer}
                 />
-                {this.state.showResult && < Result />}
             </div>
         );
     }
@@ -175,5 +168,3 @@ const Sortable = React.createClass({
  onClearFilters={this.onClearFilters}*/
 
 export default Sortable;
-
-
