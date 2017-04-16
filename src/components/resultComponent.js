@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactAudioPlayer from 'react-audio-player';
 
-import Informater from '../data/informanter';
+import Informanter from '../data/informanter';
 import '../styles/result.css';
 
 
@@ -19,7 +19,7 @@ class Result extends React.Component {
     render(){
 
         const id = 18;
-        let item = Informater.find(x => x.id === id);
+        let item = Informanter.find(x => x.id === id);
 
         const inf = item.id;
         const place = item.place;

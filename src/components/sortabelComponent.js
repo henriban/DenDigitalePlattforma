@@ -4,12 +4,15 @@ import ReactDataGrid from 'react-data-grid';
 
 import Informater from '../data/informanter';
 
-const RowRenderer = React.createClass({
+class RowRenderer extends React.Component {
+    log(){
+
+    }
 
     render() {
-        return (<div style={{cursor: "pointer"}} onClick={this.onClick}><ReactDataGrid.Row ref="row" {...this.props}/></div>)
+        return (<div style={{cursor: "pointer"}} onClick={this.log}><ReactDataGrid.Row ref="row" {...this.props}/></div>)
     }
-});
+}
 
 const Sortable = React.createClass({
     getInitialState() {
@@ -77,7 +80,7 @@ const Sortable = React.createClass({
             }
         ];
 
-        let originalRows = this.createRows(100);
+        let originalRows = this.createRows();
         let rows = originalRows.slice(0);
         // Store the original rows array, and make a copy that can be used for modifying eg.filtering, sorting
         return { originalRows, rows };
@@ -87,8 +90,7 @@ const Sortable = React.createClass({
         return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime())).toLocaleDateString();
     },
 
-    onClick(e){
-        e.preventDefault();
+    onClick(){
         console.log("clicked")
     },
 
@@ -153,9 +155,8 @@ const Sortable = React.createClass({
                     columns={this._columns}
                     rowGetter={this.rowGetter}
                     rowsCount={this.state.rows.length}
-                    minHeight={500}
+                    minHeight={275}
                     rowRenderer={RowRenderer}
-
                 />
             </div>
         );
