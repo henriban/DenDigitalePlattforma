@@ -13,12 +13,11 @@ class Result extends React.Component {
 
     onCloseClick(e){
         e.preventDefault();
-        this.props.onCloseClick();
+        this.props.onCloseClick(0);
     }
 
     render(){
-
-        const id = 18;
+        const id = this.props.inf;
         let item = Informanter.find(x => x.id === id);
 
         const inf = item.id;

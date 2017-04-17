@@ -55,10 +55,6 @@ const Fødselstidspunkt = [
     { value: '2001 –',            label: '2001 –' }
 ];
 
-/*const Informant = [
-    { value: 'trend',       label: 'Trend' },
-    { value: 'panel',       label: 'Panel' }
-];*/
 
 class Search extends React.Component {
 
@@ -74,9 +70,8 @@ class Search extends React.Component {
                     <SelectItem  label="Utdanning"          data={Utdanning}/>
                     <SelectItem  label="Yrke"               data={Yrke}/>
                     <SelectItem  label="Foreldrebakgrunn"   data={Foreldrebakgrunn}/>
-                    {/*<SelectItem  label="Informant"          data={Informant}/>*/}
                 </div>
-                {/* TODO: fix this reset button*/}
+                {/* TODO: Reset button*/}
             </div>
         );
     }
