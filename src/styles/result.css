@@ -27,64 +27,64 @@
 
 
 .resultContainer{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
     margin: 50px auto auto;
-    width: 85%;
+
+    min-width: 1000px;
+    width: 65%;
 
     background-color: #FAFAFA;
     border-radius: 5px;
 
     box-shadow: 0 0 1px #222222;
-
 }
 
 .line1{
     display: flex;
     justify-content: flex-end;
-}
-
-.line2, .line3{
-    margin: auto auto 10px;
-    width: 90%;
+    width: 100%;
+    height: 30px;
 }
 
 .line2{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
+    margin-left: 20px;
+    width: 32%;
 
-#headline{
-    width: 49%;
-    min-width: 230px;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .infoText{
-    width: 50%;
-    margin: auto auto 10px;
-
     display: flex;
+    align-content: flex-start;
     flex-wrap: wrap;
+
+    margin-bottom: 15px;
 }
 
 .infoText span{
-    min-width: 250px;
-    margin: 1px 0;
+    width: 100%;
+    margin: 2px 0;
 }
 
-
 .text{
-    margin: auto;
+    margin: 10px 0;
+
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
 
-    width: 90%;
-    padding-bottom: 10px;
+    width: 66%;
+    max-height: 500px;
 
     overflow: auto;
 }
 
-.text p{
-    margin: 0 10px;
+.text div{
+    margin: 3px 0;
 }
 
