@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Informanter from '../data/informanter';
 import '../styles/table.css';
 
 const columns = [
@@ -9,7 +8,7 @@ const columns = [
         name: 'Inf.'
     },
     {
-        key: 'area',
+        key: 'place',
         name: 'Stad'
     },
     {
@@ -21,11 +20,11 @@ const columns = [
         name: 'Alder'
     },
     {
-        key: 'born',
+        key: 'birth',
         name: 'Fødselstidspunkt'
     },
     {
-        key: 'recordingTime',
+        key: 'date_of_recording',
         name: 'Opptakstidspunkt'
     },
     {
@@ -33,11 +32,11 @@ const columns = [
         name: 'Utdanning'
     },
     {
-        key: 'profession',
+        key: 'occupation',
         name: 'Yrke'
     },
     {
-        key: 'parents',
+        key: 'parents_background',
         name: 'Foreldrebakgrunn'
     }
 ];
@@ -48,23 +47,6 @@ class Table extends React.Component{
         this.onRowClicks = this.onRowClicks.bind(this);
     }
 
-    getRows(){
-        let rows = [];
-        Informanter.map(item =>
-            rows.push({
-                id: item.id,
-                area: item.place.trim(),
-                gender: item.gender.trim(),
-                age: item.age.split(" ").slice(1).join(" ").trim(),
-                born: item.birth.trim(),
-                recordingTime: item.date_of_recording.trim(),
-                education: item.education.trim(),
-                profession: item.occupation.trim(),
-                parents: item.parents_background.trim()
-            })
-        );
-        return rows;
-    }
 
     generateHeaders(){
         return columns.map(function(column) {
@@ -76,7 +58,10 @@ class Table extends React.Component{
     generateRows () {
         const self = this;
         let i = 0;
-        return this.getRows().map(function (item) {
+
+        let rows = this.props.rows;
+
+        return rows.map(function (item) {
             let cells = columns.map(function (column) {
                 return <td key={i++} >{item[column.key]}</td>;
             });
@@ -84,10 +69,14 @@ class Table extends React.Component{
         }.bind(self));
     }
 
-    onRowClicks(id) {
+    // filterTable(searchList){
+    //     console.log(searchList);
+    //     let rows = this.state.rows;
+    //     this.setState({rows: rows.filter(x => x.gender.includes("Mann"))});
+    // }
 
+    onRowClicks(id) {
         this.props.onRowClick(id);
-        console.log(id);
     }
 
     render(){

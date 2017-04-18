@@ -17,6 +17,8 @@ const select = React.createClass({
         this.setState({
             selectValue: newValue
         });
+
+        this.props.onSelectUpdate(this.props.res, newValue);
     },
 
     render () {

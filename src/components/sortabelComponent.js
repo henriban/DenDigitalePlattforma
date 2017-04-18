@@ -274,19 +274,18 @@ const Example = React.createClass({
         Informater.map(item =>
             rows.push({
                 name: item.id,
-                area: item.place,
+                place: item.place,
                 gender: item.gender,
                 age: item.age.split(" ").slice(1).join(" "),
-                born: item.birth,
-                recordingTime: item.date_of_recording,
+                birth: item.birth,
+                date_of_recording: item.date_of_recording,
                 education: item.education,
-                profession: item.occupation,
-                parents: item.parents_background
+                occupation: item.occupation,
+                parents_background: item.parents_background
             })
 
         );
 
-        console.log(rows);
         return rows;
     },
 
