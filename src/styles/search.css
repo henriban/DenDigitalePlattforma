@@ -1,13 +1,13 @@
 .selectWrapper{
-    margin: 0 0 10px 0;
+    margin: 10px 0 10px 0;
 
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 
-    border: 1px solid black;
+    background: #fafafa;
+    box-shadow: 0 0 5px #888888;
     border-radius: 5px;
-
 }
 
 .selectItem{
