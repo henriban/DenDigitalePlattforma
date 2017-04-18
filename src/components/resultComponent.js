@@ -30,12 +30,11 @@ class Result extends React.Component {
         const occupation = item.occupation;
         const parents_background = item.parents_background;
 
-        //TODO:
-        item = Informanter.find(x => x.id === 9);
         const text = item.text;
 
-
         const url = require("../static/" + item.audio);
+
+        let k = 0;
 
         return(
             <div className="resultBackground">
@@ -56,14 +55,12 @@ class Result extends React.Component {
                             <span>Foreldrebakgrunn: {parents_background}</span>
                             <span>Informant: {inf}</span>
                         </div>
-                    </div>
-
-                    <div className="line3">
                         <ReactAudioPlayer src={url} />
                     </div>
 
                     <div className="text">
-                        <p>{text}</p>
+                        <div>{text.split("   ").map(i => {
+                            return <div key={k++}>{i}</div>})}</div>
                     </div>
                 </div>
             </div>
