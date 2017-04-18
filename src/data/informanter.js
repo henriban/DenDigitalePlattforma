@@ -125,7 +125,7 @@ const informanter =
             education: "Høgskule",
             occupation: "Primær",
             parents_background: "Begge frå Sogndal",
-            audio: "inf_9og10.mp3"
+            audio: "inf_13og14.mp3"
         },
         {
             id: 17,
