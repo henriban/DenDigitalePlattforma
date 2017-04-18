@@ -26,3 +26,8 @@ th, td{
     padding: 10px 10px;
     min-width: 10%;
 }
+
+th:hover{
+    cursor: pointer;
+    background: #d7d7d7;
+}

@@ -29,8 +29,8 @@ const date_of_recording = [
 ];
 
 const education = [
-    { value: 'gr.skule',     label: 'Gr.skule' },
-    { value: 'vg.skule',     label: 'Vg.skule' },
+    { value: 'grunnskule',     label: 'Grunnskule' },
+    { value: 'vidaregåande',     label: 'Vidaregåande' },
     { value: 'høgskule',     label: 'Høgskule' }
 ];
 

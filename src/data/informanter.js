@@ -7,7 +7,7 @@ const informanter =
             age: "Middelaldra 41 - 60",
             birth: "1941 - 1970",
             date_of_recording: "1996",
-            education: "Vg.skule",
+            education: "Vidaregåande",
             occupation: "Tertiær",
             parents_background: "Begge frå Sogndal",
             audio: "inf_9og10.mp3",
@@ -110,7 +110,7 @@ const informanter =
             age: "Eldre 61 –",
             birth: "1911 - 1940",
             date_of_recording: "1996",
-            education: "Gr.skule",
+            education: "Grunnskule",
             occupation: "Primær",
             parents_background: "Begge frå Sogndal",
             audio: "inf_13og14.mp3"
@@ -134,7 +134,7 @@ const informanter =
             age: "Eldre 61 –",
             birth: "1911 – 1940",
             date_of_recording: "1996",
-            education: "Gr.skule",
+            education: "Grunnskule",
             occupation: "Primær",
             parents_background: "Begge frå Sogndal",
             audio: "inf_17og18.mp3"
@@ -146,7 +146,7 @@ const informanter =
             age: "Eldre 61 –",
             birth: "1911 – 1940",
             date_of_recording: "1996",
-            education: "Gr.skule",
+            education: "Grunnskule",
             occupation: "Primær",
             parents_background: "Mor frå Sogndal",
             audio: "inf_17og18.mp3"

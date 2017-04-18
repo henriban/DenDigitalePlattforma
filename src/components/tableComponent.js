@@ -5,39 +5,48 @@ import '../styles/table.css';
 const columns = [
     {
         key: 'id',
-        name: 'Inf.'
+        name: 'Inf.',
+        num: 0
     },
     {
         key: 'place',
-        name: 'Stad'
+        name: 'Stad',
+        num: 1
     },
     {
         key: 'gender',
-        name: 'Kjønn'
+        name: 'Kjønn',
+        num: 2
     },
     {
         key: 'age',
-        name: 'Alder'
+        name: 'Alder',
+        num: 3
     },
     {
         key: 'birth',
-        name: 'Fødselstidspunkt'
+        name: 'Fødselstidspunkt',
+        num: 4
     },
     {
         key: 'date_of_recording',
-        name: 'Opptakstidspunkt'
+        name: 'Opptakstidspunkt',
+        num: 5
     },
     {
         key: 'education',
-        name: 'Utdanning'
+        name: 'Utdanning',
+        num: 6
     },
     {
         key: 'occupation',
-        name: 'Yrke'
+        name: 'Yrke',
+        num: 7
     },
     {
         key: 'parents_background',
-        name: 'Foreldrebakgrunn'
+        name: 'Foreldrebakgrunn',
+        num: 8
     }
 ];
 
@@ -50,8 +59,56 @@ class Table extends React.Component{
 
     generateHeaders(){
         return columns.map(function(column) {
-            return <th key={column.key}>{column.name}</th>;
-        });
+            return <th key={column.key} onClick={() => {this.sortTable(column.num)}}>{column.name}</th>;
+        }.bind(this));
+    }
+
+    sortTable(n) {
+        // if(n === 0){
+        //     return;
+        // }
+
+        let rows, i, x, y, shouldSwitch, dir, switchcount = 0;
+        let table = this.refs.filteredTable;
+        let switching = true;
+
+        dir = "asc";
+
+        while (switching) {
+
+            switching = false;
+            rows = table.getElementsByTagName("TR");
+
+            for (i = 1; i < (rows.length - 1); i++) {
+
+                shouldSwitch = false;
+
+                x = rows[i].getElementsByTagName("TD")[n];
+                y = rows[i + 1].getElementsByTagName("TD")[n];
+
+                if (dir === "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        shouldSwitch= true;
+                        break;
+                    }
+                } else if (dir === "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                        shouldSwitch= true;
+                        break;
+                    }
+                }
+            }
+            if (shouldSwitch) {
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                switchcount ++;
+            } else {
+                if (switchcount === 0 && dir === "asc") {
+                    dir = "desc";
+                    switching = true;
+                }
+            }
+        }
     }
 
 
@@ -69,12 +126,6 @@ class Table extends React.Component{
         }.bind(self));
     }
 
-    // filterTable(searchList){
-    //     console.log(searchList);
-    //     let rows = this.state.rows;
-    //     this.setState({rows: rows.filter(x => x.gender.includes("Mann"))});
-    // }
-
     onRowClicks(id) {
         this.props.onRowClick(id);
     }
@@ -84,7 +135,7 @@ class Table extends React.Component{
         let rowComponents = this.generateRows();
 
         return (
-            <table>
+            <table ref="filteredTable">
                 <thead><tr>{headerComponents}</tr></thead>
                 <tbody>{rowComponents}</tbody>
             </table>
