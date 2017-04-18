@@ -42,15 +42,25 @@ class Main extends React.Component {
     }
 
     filterTable(searchList){
+        // this.setState({filteredList: this.state.rows
+        //     .filter(x => x.place.toLowerCase().includes(searchList.place.toLowerCase()))
+        //     .filter(x => x.gender.toLowerCase().includes(searchList.gender.toLowerCase()))
+        //     .filter(x => x.age.toLowerCase().includes(searchList.age.toLowerCase()))
+        //     .filter(x => x.birth.toLowerCase().includes(searchList.birth.toLowerCase()))
+        //     .filter(x => x.date_of_recording.toLowerCase().includes(searchList.date_of_recording.toLowerCase()))
+        //     .filter(x => x.education.toLowerCase().includes(searchList.education.toLowerCase()))
+        //     .filter(x => x.occupation.toLowerCase().includes(searchList.occupation.toLowerCase()))
+        //     .filter(x => x.parents_background.toLowerCase().includes(searchList.parents_background.toLowerCase()))
+        // });
         this.setState({filteredList: this.state.rows
-            .filter(x => x.place.toLowerCase().includes(searchList.place.toLowerCase()))
-            .filter(x => x.gender.toLowerCase().includes(searchList.gender.toLowerCase()))
-            .filter(x => x.age.toLowerCase().includes(searchList.age.toLowerCase()))
-            .filter(x => x.birth.toLowerCase().includes(searchList.birth.toLowerCase()))
-            .filter(x => x.date_of_recording.toLowerCase().includes(searchList.date_of_recording.toLowerCase()))
-            .filter(x => x.education.toLowerCase().includes(searchList.education.toLowerCase()))
-            .filter(x => x.occupation.toLowerCase().includes(searchList.occupation.toLowerCase()))
-            .filter(x => x.parents_background.toLowerCase().includes(searchList.parents_background.toLowerCase()))
+            .filter(x => x.place.toLowerCase().includes(searchList.place))
+            .filter(x => x.gender.toLowerCase().includes(searchList.gender))
+            .filter(x => x.age.toLowerCase().includes(searchList.age))
+            .filter(x => x.birth.toLowerCase().includes(searchList.birth))
+            .filter(x => x.date_of_recording.toLowerCase().includes(searchList.date_of_recording))
+            .filter(x => x.education.toLowerCase().includes(searchList.education))
+            .filter(x => x.occupation.toLowerCase().includes(searchList.occupation))
+            .filter(x => x.parents_background.toLowerCase().includes(searchList.parents_background))
         });
     }
 

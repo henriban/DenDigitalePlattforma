@@ -76,6 +76,11 @@ class Search extends React.Component {
 
     handleChange(res, value){
         let new_filterRows = this.state.filterRows;
+
+        if(value === null){
+            value = '';
+        }
+
         new_filterRows[res] = value;
         this.setState({ filterRows: new_filterRows });
 
