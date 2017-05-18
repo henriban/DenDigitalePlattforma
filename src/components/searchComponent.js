@@ -39,6 +39,8 @@ const occupation = [
     { value: 'primær',      label: 'Primær' },
     { value: 'sekundær',    label: 'Sekundær' },
     { value: 'tertiær',     label: 'Tertiær' },
+    { value: 'toppleiar',     label: 'Toppleiar' },
+    { value: 'pensjonist ',     label: 'Pensjonist ' }
 ];
 
 const parents_background = [
@@ -53,6 +55,11 @@ const birth = [
     { value: '1941 – 1970',       label: '1941 – 1970' },
     { value: '1971 – 2000',       label: '1971 – 2000' },
     { value: '2001 –',            label: '2001 –' }
+];
+
+const panel = [
+    { value: 'panel',     label: 'Panel' },
+    { value: 'trend',     label: 'Trend' }
 ];
 
 
@@ -99,6 +106,7 @@ class Search extends React.Component {
                     <SelectItem  onSelectUpdate={this.handleChange} label="Utdanning"          data={education} res="education"/>
                     <SelectItem  onSelectUpdate={this.handleChange} label="Yrke"               data={occupation} res="occupation"/>
                     <SelectItem  onSelectUpdate={this.handleChange} label="Foreldrebakgrunn"   data={parents_background} res="parents_background"/>
+                    <SelectItem  onSelectUpdate={this.handleChange} label="Trend/Panel"        data={panel} res="panel"/>
                 </div>
                 {/* TODO: Reset button*/}
             </div>
