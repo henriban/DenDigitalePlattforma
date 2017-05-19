@@ -421,8 +421,9 @@ const informanter =
             education: "Høgskule",
             occupation: "Tertiær",
             parents_background: "Begge frå Sogndal",
-            audio: "inf_1og2.mp3",
-            text: text_1og2
+            audio: "inf_01og02.mp3",
+            text: text_1og2,
+            panel: "Trend"
         },
         {
             id: "01p",
@@ -434,8 +435,9 @@ const informanter =
             education: "Høgskule",
             occupation: "Tertiær",
             parents_background: "Begge frå Sogndal",
-            audio: "inf_1pog2p.mp3",
-            text: text_1pog2p
+            audio: "inf_01pog02p.mp3",
+            text: text_1pog2p,
+            panel: "Panel"
         },
         {
             id: "02",
@@ -447,8 +449,9 @@ const informanter =
             education: "Vidaregåande",
             occupation: "Tertiær",
             parents_background: "Begge frå Sogndal",
-            audio: "inf_1og2.mp3",
-            text: text_1og2
+            audio: "inf_01og02.mp3",
+            text: text_1og2,
+            panel: "Trend"
         },
         {
             id: "02p",
@@ -460,8 +463,9 @@ const informanter =
             education: "Høgskule",
             occupation: "Tertiær",
             parents_background: "Begge frå Sogndal",
-            audio: "inf_1pog2p.mp3",
-            text: text_1pog2p
+            audio: "inf_01pog02p.mp3",
+            text: text_1pog2p,
+            panel: "Panel"
         },
         {
             id: "09",
@@ -473,11 +477,12 @@ const informanter =
             education: "Vidaregåande",
             occupation: "Tertiær",
             parents_background: "Begge frå Sogndal",
-            audio: "inf_9og10.mp3",
-            text: text_9og10
+            audio: "inf_09og10.mp3",
+            text: text_9og10,
+            panel: "Trend"
         },
         {
-            id: 10,
+            id: "10",
             place: "Dalen",
             gender: "Mann",
             age: "Eldre 61 –",
@@ -486,11 +491,12 @@ const informanter =
             education: "Høgskule",
             occupation: "Tertiær",
             parents_background: "Far frå Sogndal",
-            audio: "inf_9og10.mp3",
-            text: text_9og10
+            audio: "inf_09og10.mp3",
+            text: text_9og10,
+            panel: "Trend"
         },
         {
-            id: 13,
+            id: "13",
             place: "Dalen",
             gender: "Mann",
             age: "Eldre 61 –",
@@ -500,10 +506,11 @@ const informanter =
             occupation: "Primær",
             parents_background: "Begge frå Sogndal",
             audio: "inf_13og14.mp3",
-            text: text_13og14
+            text: text_13og14,
+            panel: "Trend"
         },
         {
-            id: 14,
+            id: "14",
             place: "Dalen",
             gender: "Mann",
             age: "Middelaldra 41 - 60",
@@ -513,10 +520,11 @@ const informanter =
             occupation: "Primær",
             parents_background: "Begge frå Sogndal",
             audio: "inf_13og14.mp3",
-            text: text_13og14
+            text: text_13og14,
+            panel: "Trend"
         },
         {
-            id: 17,
+            id: "17",
             place: "Fjøra",
             gender: "Kvinne",
             age: "Eldre 61 –",
@@ -526,10 +534,11 @@ const informanter =
             occupation: "Primær",
             parents_background: "Begge frå Sogndal",
             audio: "inf_17og18.mp3",
-            text: text_17og18
+            text: text_17og18,
+            panel: "Trend"
         },
         {
-            id: 18,
+            id: "18",
             place: "Fjøra",
             gender: "Kvinne",
             age: "Eldre 61 –",
@@ -539,7 +548,8 @@ const informanter =
             occupation: "Primær",
             parents_background: "Mor frå Sogndal",
             audio: "inf_17og18.mp3",
-            text: text_17og18
+            text: text_17og18,
+            panel: "Trend"
         },
     ];
 

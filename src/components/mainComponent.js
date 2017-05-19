@@ -34,7 +34,8 @@ class Main extends React.Component {
                 date_of_recording: item.date_of_recording.trim(),
                 education: item.education.trim(),
                 occupation: item.occupation.trim(),
-                parents_background: item.parents_background.trim()
+                parents_background: item.parents_background.trim(),
+                panel: item.panel.trim()
             })
         );
         return rows;
@@ -50,6 +51,7 @@ class Main extends React.Component {
             .filter(x => x.education.toLowerCase().includes(searchList.education.toLowerCase()))
             .filter(x => x.occupation.toLowerCase().includes(searchList.occupation.toLowerCase()))
             .filter(x => x.parents_background.toLowerCase().includes(searchList.parents_background.toLowerCase()))
+            .filter(x => x.panel.toLowerCase().includes(searchList.panel.toLowerCase()))
         });
     }
 

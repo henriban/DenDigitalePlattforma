@@ -106,7 +106,7 @@ class Search extends React.Component {
                     <SelectItem  onSelectUpdate={this.handleChange} label="Utdanning"          data={education} res="education"/>
                     <SelectItem  onSelectUpdate={this.handleChange} label="Yrke"               data={occupation} res="occupation"/>
                     <SelectItem  onSelectUpdate={this.handleChange} label="Foreldrebakgrunn"   data={parents_background} res="parents_background"/>
-                    <SelectItem  onSelectUpdate={this.handleChange} label="Trend/Panel"        data={panel} res="panel"/>
+                    <SelectItem  onSelectUpdate={this.handleChange} label="Type informant"        data={panel} res="panel"/>
                 </div>
                 {/* TODO: Reset button*/}
             </div>

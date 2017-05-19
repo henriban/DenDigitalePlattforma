@@ -1,5 +1,6 @@
 .selectWrapper{
-    margin: 10px 0 10px 0;
+    position: relative;
+    top: 10px;
 
     display: flex;
     justify-content: center;
