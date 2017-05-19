@@ -1,3 +1,167 @@
+const text_1og2 = "I: Hadde de nokon spesielle ritual før de begynte timane om morgonen og slik, når de kom på skulen?\
+                        1: Me song. Det er heilt greitt. Akkurat kva me song om morgonen, det veit eg ikkje, men på ettermiddag var det no omtrent fast denne her Fager kveldsol smiler. Den hadde me.\
+                    2: Det var berre av  og til me hadde song om morgonen. Sjeldan, men så hadde me som regel denne her Du mettar liten fugl når du skulle maten då.\
+                    1: Ja, eg trur me, me bad sikkert Fadervår. Det er eg nesten sikker på altså at me gjorde.\
+                        I: Når de skulle heim att då?\
+                        2: Sprang nesten ned døra når klokka ringde.\
+                    1: Å, nei.\
+                    2: Som regel [latter].\
+                        I: Sånn som nett før jul og slik, var det noko fast tradisjon at då gjorde skulen eit eller anna?\
+                        2: Me hadde i vert fall sånn gjekk rundt juletreet på Trudvang. Eg veit ikkje om akkurat det var siste skuledagen, men me gjekk i vert fall rundt juletreet og song no,  gjekk og heldt i hendene og.\
+                    1: Ja, eg kan hugsa at det var, at det var juletre i, i\
+                    2: gymsalen\
+                    1: i gamle gymsalen, ja at ein var oppe der klassevis av og til og\
+                    2: Ja.\
+                    1: og gjekk rundt juletre. Det kan eg hugsa.\
+                    ……………………………………….\
+                    2: Altså skulesekker. Eg meiner slik som, eg tykte me hadde tunge sekker, men dei som dei går med no, eg tykkjer det er heilt forferdeleg. Dei er så tunge desse skulesekkene at dei må no øydeleggja aldeles ryggane på ungane.\
+                    1: Eg kan ikkje hugsa at me tenkte noko spesielt over dette der eg, om det var tungt eller ikkje tungt. For me fekk sånn trillebag og me. Det var ei sånn sykje som ein hadde då i, sikkert i slutten av barneskulen. Det var det som var in.\
+                    2: Ja, då når eg kom i sjette, då var det skulderveske som var in.\
+                    1: Å, ja. Ja.\
+                    2: Du var jo, du var jo aldeles skeive.\
+                    1: Ja, nei, det var ikkje nokon som gjekk med.\
+                    2: For det var jo så tungt.\
+                    1: Ja.\
+                        I: Mm.\
+                    2: Men du, du lærte deg jo kunsten å leggja att bøker på skulen. Det gjorde jo ein.\
+                    1: Dreiv me aldri med.\
+                    2: Hadde alt med?\
+                        1: Ja, eller me hadde det no ikkje på skulen. Var no ikkje nokon plass å ha det.\
+                    2: Nei. Under pulten!\
+                        1: Nei.\
+                    2: Gamle pultar som du sat med oppunder armane.\
+                    1: Nei, hadde ikkje noko der.\
+                        I: Når snøen kom då, hadde de nokon plass de kunne vera ute og\
+                    2: Hadde sånt halvtak, leskur eller kva det heiter\
+                    1: Ja.\
+                    2: imellom Trudvang og gamleskulen. Den var vel ein ja to-tre meter brei og\
+                    1: Var nokre meter lang.\
+                    2: Kor lang han var då?\
+                        1: Var nokre meter lang. Eg hugsar det at\
+                    2: Ti, femten meter kanskje lang.\
+                    1: ja, hugsar det at me\
+                    2: Det var vel der du kunne stå turt.\
+                    1: Der kunne du stå turt. Der hugsar eg ein hoppa strikk inne og, og\
+                    2: og balla.\
+                    1: og balla som me seier når, når det var, når det regna. Men elles, eg kan ikkje hugsa at me eigentleg hadde så fælt mykje for oss på vinteren. No var me ein del oppe, veit du det var ikkje utbygt oppi Rutlinslid eller noko. Det var jo ikkje eit hus der.\
+                        I: Nei.\
+                    1: Så der kan eg hugsa at me var av gårde og nokre gymtimar,  gjekk på ski, eller siglde rettare sagt. Det var no bratta så, for mykje gåing var det no vel ikkje,\
+                        I: Mm.\
+                    1: men siglde vel noko på ski der, men elles så var det ikkje så.\
+                    ………………………………………………………\
+                    2: Samla på egg ei stund, og dei gitt vekk og nei det var\
+                        1: Me hadde ei slik glansbildesykje me, men det var i barneskulen altså. Og då var det, då var det sjeldne og utanlandske og gamaldagse. Det hugsar eg.\
+                    2: Åh.\
+                    1: guri.\
+                    2: englar!\
+                        1: Så ho fekk jo tak i slike utanlandske og sjeldne\
+                    2: [Latter]\
+                    1: Det veit du var altså, det var svære greier viss me fekk tak, for då måtte me liksom betala med gjerne fire stykk berre for å få eit\
+                    I: Ja.\
+                    1: få eit slikt eit. Så hadde me slike samlemapper då som det var nedi. Desse, dei. Eg er sikker på at dei eksisterer ikkje lenger altså\
+                    2: Ja, opna\
+                    1: Ja, eg er sikker på dei hadde lommedukar eller noko liknande i til vanleg, mødrene våre. Så kva dei kallar dei for no?\
+                                                                                                                                              2: Arkivmapper?\
+                            1: Ja, meir som ei arkiv, men det var just ikkje arkiv denne her ho, nei.\
+                    2: Nei, det var vel meir som ei bok som du kunne opna?\
+                        1: Det var god lukt av ho, for mor mi hadde hatt eitkvart parfyme og litt slikt småtteri oppi. Me fekk denne der, eg kjenner den lukta der også heldt på lenge med, valdsam sortering.\
+                    ……………………………………………\
+                    I: Foreldra då om kveldane, var det noko spesielt dei masa om eller?\
+                        2: Eg åt vel middag, og så gjorde eg lekser med ein gong, fekk det unna.\
+                    1: Ja.\
+                    2: Elles var det no alltid du måtte vel som regel koma deg heim att du skulle ditt og datt og i seng og.\
+                    1: Ja, det var no legging.\
+                    2: Eg tykkjer dei er mykje meir ute no enn me fekk vera.";
+
+const text_1pog2p = "I: Ja, ja, har de hatt noko kontakt desse her tjue åra då eller er det?\
+                    1: Ser no kvarandre som han sa slik\
+                    2: Kanskje det var meir og kanskje gjennom barnehagen.\
+                    1: Mm.\
+                    …………………………………………….\
+                    I: Det kjem vel noko nytt her borte òg.\
+                    1: Ja.\
+                    2: Brua.\
+                    1: Brua, ja.\
+                    2: Loftesnesbrua.\
+                        I: Kva meiner de om den då?\
+                        1: Er det slik at det skal vera plass til både køyrande og gåande i begge retningar som han sa?\
+                        2: Det skal vera plass, det er tofeltsveg.\
+                    1: Ja.\
+                    2: Og så blir det gang-sykkelveg attåt\
+                    1: men berre på ei\
+                    2: på den sida mot Barsnes.\
+                    1: Men berre på ei side?\
+                        2: Det er på ei side.\
+                    1: Ja, då skal det liksom, då skal du kunna sykla att og fram hadde eg så nær sagt, når du syklar?\
+                        2: Jadå, det skal. Eg veit ikkje kor mange meter, men ein gang-sykkelveg skal vera tre meter.\
+                    1: Eg tykkjer ikkje det ser så fælt stort ut eg då veit du. Eg har køyrt forbi der oppe.\
+                    2: Kor brei var det ho var då? Elleve eitkvart.\
+                    1. Ho er, ho er sikkert bra, som han sa, det er berre\
+                    2: Mm.\
+                    1: det at du følte huff er det plass til alt dette her som dei, altså det er jo nøydd å dimensjonerast for å tola ein del no då eller. Elleve meter totalt?\
+                    ………………………………………………….\
+                    2: Men eg trur mange studentar kjem berre for å alt du kan oppleva her.\
+                    1: Ja.\
+                    2: Og til og med folk som skal søkja seg jobbar.\
+                    1: Ja\
+                    2: Dei òg\
+                    1: Ja, ja, ja.\
+                    2: er ute etter meint å seia fjord og fjell.\
+                    1: Me les no både i avisa og forskjellig slik eitkvart slag frammi noko pudderstyr og då  er det nokon av desse tilflyttarane som har etablert seg i jobbar her, og dette her med at dei har gått oppå Togga og kome seg ned att. Og alt dette her har dei vunne før dei begynner på jobb ho er åtte.\
+                        I: Ja, mm.\
+                    2: Eg likar meir å koma oppå Fagereggi, liten bakke opp og så gå på flata, finna seg ein hyttevegg, kosa seg og ned att sånn.\
+                    1: Mm.\
+                    2: Eg er meir der.\
+                    1: At det er jo så grualeg mange her no, sant? Det er jo noko med det òg altså før så var det no ikkje anna enn denne her lærarskulen her omtrent, sant?\
+                        I: Mm.\
+                    1: Og så var det no lite vette på DH som det heitte den gongen, he før?\
+                        I: Mm.\
+                    2: Men eg ser på jobben, der er det mange unge folk som òg fer og sprett oppi fjella\
+                    1: Ja, ja, ja.\
+                    2: både seint og tidleg.\
+                    1: Det er jo valdsamt med denne dette toppturgreiene på, det har følelsen av at det er sånn kreti og pleti. Berre tenk på dette her, her nede.\
+                    2: Byggjefeltet her ja.\
+                    1: Ja, byggjefeltet her nede. Det er jo heilt valdsamt. Dukkar opp slike namn veit du som aldri høyrt om før.\
+                        I: [latter]\
+                    1: Jammen, det er sant. Det er jo omtrent som alle vil\
+                    2: Svigerfar har høyrt dei.\
+                    1: Ja, han har høyrt dei, men kan du tenkja deg at det var sikkert fordi at der hadde dei kalvane gåande då, eller der var der dei slo først eller sist eller eitkvart slik.\
+                        I: Kva trur de vil endra seg mest no på dei neste tjue åra då?\
+                        2: Då satsar no eg på at eg skal få barnebarn òg.\
+                    1: Ja, då lyt, men kva som kjem til å skje liksom sånn i bygda du tenkjer på. Det med å sjå for seg ei utvikling det tykkjer eg er sånn. Ja, kva meir er det som dei kan få til nede i denne gropa her nede\
+                    I: [latter]\
+                    1: no liksom? Her er jo\
+                    I: Ja, ja\
+                    1: Jammen her er jo så minimalt med plass.\
+                        I: Ja.\
+                    2: Nei, no vil dei ikkje skifta logoen heller?\
+                        1: Nei.\
+                    2: Kostar for mykje.\
+                        1: Ja, det er no greitt. Det gjer det no òg det. Det er no rådyrt det.\
+                    2: Men, det må jo du ta i betraktning viss du skal slå saman nokon, og det skal ha eit nytt namn,\
+                        1: Ja\
+                    2: så kan ikkje du behalda det gamle, for det er billegast.\
+                    1: Mm.\
+                        I: [latter]\
+                    1: Så har du denne kommunesamanslåinga då, men eg ser ikkje heilt for meg at kva det skal gje slags\
+                    I: Nei.\
+                    1: valdsame utslag for bygda her.\
+                    2:  Berre ikkje dei bestemmer at alle skal skriva på bokmål,\
+                        I: Ja.\
+                    1: Ja, ja.\
+                    2: at me skal slutta med nynorsken\
+                    1: Ja, ja, mm.\
+                        I: Mm.\
+                    2: som skriftspråk då.\
+                    1: Ja.\
+                    2: For då er det klart at skal då du begynna å skriva «jeg» heile tida og\
+                    1: Ja.\
+                    2: ikkje det. Eg, eg er betre å skriva bokmål enn nynorsk for det då tenkjer du bokmål, men når du skulle skriva nynorsk når du var ung, så skulle du plutseleg skriva sånn som du snakkar. Og så då hadde du plutseleg nokre ord innimellom som sikkert var bokmål. Men no har jo du lov å skriva nesten hummar og kanari, for no er det mykje som er lov. Men det veit du fekk du det inn gjennom barnetv.\
+                        I: Mm.\
+                    2: Det var alt meir eller mindre var vel. Men det er jo fordelar med å ha fleire språk. Dei seier at du blir flinkare på skulen.\
+                        I: Mm.\
+                    2: Du lærer meir språkøyre eller.";
+
 const text_9og10 =  "I: Kva gjorde de på i friminuttane då?\
                     9: Nei, me har, me siglde valdsamt mykje på kjelke nedover mot Haukereidbrua,\
                     10: Mm.\
@@ -248,7 +412,63 @@ const text_17og18 = "18: Ja.\
 const informanter =
     [
         {
-            id: 9,
+            id: "01",
+            place: "Dalen",
+            gender: "Kvinne",
+            age: "Ung 26 - 40",
+            birth: "1941 - 1970",
+            date_of_recording: "1996",
+            education: "Høgskule",
+            occupation: "Tertiær",
+            parents_background: "Begge frå Sogndal",
+            audio: "inf_01og02.mp3",
+            text: text_1og2,
+            panel: "Trend"
+        },
+        {
+            id: "01p",
+            place: "Dalen",
+            gender: "Kvinne",
+            age: "Middelaldra 41 - 60",
+            birth: "1941 - 1970",
+            date_of_recording: "2017",
+            education: "Høgskule",
+            occupation: "Tertiær",
+            parents_background: "Begge frå Sogndal",
+            audio: "inf_01pog02p.mp3",
+            text: text_1pog2p,
+            panel: "Panel"
+        },
+        {
+            id: "02",
+            place: "Fjøra",
+            gender: "Kvinne",
+            age: "Ung 26 - 40",
+            birth: "1941 - 1970",
+            date_of_recording: "1996",
+            education: "Vidaregåande",
+            occupation: "Tertiær",
+            parents_background: "Begge frå Sogndal",
+            audio: "inf_01og02.mp3",
+            text: text_1og2,
+            panel: "Trend"
+        },
+        {
+            id: "02p",
+            place: "Fjøra",
+            gender: "Kvinne",
+            age: "Middelaldra 41 - 60",
+            birth: "1941 - 1970",
+            date_of_recording: "2017",
+            education: "Høgskule",
+            occupation: "Tertiær",
+            parents_background: "Begge frå Sogndal",
+            audio: "inf_01pog02p.mp3",
+            text: text_1pog2p,
+            panel: "Panel"
+        },
+        {
+            id: "09",
             place: "Dalen",
             gender: "Mann",
             age: "Middelaldra 41 - 60",
@@ -257,11 +477,12 @@ const informanter =
             education: "Vidaregåande",
             occupation: "Tertiær",
             parents_background: "Begge frå Sogndal",
-            audio: "inf_9og10.mp3",
-            text: text_9og10
+            audio: "inf_09og10.mp3",
+            text: text_9og10,
+            panel: "Trend"
         },
         {
-            id: 10,
+            id: "10",
             place: "Dalen",
             gender: "Mann",
             age: "Eldre 61 –",
@@ -270,11 +491,12 @@ const informanter =
             education: "Høgskule",
             occupation: "Tertiær",
             parents_background: "Far frå Sogndal",
-            audio: "inf_9og10.mp3",
-            text: text_9og10
+            audio: "inf_09og10.mp3",
+            text: text_9og10,
+            panel: "Trend"
         },
         {
-            id: 13,
+            id: "13",
             place: "Dalen",
             gender: "Mann",
             age: "Eldre 61 –",
@@ -284,10 +506,11 @@ const informanter =
             occupation: "Primær",
             parents_background: "Begge frå Sogndal",
             audio: "inf_13og14.mp3",
-            text: text_13og14
+            text: text_13og14,
+            panel: "Trend"
         },
         {
-            id: 14,
+            id: "14",
             place: "Dalen",
             gender: "Mann",
             age: "Middelaldra 41 - 60",
@@ -297,10 +520,11 @@ const informanter =
             occupation: "Primær",
             parents_background: "Begge frå Sogndal",
             audio: "inf_13og14.mp3",
-            text: text_13og14
+            text: text_13og14,
+            panel: "Trend"
         },
         {
-            id: 17,
+            id: "17",
             place: "Fjøra",
             gender: "Kvinne",
             age: "Eldre 61 –",
@@ -310,10 +534,11 @@ const informanter =
             occupation: "Primær",
             parents_background: "Begge frå Sogndal",
             audio: "inf_17og18.mp3",
-            text: text_17og18
+            text: text_17og18,
+            panel: "Trend"
         },
         {
-            id: 18,
+            id: "18",
             place: "Fjøra",
             gender: "Kvinne",
             age: "Eldre 61 –",
@@ -323,7 +548,8 @@ const informanter =
             occupation: "Primær",
             parents_background: "Mor frå Sogndal",
             audio: "inf_17og18.mp3",
-            text: text_17og18
+            text: text_17og18,
+            panel: "Trend"
         },
     ];
 

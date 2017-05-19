@@ -1,4 +1,6 @@
 table{
+    position: relative;
+    top: 20px;
     margin: auto;
     width: 100%;
     max-height: 50px;

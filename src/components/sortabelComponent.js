@@ -259,6 +259,12 @@ const Example = React.createClass({
                 name: 'Foreldrebakgrunn',
                 filterable: true,
                 sortable: true
+            },
+            {
+                key: 'panel',
+                name: 'Trend/Panel',
+                filterable: true,
+                sortable: true
             }
         ];
 
@@ -281,7 +287,8 @@ const Example = React.createClass({
                 date_of_recording: item.date_of_recording,
                 education: item.education,
                 occupation: item.occupation,
-                parents_background: item.parents_background
+                parents_background: item.parents_background,
+                panel: item.panel
             })
 
         );

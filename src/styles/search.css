@@ -1,5 +1,6 @@
 .selectWrapper{
-    margin: 10px 0 10px 0;
+    position: relative;
+    top: 10px;
 
     display: flex;
     justify-content: center;
@@ -12,6 +13,6 @@
 
 .selectItem{
     margin: 10px;
-    width: 20%;
+    width: 25%;
     min-width: 150px;
 }

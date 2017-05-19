@@ -47,6 +47,11 @@ const columns = [
         key: 'parents_background',
         name: 'Foreldrebakgrunn',
         num: 8
+    },
+    {
+        key: 'panel',
+        name: 'Trend/Panel',
+        num: 9
     }
 ];
 
@@ -64,9 +69,6 @@ class Table extends React.Component{
     }
 
     sortTable(n) {
-        // if(n === 0){
-        //     return;
-        // }
 
         let rows, i, x, y, shouldSwitch, dir, switchcount = 0;
         let table = this.refs.filteredTable;
