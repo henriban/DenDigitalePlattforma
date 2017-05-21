@@ -460,7 +460,7 @@ const informanter =
             age: "Middelaldra 41 - 60",
             birth: "1941 - 1970",
             date_of_recording: "2017",
-            education: "Høgskule",
+            education: "Vidaregåande",
             occupation: "Tertiær",
             parents_background: "Begge frå Sogndal",
             audio: "inf_01pog02p.mp3",
