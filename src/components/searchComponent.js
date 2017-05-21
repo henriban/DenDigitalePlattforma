@@ -76,7 +76,8 @@ class Search extends React.Component {
                 date_of_recording: '',
                 education: '',
                 occupation: '',
-                parents_background: ''
+                parents_background: '',
+                panel: ''
             }
         };
     }

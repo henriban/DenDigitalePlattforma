@@ -4,6 +4,32 @@ import ReactAudioPlayer from 'react-audio-player';
 import Informanter from '../data/informanter';
 import '../styles/result.css';
 
+const infinitiv_a = "*";
+const infinitiv_e = "‘";
+
+const ao = "@";
+const å = "#";
+
+const bundanForm_i = "¤";
+const bundanForm_a = "%";
+
+const adnedn = "~";
+const aneene = "¨";
+
+const dl = "+";
+const ll = "§";
+
+const dn = "{";
+const rn = "}";
+
+
+let listOfSymbols = [infinitiv_a, infinitiv_e,
+    ao, å,
+    bundanForm_i, bundanForm_a,
+    adnedn, aneene,
+    dl, ll,
+    dn, rn
+];
 
 class Result extends React.Component {
     constructor(props) {
@@ -22,6 +48,11 @@ class Result extends React.Component {
     onInfClick(e){
         this.setState({ showSecondInf: !this.state.showSecondInf});
     }
+
+    trimWord(word, symbol){
+        return word.split(symbol);
+    }
+
 
     render(){
         const id = this.props.inf;
@@ -112,7 +143,9 @@ class Result extends React.Component {
 
                     <div className="text">
                         <div>{text.split("   ").map(line => {
-                            return <div key={key++}>{line}</div>})}</div>
+                            return <div key={key++}>{line}</div>
+                        })}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,3 +154,23 @@ class Result extends React.Component {
 }
 
 export default Result;
+/*
+ listOfSymbols.map(symbol => {
+ if(line.indexOf(symbol) !== -1) {
+ return <div key={key++}>{
+ line.split(" ")
+ .map(word => {
+ if(word.indexOf(symbol) !== -1){
+ console.log(word);
+ return <span key={key++}>{this.trimWord(word, symbol)} </span>
+ }else{
+ return <span key={key++}>{word} </span>
+ }
+ })
+ }</div>
+ } else {
+
+ return <div key={key++}>{line}</div>
+ }})
+ })
+             */
