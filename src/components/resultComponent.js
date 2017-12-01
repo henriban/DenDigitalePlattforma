@@ -2,6 +2,7 @@ import React from 'react';
 import ReactAudioPlayer from 'react-audio-player';
 
 import Informanter from '../data/informanter';
+import PopUp from './popUpComponent';
 import '../styles/result.css';
 
 const infinitiv_a = "*";
@@ -22,22 +23,16 @@ const ll = "§";
 const dn = "{";
 const rn = "}";
 
-
-let listOfSymbols = [infinitiv_a, infinitiv_e,
-    ao, å,
-    bundanForm_i, bundanForm_a,
-    adnedn, aneene,
-    dl, ll,
-    dn, rn
-];
+const REGEX = new RegExp("([@#*¤%¨‘~+§{}])", "g");
 
 class Result extends React.Component {
     constructor(props) {
         super(props);
         this.onCloseClick = this.onCloseClick.bind(this);
         this.state = {
-            showSecondInf: false
-        }
+            showSecondInf: false,
+            showPopUp: true
+        };
     }
 
     onCloseClick(e){
@@ -53,6 +48,24 @@ class Result extends React.Component {
         return word.split(symbol);
     }
 
+    onWordClick(symbol){
+        this.setState({
+            showPopUp: !this.state.showPopUp
+        });
+        if(symbol === infinitiv_a || symbol === infinitiv_e){
+
+        }else if(symbol === ao || symbol === å){
+
+        }else if(symbol === bundanForm_i || symbol === bundanForm_a){
+
+        }else if(symbol === adnedn || symbol === aneene){
+
+        }else if(symbol === dl || symbol === ll){
+
+        }else if(symbol === dn || symbol === rn){
+
+        }
+    }
 
     render(){
         const id = this.props.inf;
@@ -143,10 +156,25 @@ class Result extends React.Component {
 
                     <div className="text">
                         <div>{text.split("   ").map(line => {
-                            return <div key={key++}>{line}</div>
+
+                            if(line.match(REGEX)) {
+                                return <div key={key++}>{
+                                    line.split(" ")
+                                        .map(word => {
+                                            if(word.indexOf(word.match(REGEX)) !== -1){
+                                                return <span onClick={() => this.onWordClick(word.match(REGEX)[0])} style={{color:"blue"}} key={key++}>{this.trimWord(word, word.match(REGEX)[0])} </span>
+                                            }else{
+                                                return <span key={key++}>{word} </span>
+                                            }
+                                        })
+                                }</div>
+                            } else {
+                                return <div key={key++}>{line}</div>
+                            }
                         })}
                         </div>
                     </div>
+                    {this.state.showPopUp && <PopUp text="Velg:" btn1="a" btn2="i"/>}
                 </div>
             </div>
         )
@@ -154,23 +182,3 @@ class Result extends React.Component {
 }
 
 export default Result;
-/*
- listOfSymbols.map(symbol => {
- if(line.indexOf(symbol) !== -1) {
- return <div key={key++}>{
- line.split(" ")
- .map(word => {
- if(word.indexOf(symbol) !== -1){
- console.log(word);
- return <span key={key++}>{this.trimWord(word, symbol)} </span>
- }else{
- return <span key={key++}>{word} </span>
- }
- })
- }</div>
- } else {
-
- return <div key={key++}>{line}</div>
- }})
- })
-             */

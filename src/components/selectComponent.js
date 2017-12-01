@@ -39,4 +39,4 @@ const select = React.createClass({
     }
 });
 
-module.exports = select;
+export default select;

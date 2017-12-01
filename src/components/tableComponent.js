@@ -55,6 +55,8 @@ const columns = [
     }
 ];
 
+let key = 0;
+
 class Table extends React.Component{
     constructor(props){
         super(props);
@@ -113,7 +115,6 @@ class Table extends React.Component{
         }
     }
 
-
     generateRows () {
         const self = this;
         let i = 0;
@@ -137,10 +138,13 @@ class Table extends React.Component{
         let rowComponents = this.generateRows();
 
         return (
-            <table ref="filteredTable">
-                <thead><tr>{headerComponents}</tr></thead>
-                <tbody>{rowComponents}</tbody>
-            </table>
+            <div>
+                <table ref="filteredTable">
+                    <thead><tr>{headerComponents}</tr></thead>
+                    <tbody key={key++}>{rowComponents}</tbody>
+                </table>
+                {rowComponents.length === 0 ? <div className="notFoundDiv"><p>Ingen resultat</p></div> : <div></div>}
+            </div>
         );
     }
 }

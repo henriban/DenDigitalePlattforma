@@ -5,6 +5,7 @@ import Result from './resultComponent';
 import Table from './tableComponent';
 
 import Informanter from '../data/informanter';
+
 import '../styles/main.css';
 
 class Main extends React.Component {
@@ -19,7 +20,7 @@ class Main extends React.Component {
             rows: this.getRows(),
             filteredList: this.getRows(),
             searchList: []
-        }
+        };
     }
 
     getRows(){
@@ -29,7 +30,7 @@ class Main extends React.Component {
                 id: item.id,
                 place: item.place.trim(),
                 gender: item.gender.trim(),
-                age: item.age, //.split(" ").slice(1).join(" ").trim()
+                age: item.age.trim(),
                 birth: item.birth.trim(),
                 date_of_recording: item.date_of_recording.trim(),
                 education: item.education.trim(),
