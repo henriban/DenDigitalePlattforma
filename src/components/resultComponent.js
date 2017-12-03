@@ -31,7 +31,10 @@ class Result extends React.Component {
         this.onCloseClick = this.onCloseClick.bind(this);
         this.state = {
             showSecondInf: false,
-            showPopUp: true
+            showPopUp: false,
+            popUpWord: "404",
+            popUpAlternative1: "",
+            popUpAlternative2: "",
         };
     }
 
@@ -48,23 +51,36 @@ class Result extends React.Component {
         return word.split(symbol);
     }
 
-    onWordClick(symbol){
-        this.setState({
-            showPopUp: !this.state.showPopUp
-        });
+    onWordClick(symbol, word){
+        let alternative1 = "";
+        let alternative2 = "";
+
         if(symbol === infinitiv_a || symbol === infinitiv_e){
-
+            alternative1 = "a";
+            alternative2 = "r";
         }else if(symbol === ao || symbol === å){
-
+            alternative1 = "ao";
+            alternative2 = "å";
         }else if(symbol === bundanForm_i || symbol === bundanForm_a){
-
+            alternative1 = "i";
+            alternative2 = "a";
         }else if(symbol === adnedn || symbol === aneene){
-
+            alternative1 = "adn/edn";
+            alternative2 = "ane/ene";
         }else if(symbol === dl || symbol === ll){
-
+            alternative1 = "dl";
+            alternative2 = "ll";
         }else if(symbol === dn || symbol === rn){
-
+            alternative1 = "dn";
+            alternative2 = "rn";
         }
+
+        this.setState({
+            showPopUp: !this.state.showPopUp,
+            popUpWord: word,
+            popUpAlternative1: alternative1,
+            popUpAlternative2: alternative2
+        });
     }
 
     render(){
@@ -135,22 +151,22 @@ class Result extends React.Component {
                         <ReactAudioPlayer src={url} />
 
                         {!this.state.showSecondInf &&
-                            <span className="secondInfDiv" onClick={() => this.onInfClick()}><b>{inf_2.split("p")[0]}: {age2.split(" ")[0]} {gender2.toLowerCase()} frå {place2}</b></span>
+                        <span className="secondInfDiv" onClick={() => this.onInfClick()}><b>{inf_2.split("p")[0]}: {age2.split(" ")[0]} {gender2.toLowerCase()} frå {place2}</b></span>
                         }
                         {this.state.showSecondInf &&
-                            <div className="secondInfDiv" onClick={() => this.onInfClick()}>
-                                <span><b>{inf_2.split("p")[0]}: {age2.split(" ")[0]} {gender2.toLowerCase()} frå {place2}</b></span>
-                                <div className="infoText">
-                                    <span>Informant: {inf_2.split("p")[0]}</span>
-                                    <span>Opptakstidspunkt: {date_of_recording2} </span>
-                                    <span>Fødselstidspunkt: {birth2} </span>
-                                    <span>Alder: {age2} </span>
-                                    <span>Utdanning: {education2} </span>
-                                    <span>Yrke: {occupation2}</span>
-                                    <span>Foreldrebakgrunn: {parents_background2}</span>
-                                    <span>Type Informatn: {panel2}</span>
-                                </div>
+                        <div className="secondInfDiv" onClick={() => this.onInfClick()}>
+                            <span><b>{inf_2.split("p")[0]}: {age2.split(" ")[0]} {gender2.toLowerCase()} frå {place2}</b></span>
+                            <div className="infoText">
+                                <span>Informant: {inf_2.split("p")[0]}</span>
+                                <span>Opptakstidspunkt: {date_of_recording2} </span>
+                                <span>Fødselstidspunkt: {birth2} </span>
+                                <span>Alder: {age2} </span>
+                                <span>Utdanning: {education2} </span>
+                                <span>Yrke: {occupation2}</span>
+                                <span>Foreldrebakgrunn: {parents_background2}</span>
+                                <span>Type Informatn: {panel2}</span>
                             </div>
+                        </div>
                         }
                     </div>
 
@@ -162,7 +178,7 @@ class Result extends React.Component {
                                     line.split(" ")
                                         .map(word => {
                                             if(word.indexOf(word.match(REGEX)) !== -1){
-                                                return <span onClick={() => this.onWordClick(word.match(REGEX)[0])} style={{color:"blue"}} key={key++}>{this.trimWord(word, word.match(REGEX)[0])} </span>
+                                                return <span onClick={() => this.onWordClick(word.match(REGEX)[0], this.trimWord(word, word.match(REGEX)[0]))} style={{color:"blue"}} key={key++}>{this.trimWord(word, word.match(REGEX)[0])} </span>
                                             }else{
                                                 return <span key={key++}>{word} </span>
                                             }
@@ -174,7 +190,11 @@ class Result extends React.Component {
                         })}
                         </div>
                     </div>
-                    {this.state.showPopUp && <PopUp text="Velg:" btn1="a" btn2="i"/>}
+                    {this.state.showPopUp &&
+                    <PopUp text={this.state.popUpWord}
+                           btn1={this.state.popUpAlternative1}
+                           btn2={this.state.popUpAlternative2}
+                    />}
                 </div>
             </div>
         )

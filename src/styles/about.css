@@ -2,3 +2,10 @@
     margin: auto;
     width: 50%;
 }
+
+.example_div{
+    position: fixed;
+    background-color:black;
+    width: 50px;
+    height: 50px;
+}

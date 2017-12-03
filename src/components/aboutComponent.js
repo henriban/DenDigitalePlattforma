@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/about.css';
 
+// import ReactCursorPosition from "react-cursor-position";
 // Inline color
 const style = {
     color:'red'
@@ -24,9 +25,52 @@ class About extends React.Component {
                     <li>Segmentering av ll &gt; dl Eksempel: a<span style={style}>dl</span>e eller a<span style={style}>ll</span>e</li>
                     <li>Differensiering av rn &gt; dn Eksempel: gje<span style={style}>dn</span>a eller gje<span style={style}>rn</span>e</li>
                 </ul>
+
+                {/*<ReactCursorPosition className="example" >*/}
+                    {/*<PositionLabel />*/}
+                {/*</ReactCursorPosition>*/}
             </div>
         );
     }
 }
 
 export default About;
+
+// const PositionLabel = (props) => {
+//
+//     const {
+//         detectedEnvironment: {
+//             isMouseDetected = false,
+//             isTouchDetected = false
+//         } = {},
+//         elementDimensions: {
+//             width = 0,
+//             height = 0
+//         } = {},
+//         isActive = false,
+//         isPositionOutside = false,
+//         position: {
+//             x = 0,
+//             y = 0
+//         } = {}
+//     } = props;
+//
+//     let styles = {
+//         top: y,
+//         left: x
+//     };
+//
+//     return (
+//         <div className="example__label">
+//             {`x: ${x}`}<br />
+//             {`y: ${y}`}<br />
+//             {`width:: ${width}`}<br />
+//             {`height: ${height}`}<br />
+//             {`isActive: ${isActive}`}<br />
+//             {`isPositionOutside: ${isPositionOutside ? 'true' : 'false'}`}<br />
+//             {`isMouseDetected: ${isMouseDetected ? 'true' : 'false'}`}<br />
+//             {`isTouchDetected: ${isTouchDetected ? 'true' : 'false'}`}
+//             <div className="example_div" style={styles}></div>
+//         </div>
+//     );
+// };  
