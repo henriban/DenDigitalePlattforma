@@ -50,7 +50,7 @@
     height: 30px;
 }
 
-.line2{
+.firstInfPanel{
     margin-left: 20px;
     width: 32%;
 
@@ -89,7 +89,7 @@
     margin: 3px 0;
 }
 
-.secondInfDiv{
+.secondInfPanel{
     cursor: pointer;
     width: 90%;
     background: #e6e6e6;
@@ -99,6 +99,6 @@
     margin-top: 5px;
 }
 
-.secondInfDiv .infoText{
+.secondInfPanel .infoText{
     margin-bottom: 0;
 }

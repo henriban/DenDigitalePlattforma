@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Search from './searchComponent';
-import Result from './resultComponent';
+import Result from './textWindowComponent';
 import Table from './tableComponent';
 
 import Informanter from '../data/informanter';
@@ -22,7 +22,7 @@ class Main extends React.Component {
             searchList: []
         };
     }
-
+ 
     getRows(){
         let rows = [];
         Informanter.map(item =>
