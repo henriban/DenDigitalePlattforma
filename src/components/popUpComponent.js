@@ -12,15 +12,19 @@ class popUp extends React.Component {
         };
     }
 
+    buttonClicked(symbol){
+
+    }
+
     render(){
         return (
             <div className="popUpWrapper">
                 <p>{this.state.text}</p>
                 <div className="popUpButtonContainer">
-                    <button>{this.state.btn1}</button>
-                    <button>{this.state.btn2}</button>
+                    <button onClick={() => this.buttonClicked(this.state.btn1)}>{this.state.btn1}</button>
+                    <button onClick={() => this.buttonClicked(this.state.btn2)}>{this.state.btn2}</button>
                 </div>
-                <button id="annetButton">{this.state.btn3}</button>
+                <button id="annetButton" onClick={() => this.buttonClicked(this.state.btn3)}>{this.state.btn3}</button>
             </div>
         );
     }

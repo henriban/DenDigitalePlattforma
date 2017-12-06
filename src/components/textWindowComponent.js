@@ -96,11 +96,12 @@ class Result extends React.Component {
                         <div>{text.split("   ").map(line => {
 
                             if(line.match(REGEX)) {
+                                let infNumber = line.split(":")[0].trim();
                                 return <div key={key++}>{
                                     line.split(" ")
                                         .map(word => {
                                             if(word.indexOf(word.match(REGEX)) !== -1){
-                                                return <Word key={key++} word={word} />;
+                                                return <Word key={key++} word={word} inf={infNumber} />;
                                             }else{
                                                 return <span key={key++}>{word} </span>
                                             }

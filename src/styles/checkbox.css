@@ -1,32 +1,18 @@
-.graphPage{
-    margin: auto;
-    width: 90%;
-}
-
-.graphSearchArea{
-    display: flex;
-    justify-content: flex-start;
-}
-
 .checkboxSearchWrapper{
-    position: relative;
-    margin: 10px 0;
-
     display: flex;
-
     flex-wrap: wrap;
 
-    background: #fafafa;
-    box-shadow: 0 0 5px #888888;
-    border-radius: 5px;
-}
+    position: relative;
+    left: 15px;
 
+}
+ 
 .checkboxItem{
-    margin: 10px;
-    width: 15%;
+    margin: 10px;  
+    width: 18%; 
     min-width: 160px;
 }
-
+   
 .childCheckbox{
     position: relative;
     left: 12px;

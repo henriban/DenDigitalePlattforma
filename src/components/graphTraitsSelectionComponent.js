@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Checkbox from './Checkbox';
+import Checkbox from './checkboxComponent';
 
 export default class GraphTraitsSelection extends React.Component{
 

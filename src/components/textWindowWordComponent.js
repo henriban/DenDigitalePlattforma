@@ -20,15 +20,19 @@ const ll = "§";
  
 const dn = "{";
 const rn = "}";
- 
+
+let style = {
+  color: "blue"
+};
+
 class Word extends React.Component{
 
-
     constructor(props){
-        super(props);
-
+        super(props);         
+ 
         this.state = {
             word: this.props.word,
+            inf: this.props.inf,
 
             showPopUp: false,
             popUpWord: "404",
@@ -68,12 +72,17 @@ class Word extends React.Component{
             popUpAlternative1: alternative1,
             popUpAlternative2: alternative2
         });
+
+        style = {
+            color: "red"
+        }
     }
 
     trimWord(word, symbol){
         return word.split(symbol);
     }
 
+    //TODO: showPopUp globally (only on window at the time)
     render(){
         return(
             <span>
@@ -81,9 +90,10 @@ class Word extends React.Component{
                 <PopUp text={this.state.popUpWord}
                        btn1={this.state.popUpAlternative1}
                        btn2={this.state.popUpAlternative2}
+                       inf={this.state.inf}
                 />}
                 <span onClick={() => this.onWordClick(this.state.word.match(REGEX)[0],
-                    this.trimWord(this.state.word, this.state.word.match(REGEX)[0]))} style={{color:"blue"}}
+                    this.trimWord(this.state.word, this.state.word.match(REGEX)[0]))} style={style}
                       key={this.id}>{this.trimWord(this.state.word, this.state.word.match(REGEX)[0])} </span>
             </span>
         );

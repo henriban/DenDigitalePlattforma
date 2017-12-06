@@ -1,59 +1,6 @@
 import React from 'react';
-
+import Columns from '../data/tableColumns';
 import '../styles/table.css';
-
-const columns = [
-    {
-        key: 'id',
-        name: 'Inf.',
-        num: 0
-    },
-    {
-        key: 'place',
-        name: 'Stad',
-        num: 1
-    },
-    {
-        key: 'gender',
-        name: 'Kjønn',
-        num: 2
-    },
-    {
-        key: 'age',
-        name: 'Alder',
-        num: 3
-    },
-    {
-        key: 'birth',
-        name: 'Fødselstidspunkt',
-        num: 4
-    },
-    {
-        key: 'date_of_recording',
-        name: 'Opptakstidspunkt',
-        num: 5
-    },
-    {
-        key: 'education',
-        name: 'Utdanning',
-        num: 6
-    },
-    {
-        key: 'occupation',
-        name: 'Yrke',
-        num: 7
-    },
-    {
-        key: 'parents_background',
-        name: 'Foreldrebakgrunn',
-        num: 8
-    },
-    {
-        key: 'panel',
-        name: 'Trend/Panel',
-        num: 9
-    }
-];
 
 let key = 0;
 
@@ -65,11 +12,11 @@ class Table extends React.Component{
 
 
     generateHeaders(){
-        return columns.map(function(column) {
+        return Columns.map(function(column) {
             return <th key={column.key} onClick={() => {this.sortTable(column.num)}}>{column.name}</th>;
         }.bind(this));
     }
-
+    
     sortTable(n) {
 
         let rows, i, x, y, shouldSwitch, dir, switchcount = 0;
@@ -122,7 +69,7 @@ class Table extends React.Component{
         let rows = this.props.rows;
 
         return rows.map(function (item) {
-            let cells = columns.map(function (column) {
+            let cells = Columns.map(function (column) {
                 return <td key={i++} >{item[column.key]}</td>;
             });
             return <tr className="row" onClick={() => {this.onRowClicks(item.id)}} key={i++}>{cells}</tr>;
@@ -130,7 +77,7 @@ class Table extends React.Component{
     }
 
     onRowClicks(id) {
-        this.props.onRowClick(id);
+        this.props.onRowClick(id); 
     }
 
     render(){
