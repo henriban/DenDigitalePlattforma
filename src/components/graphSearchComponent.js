@@ -5,24 +5,28 @@ import Variables from '../data/searchVariables';
 
 import '../styles/checkbox.css';
 
-export default class graphSelectComponent extends React.Component{
+class graphSearchComponent extends React.Component{
 
-    componentWillMount = () => {
-        this.selectedCheckboxes = new Set();
-    };
+    constructor(props){
+        super(props);
+        this.state = {
+            filterRows: {
+                place: [],
+                gender: [],
+                age: [],
+                birth: [],
+                date_of_recording: [],
+                education: [],
+                occupation: [],
+                parents_background: [],
+                panel: []
+            },
+        };
+    }
 
-
-    toggleCheckbox = label => {
-        for (const checkbox of this.selectedCheckboxes) {
-            console.log(checkbox, 'is selected.');
-        }
-        if (this.selectedCheckboxes.has(label)) {
-            this.selectedCheckboxes.delete(label);
-        } else {
-            this.selectedCheckboxes.add(label);
-        }
-        console.log(this.selectedCheckboxes)
-    };
+    toggleCheckbox(checkStr, res){
+        console.log(res, checkStr);
+    }
 
     render(){
         return(
@@ -40,3 +44,5 @@ export default class graphSelectComponent extends React.Component{
         );
     }
 }
+
+export default graphSearchComponent;

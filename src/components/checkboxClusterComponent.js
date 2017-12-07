@@ -6,6 +6,7 @@ import Informanter from '../data/informanter';
 let key = 0;
 
 let checkStr = [];
+let activeRows = [];
 
 export default class checkboxComponent extends React.Component{
 
@@ -14,9 +15,8 @@ export default class checkboxComponent extends React.Component{
         this.state = {
             isChecked: false,
             res: this.props.res,
-            activeRows: this.initRows(),
             filterRows: {
-                place: ["Fjøra"],
+                place: [],
                 gender: [],
                 age: [],
                 birth: [],
@@ -27,8 +27,10 @@ export default class checkboxComponent extends React.Component{
                 panel: []
             },
         };
-    }
 
+        activeRows = this.initRows();
+    } 
+  
     initRows(){
         let rows = [];
         Informanter.map(item =>
@@ -48,7 +50,7 @@ export default class checkboxComponent extends React.Component{
 
         return rows;
     }   
-    
+     
    
     setLabelCheckStr(label){
         if(!checkStr.includes(label)){
@@ -75,19 +77,28 @@ export default class checkboxComponent extends React.Component{
         }else{
             this.setLabelCheckStr(label)
         }
-        // console.log(checkStr);
+
+        // It's works, but I don't know why
+        //      Updates filterRows, but just on res (copy the checkStr into only on res)
+        //      TODO: fix this
+        let new_filterRows = this.state.filterRows;
+        new_filterRows[res] = checkStr;
 
 
         let newFilteredRows = [];
 
-        this.state.filterRows[res].map(filter => Informanter.map(inf => inf[res].includes(filter) ? newFilteredRows.push(inf) : null ));
+        // Filter the rows, if the filter is empty don't do anything. If not empty iterate through Informanter and find matches
+        if(activeRows.length > 0){
+            this.state.filterRows[res].map(filter => !filter.length ? null :
+                activeRows.map(inf => inf[res].includes(filter) ? newFilteredRows.push(inf) : null ));
+        }else{
+            this.state.filterRows[res].map(filter => !filter.length ? null :
+                Informanter.map(inf => inf[res].includes(filter) ? newFilteredRows.push(inf) : null ));
+        }
 
-        this.setState({
-           activeRows: newFilteredRows
-        });
-
-        console.log(newFilteredRows);
-        console.log(this.state.activeRows);
+        activeRows = newFilteredRows;
+        // console.log(activeRows);
+        this.props.onCheckUpdate(checkStr, res);
     };
 
     render(){
