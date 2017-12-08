@@ -9,13 +9,12 @@ class Table extends React.Component{
         super(props);
         this.onRowClicks = this.onRowClicks.bind(this);
     }
-
-
+   
     generateHeaders(){
         return Columns.map(function(column) {
             return <th key={column.key} onClick={() => {this.sortTable(column.num)}}>{column.name}</th>;
         }.bind(this));
-    }
+    } 
     
     sortTable(n) {
 

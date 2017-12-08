@@ -1,12 +1,7 @@
 import React from 'react'
 import Checkbox from './checkboxComponent';
 
-import Informanter from '../data/informanter';
-
 let key = 0;
-
-let checkStr = [];
-let activeRows = [];
 
 export default class checkboxComponent extends React.Component{
 
@@ -15,57 +10,27 @@ export default class checkboxComponent extends React.Component{
         this.state = {
             isChecked: false,
             res: this.props.res,
-            filterRows: {
-                place: [],
-                gender: [],
-                age: [],
-                birth: [],
-                date_of_recording: [],
-                education: [],
-                occupation: [],
-                parents_background: [],
-                panel: []
-            },
+            checkStr: []
         };
-
-        activeRows = this.initRows();
-    } 
-  
-    initRows(){
-        let rows = [];
-        Informanter.map(item =>
-            rows.push({
-                id: item.id,
-                place: item.place.trim(),
-                gender: item.gender.trim(),
-                age: item.age.trim(),
-                birth: item.birth.trim(),
-                date_of_recording: item.date_of_recording.trim(),
-                education: item.education.trim(),
-                occupation: item.occupation.trim(),
-                parents_background: item.parents_background.trim(),
-                panel: item.panel.trim()
-            })
-        );
-
-        return rows;
-    }   
+    }
      
    
     setLabelCheckStr(label){
-        if(!checkStr.includes(label)){
-            checkStr.push(label);
+        let checked = this.state.checkStr;
+        if(!checked.includes(label)){
+            checked.push(label);
         }else {
             this.removeLabelCheckStr(label)
         }
     }
 
     removeLabelCheckStr(label){
-        let index = checkStr.indexOf(label);
-        checkStr.splice(index, 1);
-    }
+        let checked = this.state.checkStr;
+        let index = checked.indexOf(label);
+        checked.splice(index, 1);
+    } 
 
-    toggleCheckbox = (label, res) => {
+    toggleCheckbox = (label, res, isChecked) => {
         if(label.includes(this.props.label)){
             this.setState({
                 isChecked: !this.state.isChecked
@@ -78,27 +43,7 @@ export default class checkboxComponent extends React.Component{
             this.setLabelCheckStr(label)
         }
 
-        // It's works, but I don't know why
-        //      Updates filterRows, but just on res (copy the checkStr into only on res)
-        //      TODO: fix this
-        let new_filterRows = this.state.filterRows;
-        new_filterRows[res] = checkStr;
-
-
-        let newFilteredRows = [];
-
-        // Filter the rows, if the filter is empty don't do anything. If not empty iterate through Informanter and find matches
-        if(activeRows.length > 0){
-            this.state.filterRows[res].map(filter => !filter.length ? null :
-                activeRows.map(inf => inf[res].includes(filter) ? newFilteredRows.push(inf) : null ));
-        }else{
-            this.state.filterRows[res].map(filter => !filter.length ? null :
-                Informanter.map(inf => inf[res].includes(filter) ? newFilteredRows.push(inf) : null ));
-        }
-
-        activeRows = newFilteredRows;
-        // console.log(activeRows);
-        this.props.onCheckUpdate(checkStr, res);
+        this.props.onCheckUpdate(this.state.checkStr, res, isChecked);
     };
 
     render(){
@@ -114,4 +59,4 @@ export default class checkboxComponent extends React.Component{
             </div>
         );
     }
-}
+}   
