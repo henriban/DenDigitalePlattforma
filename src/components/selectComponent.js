@@ -26,7 +26,7 @@ const select = React.createClass({
             <div className="selectItem">
                 <span className="section-heading">{this.props.label}:</span>
                 <Select ref="stateSelect"
-                        autofocus
+                        autoFocus
                         options={this.props.data}
                         simpleValue
                         name="selected-state"
@@ -39,4 +39,4 @@ const select = React.createClass({
     }
 });
 
-module.exports = select;
+export default select;
