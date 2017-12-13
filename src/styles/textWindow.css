@@ -24,7 +24,7 @@
 
 .closeButton:hover{
     background: #ff3c52;
-}
+} 
 
 
 .resultContainer{
@@ -43,7 +43,13 @@
     box-shadow: 0 0 1px #222222;
 }
 
-.line1{
+.textWindowContent{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.textWindowHeader{
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -80,7 +86,8 @@
     justify-content: space-around;
 
     width: 66%;
-    max-height: 500px;
+
+    max-height: 470px;
 
     overflow: auto;
 }

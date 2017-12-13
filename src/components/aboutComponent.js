@@ -25,7 +25,6 @@ class About extends React.Component {
                     <li>Segmentering av ll &gt; dl Eksempel: a<span style={style}>dl</span>e eller a<span style={style}>ll</span>e</li>
                     <li>Differensiering av rn &gt; dn Eksempel: gje<span style={style}>dn</span>a eller gje<span style={style}>rn</span>e</li>
                 </ul>
-
                 {/*<ReactCursorPosition className="example" >*/}
                     {/*<PositionLabel />*/}
                 {/*</ReactCursorPosition>*/}

@@ -13,7 +13,6 @@ class popUp extends React.Component {
     }
 
     buttonClicked(symbol){
-
     }
 
     render(){

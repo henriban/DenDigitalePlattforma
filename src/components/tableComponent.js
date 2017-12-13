@@ -15,7 +15,7 @@ class Table extends React.Component{
             return <th key={column.key} onClick={() => {this.sortTable(column.num)}}>{column.name}</th>;
         }.bind(this));
     } 
-    
+       
     sortTable(n) {
 
         let rows, i, x, y, shouldSwitch, dir, switchcount = 0;
