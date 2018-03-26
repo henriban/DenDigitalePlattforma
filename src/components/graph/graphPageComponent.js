@@ -6,7 +6,7 @@ import GraphSearch from './graphSearchComponent';
 
 // import TestData from '../data/testDataGraph';
 
-import '../styles/graph.css';
+import '../../styles/graph.css';
 
 // Test result from graphSearch
 let graphSearchResult = [

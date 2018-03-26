@@ -11,12 +11,23 @@ import '../styles/textWindow.css';
 const REGEX = new RegExp("([@#*¤%¨‘~+§{}])", "g");
 
 class Result extends React.Component {
+
     constructor(props) {
         super(props);
         this.onCloseClick = this.onCloseClick.bind(this);
         this.state = {
             showSecondInf: false,
+            x: 0,
+            y: 0
         };
+    }
+
+    componentWillMount(){
+        document.addEventListener("keydown", this.onKeyPushed);
+    }   
+
+    componentWillUnmount(){
+        document.removeEventListener("keydown", this.onKeyPushed);
     }
 
     onCloseClick(e){
@@ -24,11 +35,23 @@ class Result extends React.Component {
         this.props.onCloseClick(0);
     }
 
+    _onMouseMove(e) {
+        this.setState({ x: e.nativeEvent.offsetX, y: e.nativeEvent.offsetY });
+    }
+
     onInfClick(e){
         this.setState({ showSecondInf: !this.state.showSecondInf});
     }
 
+    onKeyPushed  = (event) => {
+        console.log(event);
+        if(event.key === 'Escape'){
+            this.onCloseClick(event);
+        }
+    };
+
     render(){
+        // const {x, y} = this.state;
         const id = this.props.inf;
 
         let inf1 = Informanter.find(x => x.id === id);
@@ -50,9 +73,10 @@ class Result extends React.Component {
         let key = 0;
 
         return(
-            <div className="resultBackground">
+            <div className="resultBackground" >
 
-                <div className="resultContainer">
+                <div className="resultContainer" onMouseDown={this._onMouseMove.bind(this)}>
+                    {/*<h1>Mouse coordinates: \n { x } { y }</h1>*/}
                     <div className="textWindowHeader">
                         <button className="closeButton" onClick={this.onCloseClick} href='#'>x</button>
                     </div>
@@ -82,7 +106,7 @@ class Result extends React.Component {
                                         line.split(" ")
                                             .map(word => {
                                                 if(word.indexOf(word.match(REGEX)) !== -1){
-                                                    return <Word key={key++} word={word} inf={infNumber} />;
+                                                    return <Word key={key++} word={word} inf={infNumber} mouseX={this.state.x}/>;
                                                 }else{
                                                     return <span key={key++}>{word} </span>
                                                 }
@@ -94,10 +118,15 @@ class Result extends React.Component {
                             })}
                             </div>
                         </div>
-                    </div>
+                    </div>   
+                    
 
-                    <ReactAudioPlayer src={url} style={{width : 1000, margin: "auto", padding: 10}}/>
-                </div>
+                    <ReactAudioPlayer
+                        src={url}
+                        style={{width : 1000, margin: "auto", padding: 10}}
+                        controls 
+                        controlsList="nodownload"/> 
+                </div>  
             </div>
         )
     }

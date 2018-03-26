@@ -1,5 +1,5 @@
 .popUpWrapper{
-    position: fixed;
+    position: fixed; 
 
     min-width: 230px;
     min-height: 50px;
@@ -18,7 +18,7 @@
     width: 50%;
 }
 
-#annetButton{
+#btnA{
     width: 100%;
 }
 

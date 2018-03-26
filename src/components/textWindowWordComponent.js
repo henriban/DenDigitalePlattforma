@@ -3,12 +3,12 @@ import PopUp from './popUpComponent';
 
 const REGEX = new RegExp("([@#*¤%¨‘~+§{}])", "g");
 
-const infinitiv_a = "*";
+const infinitiv_a = "*";   
 const infinitiv_e = "‘";
 
 const ao = "@";
 const å = "#";
-
+ 
 const bundanForm_i = "¤";
 const bundanForm_a = "%";
 
@@ -38,8 +38,9 @@ class Word extends React.Component{
             popUpWord: "404",
             popUpAlternative1: "",
             popUpAlternative2: "",
-        };
 
+            buttonClicked: "null",
+        };
     }
 
     onWordClick(symbol, word){
@@ -70,7 +71,8 @@ class Word extends React.Component{
             showPopUp: !this.state.showPopUp,
             popUpWord: word,
             popUpAlternative1: alternative1,
-            popUpAlternative2: alternative2
+            popUpAlternative2: alternative2,
+            activeButton: null,
         });
 
         style = {
@@ -82,8 +84,15 @@ class Word extends React.Component{
         return word.split(symbol);
     }
 
+    onButtonClicked = (button) =>{
+        this.setState({
+            activeButton: button
+        });
+    };
+
     //TODO: showPopUp globally (only on window at the time)
     render(){
+
         return(
             <span>
                 {this.state.showPopUp &&
@@ -91,7 +100,11 @@ class Word extends React.Component{
                        btn1={this.state.popUpAlternative1}
                        btn2={this.state.popUpAlternative2}
                        inf={this.state.inf}
+                       activeButton={this.state.activeButton}
+                       onButtonClicked={this.onButtonClicked}
+                       mouseX={this.props.mouseX}
                 />}
+                {/*OnClick find symbol and remove/trim word from symbol(ends up with symbol and word)*/}
                 <span onClick={() => this.onWordClick(this.state.word.match(REGEX)[0],
                     this.trimWord(this.state.word, this.state.word.match(REGEX)[0]))} style={style}
                       key={this.id}>{this.trimWord(this.state.word, this.state.word.match(REGEX)[0])} </span>

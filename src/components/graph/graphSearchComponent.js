@@ -1,10 +1,10 @@
 import React from 'react';
 
 import CheckboxComponent from './checkboxClusterComponent';
-import Variables from '../data/searchVariables';
-import Informants from '../data/informanter';
+import Variables from '../../data/searchVariables';
+import Informants from '../../data/informanter';
 
-import '../styles/checkbox.css';
+import '../../styles/checkbox.css';
 
 let activeRows = [];
 

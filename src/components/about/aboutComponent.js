@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/about.css';
+import '../../styles/about.css';
 
 // import ReactCursorPosition from "react-cursor-position";
 // Inline color
@@ -9,9 +9,30 @@ const style = {
 
 class About extends React.Component {
 
+    constructor(props) {
+        super(props);
+
+        this.state = { x: 0, y: 0 };
+    }
+
+    _onMouseMove(e) {
+        this.setState({ x: e.nativeEvent.offsetX, y: e.nativeEvent.offsetY });
+    }
+
     render(){
+
+        const { x, y} = this.state;
         return(
-            <div className="about">
+            <div className="about" onMouseDown={this._onMouseMove.bind(this)}>
+
+
+                {/*<div className="parent">*/}
+                    {/*<div id="target"></div>*/}
+                    {/*<div id="dialog"></div>*/}
+                {/*</div>*/}
+
+                <h1>Mouse coordinates: \n { x } { y }</h1>
+
                 <h2>Trekk som elevane kan leita etter i målprøvane</h2>
 
                 <ul>

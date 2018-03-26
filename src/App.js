@@ -2,8 +2,8 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import Main from './components/mainComponent';
-import Graph from './components/graphPageComponent';
-import About from './components/aboutComponent';
+import Graph from './components/graph/graphPageComponent';
+import About from './components/about/aboutComponent';
 
 import Navbar from './components/navbar';
 
