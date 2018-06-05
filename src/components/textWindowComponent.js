@@ -44,9 +44,10 @@ class Result extends React.Component {
     }
 
     onKeyPushed  = (event) => {
-        console.log(event);
         if(event.key === 'Escape'){
             this.onCloseClick(event);
+        }else if (event.code === "Space"){
+            console.log("Jump");
         }
     };
 

@@ -1,27 +1,11 @@
 import React from 'react';
 import PopUp from './popUpComponent';
 
+import Symbols from '../data/symbols';
+
 const REGEX = new RegExp("([@#*¤%¨‘~+§{}])", "g");
 
-const infinitiv_a = "*";   
-const infinitiv_e = "‘";
-
-const ao = "@";
-const å = "#";
- 
-const bundanForm_i = "¤";
-const bundanForm_a = "%";
-
-const adnedn = "~";
-const aneene = "¨";
-
-const dl = "+";
-const ll = "§";
- 
-const dn = "{";
-const rn = "}";
-
-let style = {
+let style = { 
   color: "blue"
 };
 
@@ -29,9 +13,9 @@ class Word extends React.Component{
 
     constructor(props){
         super(props);         
- 
+
         this.state = {
-            word: this.props.word,
+            word: this.props.word, //Word + symbol (something*)
             inf: this.props.inf,
 
             showPopUp: false,
@@ -44,25 +28,28 @@ class Word extends React.Component{
     }
 
     onWordClick(symbol, word){
+
+        word = Word.trimWord(word, symbol);
+
         let alternative1 = "";
         let alternative2 = "";
 
-        if(symbol === infinitiv_a || symbol === infinitiv_e){
+        if(symbol === Symbols.infinitiv_a || symbol === Symbols.infinitiv_e){
             alternative1 = "a";
             alternative2 = "r";
-        }else if(symbol === ao || symbol === å){
+        }else if(symbol === Symbols.ao || symbol === Symbols.å){
             alternative1 = "ao";
             alternative2 = "å";
-        }else if(symbol === bundanForm_i || symbol === bundanForm_a){
+        }else if(symbol === Symbols.bundanForm_i || symbol === Symbols.bundanForm_a){
             alternative1 = "i";
             alternative2 = "a";
-        }else if(symbol === adnedn || symbol === aneene){
+        }else if(symbol === Symbols.adnedn || symbol === Symbols.aneene){
             alternative1 = "adn/edn";
             alternative2 = "ane/ene";
-        }else if(symbol === dl || symbol === ll){
+        }else if(symbol === Symbols.dl || symbol === Symbols.ll){
             alternative1 = "dl";
             alternative2 = "ll";
-        }else if(symbol === dn || symbol === rn){
+        }else if(symbol === Symbols.dn || symbol === Symbols.rn){
             alternative1 = "dn";
             alternative2 = "rn";
         }
@@ -75,13 +62,13 @@ class Word extends React.Component{
             activeButton: null,
         });
 
-        style = {
-            color: "red"
-        }
+        // style = {
+        //     color: "red"
+        // }
     }
 
-    trimWord(word, symbol){
-        return word.split(symbol);
+    static trimWord(word, symbol){
+        return word.split(symbol)[0];
     }
 
     onButtonClicked = (button) =>{
@@ -92,6 +79,8 @@ class Word extends React.Component{
 
     //TODO: showPopUp globally (only on window at the time)
     render(){
+
+        let symbol = this.state.word.match(REGEX)[0];
 
         return(
             <span>
@@ -105,9 +94,9 @@ class Word extends React.Component{
                        mouseX={this.props.mouseX}
                 />}
                 {/*OnClick find symbol and remove/trim word from symbol(ends up with symbol and word)*/}
-                <span onClick={() => this.onWordClick(this.state.word.match(REGEX)[0],
-                    this.trimWord(this.state.word, this.state.word.match(REGEX)[0]))} style={style}
-                      key={this.id}>{this.trimWord(this.state.word, this.state.word.match(REGEX)[0])} </span>
+                <span onClick={() => this.onWordClick(symbol, this.state.word)}
+                      style={style}
+                      key={this.id}>{Word.trimWord(this.state.word, symbol)} </span>
             </span>
         );
     }
