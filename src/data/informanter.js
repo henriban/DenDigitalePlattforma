@@ -687,6 +687,467 @@ const text_17og18 = "18: Ja.\n" +
                     "18: men alle i saman.\n" +
                     "17: Ja";
 
+const text_35og58 = "I: Hugsar de nokon episodar frå de var mindre?\n" +
+    "58: Ja, eg hugsar ein gong i #barnehagen. Så, eg og besteveninna mi, me var alltid ute i regnet. Me\n" +
+    "dreiv og, me var dei einaste ute i regnet som huska og sånt og. Me, me fekk eigentleg ikkje lov å\n" +
+    "*vera ute, og så var me alltid ute.\n" +
+    "35: &lt;humrar&gt; Nei, eg hugsar ein gong @då @når me skulle *begynna i førsteklasse så, så kom me og\n" +
+    "@då stod ~klassane a og b klassen for seg sjølv. Og så sa rektor at no kunne me *koma inn og så fekk\n" +
+    "me @sjå klasserommet første gong og hugsar mamma og pappaen sat baki klasserommet og @såg\n" +
+    "fram @på oss og skikkeleg stolte.\n" +
+    "58: Ja, og så me fekk, av klassestyraren så fekk me ein blomster kvar, fordi at §alle var ~blomstrane\n" +
+    "hennar @då liksom til klassestyraren @vår.\n" +
+    "I: &lt;nøler&gt; Trefte de nokon jamaldringar før de begynte i skulen nokon plass?\n" +
+    "35: Det var jo i #barnehagen @då, men.\n" +
+    "58: Ja.\n" +
+    "35: Så var det no litt sånn som du var på ferie og sånt.\n" +
+    "58: Mm.\n" +
+    "35: Ikkje så mykje her i Sogndal utanom #barnehagen eigentleg.\n" +
+    "58: Besteveninna mi og eg gjekk i #barnehagen @då, så me har kjent kvarandre sidan me var to @år\n" +
+    "eller noko sånt.\n" +
+    "I: Mm.\n" +
+    "35: Mm.\n" +
+    "I: Når nokon i klassen hadde bursdag eller noko sånn, gjorde de noko spesielt då?\n" +
+    "35: Ja, me feira jo bursdagar og kjøpte presangar og laga sånn krone hugsar eg…\n" +
+    "58: Ja.\n" +
+    "35: frå #barnehagen, så stod det liksom namnet, og kor §gamal eg blei på krona @då. Så laga dei\n" +
+    "§alle saman teikning, så blei det bok ut av det og sånt.\n" +
+    "58: Ja, laga sånn bok til kvar…\n" +
+    "35: Mm.\n" +
+    "58: med alle teikningar. Så stod alltid den som hadde bursdag @oppå stolen, og så song §alle saman.\n" +
+    "35: Ja, og så fekk den som hadde bursdag *bestemma kven som skulle *sitja attmed han.\n" +
+    "58: Ja.\n" +
+    "35: He\n" +
+    "58: &lt;humrar&gt; og kva, kva skulle ha til mat @då.\n" +
+    "35: Ja.\n" +
+    "I: Når de begynte på skulen då, kva gjorde de då når nokon hadde bursdag?\n" +
+    "58: Då song me. Me har songe heile ¤tida liksom og.\n" +
+    "35: Mm, blei, det var ikkje krona og teikning i …\n" +
+    "58: Nei.\n" +
+    "35: @på skulen eigentleg.\n" +
+    "\n" +
+    "35: @Då var det berre heilt vanleg.\n" +
+    "58: Mm, song og sånt.\n" +
+    "I: Å, ja.\n" +
+    "58: Men av og til fekk me kake,\n" +
+    "35: Ja.\n" +
+    "58: eller bollar eller noko sånt.\n" +
+    "I: Var det noko, noko spesielt radioprogram som var interessant når de var småe?\n" +
+    "58: Radioprogram?\n" +
+    "I: Ja.\n" +
+    "58: Eller, eg syntest ikkje det var spennande, men pappaen min han jobba i radioen @når eg var liten.\n" +
+    "I: Ja.\n" +
+    "58: Så eg høyrde ofte på kva han sa @då. Det var liksom ikkje noko sånn som eg følgde med @på.\n" +
+    "35: Nei, same her.\n" +
+    "58: Det var berre @når han var der, så høyrde eg etter kva han sa sant.\n" +
+    "35: Av og til så høyrde eg @på sånn der, det var sånne spennande detektiv-historier @då.\n" +
+    "I: Å, ja.\n" +
+    "58: Og så sånne #barnetimen og sånn.\n" +
+    "35: Ja. Men eg likte best å @sjå på TV.\n" +
+    "I: Kva dreiv de med i friminutta då?\n" +
+    "35: Hoppa tau.\n" +
+    "58: Ja, (i hvert fall) i dei første, eller…\n" +
+    "35: Ja.\n" +
+    "58: første @åra så var det meir *hoppa tau og *slenga oss i det ¤slengstativa og\n" +
+    "35: Eller det var ein periode der det var så populært med pog,\n" +
+    "58: Ja.\n" +
+    "35: hugsar eg. Og så *byta serviettar og.\n" +
+    "58: Viskelær og.\n" +
+    "35: Ja, og @då heldt me @på med det timevis, veit du.\n" +
+    "I: Var det noko forskjell kva jenter gjorde på og gutar gjorde på?\n" +
+    "35: Ja.\n" +
+    "58: Ja.\n" +
+    "35: ~Gutane bytte ikkje serviettar og sånt.\n" +
+    "58: Nei, men pog.\n" +
+    "35: Ja.\n" +
+    "58: Det var veldig populært blant §alle.\n" +
+    "35: Ja.\n" +
+    "I: Var det noko foreldra masa om då de var mindre, om kvelden og?\n" +
+    "35: Det var sånn pussa godt ~tennene og *vaska godt i augo &lt;ler&gt; og *kamma @håret og sånt.\n" +
+    "\n" +
+    "58: Eg hugsar ein gong eg nekta å *leggja meg, @då blei mamma og pappa skikkeleg sinte for det at\n" +
+    "eg ville ikkje *sova berre @på, @på grunn av at eg ville @sjå @på TV og sånn. Det hugsar eg så godt.\n" +
+    "35: Det var mykje om den same ¤masinga eigentleg.\n" +
+    "58: Ja.\n" +
+    "…………………………………………………………………………\n" +
+    "I: Hugsar de noko de har gjort, opplevd?\n" +
+    "35: &lt;nøler&gt; Me har vore @på leirskule i lag. Me har vore i masse bursdagar.\n" +
+    "58: Ja.\n" +
+    "I: Kan de fortelja noko ifrå det? Nokon sånne småting?\n" +
+    "58: For eksempel første bursdagen min @då, eller, eller i @sjuårsbursdagen min @då @når ho kom\n" +
+    "for første gong. Me har liksom film[opptak] av det @då. Og @då skal *fortelja ein vits. Så blir det\n" +
+    "alltid avbrote heile ¤tida av brus som sølar over og @får aldri sagt vitsen sin, veit du. Det er ingen\n" +
+    "som høyrer @på og. Det er så komisk.\n" +
+    "35: Mm, @då @når me var @på leirskule så @låg me og sov, og så om ¤natta klokka fem så ringjer\n" +
+    "brannalarmen sant. Og §alle spring ut veit du og livredde heile gjengen, veit du. Så nei, det var falsk\n" +
+    "alarm, seier dei. Og så time @etterpå så ringjer han ein gong til &lt;humrar&gt;.\n" +
+    "58: Og så ringjer han @endå ein gong.\n" +
+    "35: Ja, og så nei det var falsk alarm det òg, og me så sinte, veit du, og ville *sova.\n" +
+    "58: @Står og skjeller ut, ut ~lærarane.\n" +
+    "35: Å, og så ti minutt @etterpå, så ringjer han ein gong til, sant &lt;ler&gt;.\n" +
+    "58: Tre gonger den ¤natta.\n" +
+    "35: Ja, og me veit du, så sinte og. Eg lo eigentleg mest av det @då @etterpå.\n" +
+    "58: Ja, @då fekk me *sova ein time ekstra @då så.\n" +
+    "I: Ja, var det noko anna som skjedde når de var på leirskule?\n" +
+    "35: Me var @på @båttur i to timar og @såg @på §fuglefjellet.\n" +
+    "58: Mm.\n" +
+    "35: Me var @på Runde. Det var ein halv million fuglar der, @på det §fjellet.\n" +
+    "58: Mm.\n" +
+    "35: Og så @såg me @på selar, så var me @på fjelltur.";
+
+const text_36og47 = "47: Om sommaren så hugsar eg at me pleidde å @gå ned og *bada i ¤Leirviki. Det er badeplassen @då @på Nornes.\n" +
+    "I: Ja.\n" +
+    "47: Så @då hugsar eg at eg var så redd brennenesle, eller. Så dei @måtte alltid *bera meg, elles tok eg alltid med meg ei ekstra bukse slik at eg kunne ha ho @på meg @når eg gjekk gjennom brennenesla.\n" +
+    "I: Hugsar du noko frå du var mindre?\n" +
+    "36: Ja. Det var ein gong eg, eg har større søster @då, så skulle me *liggja i ¤senga til mamma. Og så var eg ikkje heilt frisk, så spydde eg @oppå ho.\n" +
+    "I: Trefte de nokon jamaldringar før de begynte i skulen?\n" +
+    "47: Eg gjekk på Lomelde #barnehage, eller i Lomelde #barnehage. Og så siste @året i #barnehagen, @då gjekk eg @på, i @Ylvisåker #barnehage, for Lomelde blei lagt ned. @Då var eg veninne med ei som er eitt @år yngre. Og så @då, så to jenter som er like gamle som meg, og så eg og ho hi @då me pleidde alltid å *krangla med kvarandre, sant, for me var bestevenner to og to, og så krangla me heile ¤tida, så @når me kom i @~seksåringane, @då blei eg venn med ho som eg hadde krangla med. \n" +
+    "I: Du var ikkje nokon annan plass du trefte nokon? \n" +
+    "36: Jau, eg var i #barnehagen, og så gjekk eg litt på Lomelde óg i begynnelsen, men eg var mest @på @Ylvisåker @då.\n" +
+    "Int: Fekk de høyra mykje om skulen før de begynte sjølve då? \n" +
+    "47: Nei, ikkje som eg hugsar. Eller i @~seksåringane @då hugsar eg at klasseforstandaren kom, eller ho me skulle ha @då, kom. Då teikna me teikningar til ho og sånn Om sommaren før me skulle *begynna i skulen @då hugsar eg at eg fekk eit brev av ho, klasseforstandaren, der ho takka for ¤teikninga og litt sånn.\n" +
+    "I: Var det noko spesielt radioprogram som var interessant når de var små?\n" +
+    "47 og 36: Nei\n" +
+    "36: Det var berre #barneteve me pleidde å @sjå @på.\n" +
+    "47: Eller, eg har aldri høyrt @på radio så mykje @då men.\n" +
+    "36: Eg hadde sånne der kassettar @då, sånn lydbok greier.  Elles høyrde ikkje eg @på radio.\n" +
+    "I: Når de ikkje gjekk på skulen då, kva gjorde de då, når de hadde fri?\n" +
+    "36: Eg var masse heime. Og så var eg trur, var ein del @på §fjellet. Me har hytte @på §fjellet. Så var eg med venner og @på besøk og sånt.\n" +
+    "………………………………………………………………………………….\n" +
+    "I: Korleis vil de karakterisera rommet dykkar heime? Korleis ser det ut?\n" +
+    "36: Eg har ei seng, og så har eg §hylle og pult og kommode og så har eg stol, to stolar. \n" +
+    "I: Er det heilt nake rundt omkring?\n" +
+    "36: Nei, eg har bilete. Så har eg plakatar. \n" +
+    "I: Førebileta dine som er der?\n" +
+    "36: Nei, eg har ikkje så masse sånne bilete. Eg hadde det før, før eg flytta rommet mitt, men så gidd eg ikkje *henga opp att så masse @på, @på ~veggane, for det at ¤målinga dett berre av viss eg teipar.\n" +
+    "47: Nei, eg har eit sånn passe stort rom, så er det grønt rom, eller sånn mørkegrønt. Det nærmar seg @blått kan du *seia. Så har eg kvite lister, og kvitt tak og kvit dør. Og over ¤senga @då @går det @skrå nedover og så @oppå, eller der har eg stjerner @då, som er sjølvlysande. Så har eg @klesskåp og nattbord, så har eg skrivepult og §hylle. Der har eg alle ¤pyntetinga  mine og bøker og sånn. Og @oppå @skåpet har eg §alle ¤kosedyra mine. Dei @står liksom til pynt.\n" +
+    "…………………………………………………………………………………………………………………..\n" +
+    "36: Me var på Sørlandet med ~naboane @våre for nokre @år sidan. Det var veldig langt å *køyra. Me begynte å *køyra klokka seks om morgonen, kom fram klokka @åtte om kvelden. \n" +
+    "47: Eg var med på sånn korpstur, for @då fekk eg lov til å *vera med, til Trondheim, og @då var det ti timar å *køyra. \n" +
+    "…………………………………………………………………………………………………………………….\n" +
+    "I: Det er store planar for når det gjeld skulane her i Sogndal. Veit du kva det skal bli?\n" +
+    "36: M, er ikkje det sånn at skulen skal *vera sånn litt oppi der?\n" +
+    "47: Det skal *vera, eg trur eg har høyrt at det skal *vera sånn gang under ¤jorda eitt eller anna til hin skulen. For det skal *vera to bygg, og @då skal du *kunna @gå under.\n" +
+    "36: Sånn der, Sikkert sånn nødutgang kanskje.\n" +
+    "47: Men eg veit i hvert fall at det skal *vera gårdspla- , eller tun §mellom, så skal det *vera ein gang under, så \n" +
+    "36: Men, #barneskulen skal no *koma opp her òg, trur eg.\n" +
+    "47: Ja. \n";
+
+const text_37og38 = "I: Hugsar de nokon episodar ifrå de var mindre, før de begynte I skulen? Kva gjorde de på då?\n" +
+    "37: #Barnehagen, <humrar>. \n" +
+    "38: <humrar>. \n" +
+    "I: Ja. \n" +
+    "37: Ja. \n" +
+    "38: Ja. \n" +
+    "37: Det var vel eitt eller to @år me gjekk I same #barnehage. \n" +
+    "38: Men kva gjekk du @på?\n" +
+    "37: Eg gjekk @på Lomelde òg. \n" +
+    "38: Å, ja. \n" +
+    "37: Men eg gjekk @på Ylvisåker eitt eller to @år,\n" +
+    "38: Ja. \n" +
+    "37: trur eg. \n" +
+    "38: Eg hugsar me sykla rundt #barnehagen. Det var sånn veg rundt der. \n" +
+    "37: Ja, ja. \n" +
+    "38: Så dreiv me og *sykla. \n" +
+    "37: Det var sånn asfaltert veg rundt. \n" +
+    "38: Mm. \n" +
+    "37: Og så var det sånn bensinstasjon @på hjørnet der. \n" +
+    "38: Ja, <latter>. Og så eg hugsar ein gong eg og besteveninna mi @då. Me dreiv og huska og så begynte det å *regna. Og så jobba tremenningen min der. Og så fekk me lov til å *sitja med T-skjorter @når det regna. Me var så stolte, veit du <latter>. \n" +
+    "I: Fekk de høyra mykje om, om skulen før de begynte sjølve?\n" +
+    "37: Litt kanskje. \n" +
+    "38: <nøler> \n" +
+    "37: Me gjekk jo i [det var sånn] @~seksåringane. @Då var me jo i skulen.  \n" +
+    "38: Ja, så.  \n" +
+    "37: Og så gjekk jo me i, #barnehagen var jo attmed skulen. \n" +
+    "38: Ja, over bana liksom. Eg trur (i hvert fall) me gledde oss @då til å *begynna @på skulen. \n" +
+    "37: Ja, og så var det litt skummelt òg. \n" +
+    "38: Og å @få lekser og sånt. @Då var liksom vaksne @då <humrar>. \n" +
+    "I: Dreiv de med noko anna der borte enn det de dreiv med?\n" +
+    "37: Det var no lekser og så @måtte du *gjera ting, bestemt liksom. \n" +
+    "38: Ja, me hadde sånn bok @då, hugsar eg. Det svære.\n" +
+    "37: Ja, det §trylleskipet.\n" +
+    "38: Ja, høyrde me på sånn kassett, og så @måtte me *gjera sånn @oppgåver i den ¤boka og *teikna. \n" +
+    "37: Ja, eg var berre annakvar dag, så eg fekk ikkje med meg alt. \n" +
+    "38: Å, ja <humrar>\n" +
+    "I: Viss nokon i, i klassen hadde bursdag, gjorde de noko spesielt då?\n" +
+    "38: I #barnehagen så hadde me krona, laga me krona, så laga me sånn\n" +
+    "37: Ja, og så teikning, eit sånt hefte.\n" +
+    "38: Og så hadde me gele eller is @då. \n" +
+    "37: Ja.\n" +
+    "38: Det var …\n" +
+    "37:  Og så kasta me dei opp i ¤lufta så mange gonger som dei hadde. \n" +
+    "38: Ja.  \n" +
+    "I: Hm?\n" +
+    "38: Kasta, eller dei \n" +
+    "37: Vaksne\n" +
+    "38: Ja. \n" +
+    "37: kasta dei opp. \n" +
+    "I: Når de begynte i skulen då, var det noko spesielt ritual då når de hadde bursdag?\n" +
+    "38: Me laga vel krona.\n" +
+    "37: Ja, første @¤åra kanskje.\n" +
+    "38: Ja, og så song me @då. \n" +
+    "37: Ja. \n" +
+    "38: Men @då var det ikkje noko sånn meir spesielt, sånn som det var i #barnehagen. \n" +
+    "37: Det var av og til viss at det var mange som hadde samtidig, så fekk me kanskje *laga ei kake eller noko sånt. \n" +
+    "38: Ja. \n" +
+    "…………………………………………………………………………………………….\n" +
+    "37: Men @når me var heilt @småe, så var det jo sånn turneringar og sånn. \n" +
+    "38: Ja. @Då spelte me ikkje kampar. \n" +
+    "37: [Det var i] ~helgane. \n" +
+    "I: Å, ja. Korleis vil de karakterisera rommet dykkar? Korleis ser det ut?\n" +
+    "38: Det er to store @klesskåp <humrar>, og så er det ein, dei er kvite, og så er det ein lang pult, så er det eit anna @skåp med noko sånn glas, vindauge @på, @på ein @måte, og så er det eit lite bord og ¤senga med §spegel over. \n" +
+    "I: Er det heilt nake på, rundt omkring?\n" +
+    "38: På ~veggane?\n" +
+    "I: Mm. \n" +
+    "38: Eg har ikkje plakatar @då. Det gidd eg ikkje å ha <humrar>. Men eg har bilete. Eg har eitt bilete der det eg @målte @når eg var seks @år <ler>. Store sommarfuglar og noko sånn greier. \n" +
+    "I: Mm.\n" +
+    "38: Det er berre hengt opp. \n" +
+    "37: Nei, det er liksom rosa @då, \n" +
+    "38: <humrar>\n" +
+    "37: for at det er lenge sidan eg @målte det. Og så er det @skråtak, og så er det @klesskåp, pulten, ein kommode, seng, sakkosekk, og så er det noko sånn speglar og bilete og noko sånn på ~veggane.\n" +
+    "…………………………………………………………………………….. \n" +
+    " I: Har de vore på nokon skuleturar som de kan hugsa?\n" +
+    "37: Og så var me på telt-tur i sjetteklassen. \n" +
+    "38: Ja.\n" +
+    "I: Ja, fortel om den då!\n" +
+    "38: Det var ganske langt å @gå <ler>. \n" +
+    "37: Ja. \n" +
+    "38: Og så hadde me sånn, me vog ~sekkane før me reiste @då, var ti … \n" +
+    "37: §Alle var @på sånn ti-tolv kilo og sånn.\n" +
+    "38: Ja, det var ganske tungt, så det. Det var godt @når me kom opp og fekk sett opp ¤telta og …\n" +
+    "37: §Alle var heilt sånn @såre bakpå ~ryggane og.\n" +
+    "38: Mm. Så var me berre ti stykke i klassen @då, så var ikkje så (valdsamt) mange, men det var berre koseleg. \n" +
+    "37: Mm.\n" +
+    "38: Så @låg me sånn i telt ja. Og læraren vår kokte tomatsuppe til frukost neste dag <humrar>.\n" +
+    "37: <humrar>. \n" +
+    "…………………………………………………………….\n" +
+    "I: Kva har de inntrykk av at andre veit om Sogndal når det snakkar med dei?\n" +
+    "38: Trur eigentleg ikkje dei veit så mykje, \n" +
+    "37: Nei  \n" +
+    "38: for Sogndal er ikkje sånn veldig stort og kjent liksom. \n" +
+    "I: Nei. \n" +
+    "37: Hadde det kanskje vore by, så hadde dei #gjerne visst meir. \n" +
+    "38: Ja. \n" +
+    "I: Er det noko de set spesielt pris på her, for eksempel noko med naturen eller noko?\n" +
+    "38: Sjøen\n" +
+    "37: Ja.\n" +
+    "38: eigentleg , og så ¤§fjelli @då. Det er jo av og til kjekt å @gå @på fjelltur <humrar>.\n" +
+    "I: Mm. \n" +
+    "37: Det passar liksom i lag. \n" +
+    "…………………………………………………………..\n" +
+    "38: Eg har (i hvert fall) bestemt meg for at @når eg er ferdig på allmenn, så har eg lyst å ta eit @år fri og *jobba og berre *reisa og …\n" +
+    "37: Ja, peng og reist …\n" +
+    "38: Mm. \n" +
+    "37: nett der du ville akkurat liksom.\n" +
+    "38: Langt vekk. Syden og …\n" +
+    "I: Ja, kvifor det då?\n" +
+    "37: §Alle plassar liksom.\n" +
+    "38: Fordi det synest, eg synest …\n" +
+    "37: *Oppleva korleis det er \n" +
+    "38: Ja, og eg synest det er morosamt å *reisa og ikkje berre *vera her i Sogndal og bli sitjande her liksom heile livet. ";
+
+const text_39og48 = "I: Fekk de høyra noko om skulen før de begynte sjølve?\n" +
+    "48: Om me fekk *høyra noko om han?\n" +
+    "I: Ja, var det nokon som fortalde noko om?\n" +
+    "39: @Når me var, @når me gjekk i #barnehagen, så var me ute og besøkte skulen. \n" +
+    "48: Mm. \n" +
+    "39: Ein dag liksom, men det var @~seksåringane trur eg først. \n" +
+    "I: Mm. \n" +
+    "48: Mm.\n" +
+    "39: Så var og besøkte der og @såg og sånn eller så …\n" +
+    "I: Var det noko radioprogram som var interessant når de var småe, interessant å høyra på?\n" +
+    "48: Eg høyrde ikkje så masse på radio, eg @såg mest på #barne-TV og så. \n" +
+    "39: Ja, av og til så høyrde eg på denne her #barnetimen som var. \n" +
+    "I: Mm. \n" +
+    "39: Men det var ikkje så ofte. Det var berre @når eg liksom tilfeldig. Elles så @såg eg mest på #barne-TV.  \n" +
+    "I: Mm. \n" +
+    "48: Ja. \n" +
+    "I: Kva leikte de med heime då?\n" +
+    "39: Det var …\n" +
+    "48: Barbie-dokker <ler>. \n" +
+    "39: <nøler> Barbie-dokker og dokker\n" +
+    "48: Eg og ho me slost heile ¤tida om kva me skulle *leika med … \n" +
+    "39: <ler> \n" +
+    "I: Ja. \n" +
+    "48: barbie-dokker eller dokker, for ho hadde lyst til å *leika med dokker og eg med barbie-dokker og så …\n" +
+    "39: @Då var det alltid sånn at me tok begge delar. \n" +
+    "48: Ja. \n" +
+    "39: Og så leikte me kontor. Ja.\n" +
+    "48: Mm. Så leikte me dyresjukehus. \n" +
+    "39: Ja. \n" +
+    "48: Surra inn ~bamsane med dopapir og plaster. \n" +
+    "……………………………………………………………………………….\n" +
+    "I: Hugsar de nokon episodar frå de gjekk i Trudvang?\n" +
+    "48: At, det var sånn a mot b heile ¤tida, så me ville absolutt ikkje *vera med a-klassen. Det var skikkeleg krig, dreiv og §kalla kvarandre og <ler>. Så i femteklasse @då fekk me nye lærarar, og dei prøvde å @få oss i lag. \n" +
+    "39: I sjuandeklasse blei me nesten altfor gode vener <humrar>. \n" +
+    "48: Ja. \n" +
+    "I: Kva vil det seia?\n" +
+    "39: Nei, me, me var mykje med dei og hadde alltid lyst til å ha dei med på dei ¤tinga me gjorde og sånt. \n" +
+    "I: Ja. \n" +
+    "48: Var vanskeleg å *bestemma @når me skulle *skriva to namn som me hadde lyst til å @gå med i klasse med @når me skulle opp @på ungdomsskulen. Så var det veldig vanskeleg, for det var så mange.\n" +
+    "I: Når nokon i klassen hadde bursdag, gjorde de noko spesielt då?\n" +
+    "39: Ja, det var alltid sånn song i klassen. \n" +
+    "I: Hadde de noko fast de gjorde når de starta om morgonen på skulen? \n" +
+    "39: Nei, det trur eg ikkje. \n" +
+    "I: Når de slutta om dagen då?\n" +
+    "48: Me pleidde å, [då] @når me gjekk i første og andre og tredje, så hadde me samlingsstund om morgonen.\n" +
+    "I: Ja, kva gjorde de?\n" +
+    "48: Me hadde det spesielt @måndagar. @Då prata me om kva me hadde gjort i ¤helga og sånt. \n" +
+    "I: Ja. \n" +
+    "39: Så song me av og til songar. \n" +
+    "…………………………………………………………………\n" +
+    "I: Har de fått nokon oppgåver i forhold til han minste?\n" +
+    "39: Nei, eller me pleidde å *passa han på onsdagar @når me hadde fri. Så pleidde me å *§trilla han og sånn i ¤vogna <ler>. \n" +
+    "I: Er de av den typen som er tidleg oppe og har god tid om morgonen?\n" +
+    "39: Ja. \n" +
+    "I: Kva tid står du opp?\n" +
+    "39: Nei, eg @står opp klokka @åtte. \n" +
+    "I: Ja, og kva gjer du då når du står opp?\n" +
+    "39: Først så kler eg på meg og sånn og vaskar meg og ordnar meg. Så @går eg ned og et og lagar niste og pakkar sekken og @går eg opp att og pussar ~tennene. Og så @går eg til skulen.  \n" +
+    "I: Mm. \n" +
+    "48: Eg, he, eg blir vekt halv @åtte, men ofte så @står eg ikkje opp før kvart @på @åtte, ti på @åtte @då blir litt sånn dårleg tid. @Då kler eg på meg, så et eg frukost, så ordnar eg meg, pussar tenner, og så køyrer me ned til skulen. \n" +
+    "I: Korleis vil de beskriva rommet dykkar heime? Korleis ser det ut?\n" +
+    "48: Lite med masse §dill og porselensdokker, sånn der @småe ting. \n" +
+    "I: Men kva er det der av møblar og sånn då?\n" +
+    "48: Seng og pult og så er det §hyller, og eit @klesskåp, liten cd-spelar elles så masse, masse ting <humrar>. \n" +
+    "I: Mm. \n" +
+    "39: Mitt er raudt, lite rom med ei seng, to kommodar, §hyller ein pult, og så har eg eit lite nattbord, og så har eg nokre plakatar og bilete, ja. \n" +
+    "……………………………………………………………………………………….. \n" +
+    "39: Eg hugsar berre eg var i trekket. Det var no i vinter, køyrde eg telemark og (snowboard), stod eg og venta @på ho og så merka ikkje eg at ho kom. Ho kom og køyrde rett i føtene mine så me flaug begge to. \n" +
+    "I: Har de nokon sånne testløp av og til?\n" +
+    "39: Ja. \n" +
+    "48: Mm. \n" +
+    "I: Kva går det ut på?\n" +
+    "39: @Oppå bana her så skal me *springa, skal me @sjå kor mange rundar me klarer å *springa rundt @på tolv minuttar. \n" +
+    "48: Me har berre hatt det ein gong, skal me ha det att no til @våren òg, trur eg. \n" +
+    "………………………………………………………………………………….\n" +
+    "I: Kva slags område er det som de rekna utafor sentrum no? Kva er liksom utafor?\n" +
+    "48: Lite stykke oppi Dalen og Skjeldestad om\n" +
+    "39: @Åberge, Barsnes … \n" +
+    "48: mot Kaupanger\n" +
+    "39: over ¤brua.\n" +
+    "I: Trur de Sogndal vil vera ein god plass å bu om tjue år?\n" +
+    "39: Ja, det trur eg. \n" +
+    "I: Korleis er tanken på å flytta til ein annan plass?\n" +
+    "48: Eg vil heilt sikkert *flytta vekk @når eg blir litt eldre. Kan *henda eg flyttar tilbake @når eg skal ha familie og sånn, men eg kjem ikkje til å bu her heile ¤tida. Det har eg ikkje lyst til. \n" +
+    "39: Nei, det har eg heller. @Når eg skal *studera og sånn, så kjem eg sikkert til å *reisa ein heilt annan plass.\n" +
+    "I: Ja, vil du koma att her?\n" +
+    "39: Det kan *henda.";
+
+const text_72og73 = "I: Korleis var det når de gjekk der nede?\n" +
+    "72: Alt, alt var så gamalt der nede i forhold til her oppe. \n" +
+    "73: Ja. \n" +
+    "72: Her er det ein ny del og ein §gamal del, men der nede var jo alt berre nesten murvegger. \n" +
+    "73: Ja, det var liksom alt gamalt. \n" +
+    "I: Ja, for at eg òg har gått på den skulen der nede, og då me kom i sjetteklasse, då var den der raude delen bak der, då var, då vart den heilt ny.\n" +
+    "72: Jammen det som me §kallar oppsida, det bygget @på oppsida. \n" +
+    "73: Å, ja, det. \n" +
+    "I: Men kva, kva gjorde de på der nede då? Friminutt og slik?\n" +
+    "72: Nei, for det meste …\n" +
+    "73: Spelte §fotball. \n" +
+    "72: @Då var det mest å *spela §fotball, for @då ...\n" +
+    "73: Ja.\n" +
+    "I: Ja, var det blanding av jenter og gutar, eller var det kvar for seg?\n" +
+    "73: <nøler> A mot B, eller \n" +
+    "72: Ja. \n" +
+    "73: Ja, noko sånt. \n" +
+    "72: Dei som kom, dei spelte §fotball. Elles så dei som ikkje ville *spela §fotball, dei stod ute liksom berre og @såg @på. Det var …\n" +
+    "73: Ja, elles var dei borte og eller oppe der. \n" +
+    "I: Mm.\n" +
+    "73: Ja, veit det søren kva eg skal *§kalla det.\n" +
+    "I: Og så har de gått to år her oppe på Kvåle skule òg. \n" +
+    "73: Ja.\n" +
+    "72: Ja. \n" +
+    "I: Ja, korleis var det å koma opp her då?\n" +
+    "72: Nei, litt løge første dagen i sjette klasse, for @då …\n" +
+    "73: Eigentleg ikkje noko forskjell, men eg gjekk nesten ned til Trudvang første dagen. \n" +
+    "I: Sakna du der nede då?\n" +
+    "73: Nei\n" +
+    "………………………………………………………………………………..\n" +
+    "I: Har de fått kjeft for noko?\n" +
+    "72: Skal me @sjå. Mamma og pappaen blei litt sinte @når eg heldt på å *tenna på hunden @vår. Det var noko sånn trykkegreier som du trykkjer @på, så kjem det flamme. \n" +
+    "I: Ja, sånn lighter?\n" +
+    "72: Ja, så bad mamma meg om å *fjerna noko ugras, tenkte eg at ja, ja. Så @såg eg den @låg @på ¤trappa, skjønar du. Så tenkte eg i staden for å bli driten på nevar og plukkar det, kva å *tenna @på det? Kjem denne hunden @då hit og så snusar han og så berre smett han fint under, så eg held @på å *tenna @på i nakken @på han. Det veit eg ikkje om mamma og pappaen veit eigentleg, men det er ikkje så nøye. \n" +
+    "73: Kva då? \n" +
+    "72: Eg heldt på å *drepa nabokatten. \n" +
+    "73: Nei. \n" +
+    "I: He, he. \n" +
+    "72: Jau. Han kom inn ¤døra, og så slo eg til han med ein kost. Jammen det var sommar, og så @måtte me *lufta ¤døra, eller *opna ¤døra slik at det kom luft inn. Kom det ein katt som vil du *lokka inn over oss sikkert, så han hoppa @på altanen, så han hoppa ut.\n" +
+    "I: Har ikkje foreldra vore sinte på deg nokon gonger. \n" +
+    "73: Jo, det har dei ja. Mm.\n" +
+    "72: He, he, det hugsar eg @på playstation, he, he. \n" +
+    "73: Å, ja. Eg klikka @på mamma. \n" +
+    "72: Kva du gjorde @då eigentleg?\n" +
+    "73: Ho ville ikkje *hjelpa meg med ~leksene.\n" +
+    "………………………………………………………………….\n" +
+    "72: Og så @då dette ~regiongreiene med om at, om at dei skal @slå i saman dei tre ¤vestlandsfylka og bli ein region.\n" +
+    "I: Ja, har du tenkt på det?\n" +
+    "72: Ja, @då blir, @då blir Sogndal så lite viss det blir ein heil region.\n" +
+    "73: Ja.\n" +
+    "I: Mm.\n" +
+    "73: Eg vil ikkje det. \n" +
+    "I: Ordføraren dykkar han sa litt tidlegare i haust at Sogndal var kjend for fotball, saft og puddersnø. Så korleis vil de karakterisera Sogndal?\n" +
+    "73: Sogndal saft. \n" +
+    "72: Sogndal saft, §fjell.\n" +
+    "73: Sogndal saft, §fotball.\n" +
+    "72: §Fjell og fjord og §fotball.\n" +
+    "73: Sogndal saft og\n" +
+    "72: §Fjell, fjord og §fotball. \n" +
+    "73: Nei. \n" +
+    "72: Jau. \n" +
+    "73: Nei, Sogndal saft og §fotball og §fjell og fjord, nei og fjord og §fjell.\n" +
+    "I: Den rekkefølgja der?\n" +
+    "………………………………………….\n" +
+    "I: Skal spela mot Start siste kampen, og det er vel eit lag som ligg langt nede?\n" +
+    "73: Ja, dei burde dei *vinna mot. \n" +
+    "72: Dei har rykt ned. Dei har rykt ned.\n" +
+    "73: Ja. \n" +
+    "72: Spesielt etter dei tapte i @går. \n" +
+    "73: Kven dei tapte mot?\n" +
+    "72: Viking.\n" +
+    "73: Ja. \n" +
+    "I: Ja, Start tapte i går, og Sogndal tapte òg i går. \n" +
+    "73: Ja, dei tapte tre ein.\n" +
+    "72: Dei leia ein null til syttiandre minutt\n" +
+    "73: Ja.\n" +
+    "72: eller noko.\n" +
+    "73: Me høyrde det @på radioen. \n" +
+    "I: Mm.\n" +
+    "73: Me sat jo i bil i heile @går. \n" +
+    "72: Herre Jesus.\n" +
+    "73: Eller eg har jo sete i bil i heile ¤helga for å *seia det. \n" +
+    "I: Kvifor det?\n" +
+    "73: @På laurdag så var eg til Nordfjordeid. \n" +
+    "I: Mm.\n" +
+    "73: Men ferja der var stengt, så me @måtte *køyra via Stryn. Det var no to timar ekstra. Så det var fire timar berre til Nordfjordeid, så tilbake.\n" +
+    "I: Så de er mykje ute og reiser då når de er i helgane?\n" +
+    "72: Ja. \n" +
+    "73: Mm. \n" +
+    "I: På turnering eller kampar og sånt. \n" +
+    "72: Og så er det no til ¤helga att. @Då skal me same vegen. @Då skal me til Florø. \n" +
+    "73: Peng.\n" +
+    "I: Korleis trur de det ser ut her i Sogndal\n" +
+    "73: Heilt, heilt …\n" +
+    "I: om tjue år?\n" +
+    "72: Ja. \n" +
+    "73: annleis. Kanskje ein ny #barneskule.\n" +
+    "72: Ja, #gjerne ein #barnehage.\n" +
+    "73: Ny #barne, ny #barneskule.\n" +
+    "72: #Barnehage eller #barneskule.\n" +
+    "73: Eg trur det kjem til å *koma sånn ny #barneskule. \n" +
+    "72: Kanskje dei kjem med noko nytt at dei @går berre nokre @år i #barnehagen, og så har dei sånn førskule, ikkje er #barnehage, men ikkje er skule heller liksom at dei, at det er sånn (forberedelse) til skulen. \n" +
+    "I: Trur de det vil vera noko grøntområde igjen nedi Fjøra?\n" +
+    "72: Ikkje mykje. \n" +
+    "73: Parken.\n" +
+    "72: Hagen til besta og besten #gjerne. \n" +
+    "I: Er de mykje på kulturhuset då?\n" +
+    "73: Eg er ikkje.\n" +
+    "72: Eg, eg ser ein film §innimellom. \n" +
+    "I: Her ventar dei på gjest nummer ein million på kinoen. \n" +
+    "73: Det blir meg. \n" +
+    "I: Det kan bli deg, ja. Kva trur du du får i premie?\n" +
+    "73: Uff, @då burde eg @få ein million.";
+
 const informanter =
     [
         {
@@ -914,6 +1375,161 @@ const informanter =
             parents_background: "Mor frå Sogndal",
             audio: "inf_17og18.mp3",
             text: text_17og18,
+            panel: "Trend"
+        },
+
+        {
+            id: "36",
+            place: "Norane",
+            gender: "Kvinne",
+            age: "Ungdom 13 – 25",
+            birth: "1971 – 2000",
+            date_of_recording: "2001",
+            education: "Grunnskule",
+            occupation: "Elev",
+            parents_background: "Begge frå Sogndal",
+            audio: "inf_36og47.mp3",
+            text: text_36og47,
+            panel: "Trend"
+        },
+        {
+            id: "36p",
+            place: "Fjøra",
+            gender: "Kvinne",
+            age: "Ung 26 - 40",
+            birth: "1971 – 2000",
+            date_of_recording: "2017",
+            education: "Vidaregåande",
+            occupation: "Tertiær",
+            parents_background: "Begge frå Sogndal",
+            audio: "inf_36og47.mp3",
+            text: text_36og47, // TODO: -> 36p
+            panel: "Panel"
+        },
+        {
+            id: "47",
+            place: "Norane",
+            gender: "Kvinne",
+            age: "Ungdom 13 – 25",
+            birth: "1971 – 2000",
+            date_of_recording: "2001",
+            education: "Grunnskule",
+            occupation: "Elev",
+            parents_background: "Mor frå Sogndal",
+            audio: "inf_36og47.mp3",
+            text: text_36og47,
+            panel: "Trend"
+        },
+        {
+            id: "35",
+            place: "Fjøra",
+            gender: "Kvinne",
+            age: "Ungdom 13 – 25",
+            birth: "1971 – 2000",
+            date_of_recording: "2001",
+            education: "Grunnskule",
+            occupation: "Elev",
+            parents_background: "Begge frå Sogndal",
+            audio: "inf_35og58.mp3",
+            text: text_35og58,
+            panel: "Trend"
+        },
+        {
+            id: "58",
+            place: "Fjøra",
+            gender: "Kvinne",
+            age: "Ungdom 13 – 25",
+            birth: "1971 – 2000",
+            date_of_recording: "2001",
+            education: "Grunnskule",
+            occupation: "Elev",
+            parents_background: "Ingen frå Sogndal",
+            audio: "inf_35og58.mp3",
+            text: text_35og58,
+            panel: "Trend"
+        },
+        {
+            id: "37",
+            place: "Norane",
+            gender: "Kvinne",
+            age: "Ungdom 13 – 25",
+            birth: "1971 – 2000",
+            date_of_recording: "2001",
+            education: "Grunnskule",
+            occupation: "Elev",
+            parents_background: "Begge frå Sogndal",
+            audio: "inf_37og38.mp3",
+            text: text_37og38,
+            panel: "Trend"
+        },
+        {
+            id: "38",
+            place: "Norane",
+            gender: "Kvinne",
+            age: "Ungdom 13 – 25",
+            birth: "1971 – 2000",
+            date_of_recording: "2001",
+            education: "Grunnskule",
+            occupation: "Elev",
+            parents_background: "Begge frå Sogndal",
+            audio: "inf_37og38.mp3",
+            text: text_37og38,
+            panel: "Trend"
+        },
+        {
+            id: "39",
+            place: "Fjøra",
+            gender: "Kvinne",
+            age: "Ungdom 13 – 25",
+            birth: "1971 – 2000",
+            date_of_recording: "2001",
+            education: "Grunnskule",
+            occupation: "Elev",
+            parents_background: "Begge frå Sogndal",
+            audio: "inf_39og48.mp3",
+            text: text_39og48,
+            panel: "Trend"
+        },
+        {
+            id: "48",
+            place: "Fjøra",
+            gender: "Kvinne",
+            age: "Ungdom 13 – 25",
+            birth: "1971 – 2000",
+            date_of_recording: "2001",
+            education: "Grunnskule",
+            occupation: "Elev",
+            parents_background: "Far frå Sogndal",
+            audio: "inf_39og48.mp3",
+            text: text_39og48,
+            panel: "Trend"
+        },
+        {
+            id: "72",
+            place: "Fjøra",
+            gender: "Mann",
+            age: "Ungdom 13 – 25",
+            birth: "2001 –",
+            date_of_recording: "2016",
+            education: "Grunnskule",
+            occupation: "Elev",
+            parents_background: "Mor frå Sogndal",
+            audio: "inf_72og73.mp3",
+            text: text_72og73,
+            panel: "Trend"
+        },
+        {
+            id: "73",
+            place: "Fjøra",
+            gender: "Mann",
+            age: "Ungdom 13 – 25",
+            birth: "2001 –",
+            date_of_recording: "2016",
+            education: "Grunnskule",
+            occupation: "Elev",
+            parents_background: "Ingen frå Sogndal",
+            audio: "inf_72og73.mp3",
+            text: text_72og73,
             panel: "Trend"
         },
     ];
