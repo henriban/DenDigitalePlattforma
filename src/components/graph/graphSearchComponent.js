@@ -6,7 +6,7 @@ import Informants from '../../data/informanter';
 
 import '../../styles/checkbox.css';
 
-let activeRows = [];
+let filteredInfList = [];    
 
 class graphSearchComponent extends React.Component{
 
@@ -26,10 +26,10 @@ class graphSearchComponent extends React.Component{
             },
         };
 
-        activeRows = this.initRows();
+        filteredInfList = this.initAllInf();
     }
 
-    initRows(){
+    initAllInf(){
         let rows = [];
         Informants.map(item =>
             rows.push({
@@ -65,9 +65,9 @@ class graphSearchComponent extends React.Component{
         if(isChecked){
 
             // Filter the rows, if the filter is empty don't do anything. If not empty, iterate through Informants and find matches
-            if(activeRows.length > 0){
+            if(filteredInfList.length > 0){
                 this.state.filterRows[res].map(filter => !filter.length ? null :
-                    activeRows.map(inf => inf[res].includes(filter) ? newFilteredRows.push(inf) : null ));
+                    filteredInfList.map(inf => inf[res].includes(filter) ? newFilteredRows.push(inf) : null ));
                 // activeRows.map(inf => inf[res].includes(filter) ? this.pushToList(newFilteredRows, inf) : null ));
             }else{
                 this.state.filterRows[res].map(filter => !filter.length ? null :
@@ -82,7 +82,9 @@ class graphSearchComponent extends React.Component{
             }
         }
 
-        activeRows = newFilteredRows;
+        filteredInfList = newFilteredRows;
+        console.log("ActiveRow", filteredInfList);
+        console.log("State FilterRow", this.state.filterRows);
     };
 
     render(){

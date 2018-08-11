@@ -17,6 +17,8 @@ class Word extends React.Component{
         this.state = {
             word: this.props.word, //Word + symbol (something*)
             inf: this.props.inf,
+            wordIndex: this.props.wordIndex,
+            infLocalStorage: this.props.infLocalStorage,
 
             showPopUp: false,
             popUpWord: "404",
@@ -28,7 +30,6 @@ class Word extends React.Component{
     }
 
     onWordClick(symbol, word){
-
         word = Word.trimWord(word, symbol);
 
         let alternative1 = "";
@@ -36,7 +37,7 @@ class Word extends React.Component{
 
         if(symbol === Symbols.infinitiv_a || symbol === Symbols.infinitiv_e){
             alternative1 = "a";
-            alternative2 = "r";
+            alternative2 = "e";
         }else if(symbol === Symbols.ao || symbol === Symbols.å){
             alternative1 = "ao";
             alternative2 = "å";
@@ -59,22 +60,36 @@ class Word extends React.Component{
             popUpWord: word,
             popUpAlternative1: alternative1,
             popUpAlternative2: alternative2,
-            activeButton: null,
+            activeButton: this.getActiveButtonFromLocalStorage(),
         });
+    }
 
-        // style = {
-        //     color: "red"
-        // }
+    getActiveButtonFromLocalStorage(){
+        console.log("getActiveButtonFromLocalStorage", JSON.parse(localStorage.getItem(this.state.infLocalStorage))[this.state.wordIndex]);
+        let symbol = JSON.parse(localStorage.getItem(this.state.infLocalStorage))[this.state.wordIndex];
+        if(symbol === this.state.popUpAlternative1){
+            return "btn1"
+        }else if(symbol === this.state.popUpAlternative2){
+            return "btn2"
+        }else if(symbol === "Annet"){
+            return "Annet"
+        }
+        return null;
     }
 
     static trimWord(word, symbol){
         return word.split(symbol)[0];
     }
 
-    onButtonClicked = (button) =>{
+    onButtonClicked = (symbol, button) =>{
         this.setState({
             activeButton: button
         });
+
+        // Register which button that is pressed
+        let wordList = JSON.parse(localStorage.getItem(this.state.infLocalStorage));
+        wordList[this.state.wordIndex] = symbol;
+        localStorage.setItem(this.state.infLocalStorage, JSON.stringify(wordList));
     };
 
     //TODO: showPopUp globally (only on window at the time)

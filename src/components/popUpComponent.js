@@ -16,11 +16,10 @@ class popUp extends React.Component {
     }
 
     buttonClicked(symbol, btn){
-        this.props.onButtonClicked(btn);
+        this.props.onButtonClicked(symbol, btn);
         this.setState({
             activeButton: btn
         });
-        console.log(symbol);
     }
 
     render(){
