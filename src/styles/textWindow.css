@@ -29,7 +29,7 @@
 
 .resultContainer{
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start;    
     flex-wrap: wrap;
 
     margin: 50px auto auto;
@@ -108,4 +108,4 @@
 
 .secondInfPanel .infoText{
     margin-bottom: 0;
-}
+}        
