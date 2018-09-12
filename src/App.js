@@ -6,6 +6,7 @@ import Graph from './components/graph/graphPageComponent';
 import About from './components/about/aboutComponent';
 
 import Navbar from './components/navbar';
+// import Footer from './components/footer';
 
 class App extends React.Component {
   render() {
@@ -13,10 +14,11 @@ class App extends React.Component {
         <div>
             <Navbar/>
             <Switch>
-              <Route exact path='/' component={Main}/>
+              <Route exact path='/' component={About}/>
+              <Route path='/database' component={Main}/>
               <Route path='/graf' component={Graph}/>
-              <Route path='/om' component={About}/>
             </Switch>
+            {/*<Footer />*/}
         </div>
     );
   }
