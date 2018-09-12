@@ -2,7 +2,7 @@ import React from 'react';
 
 import CheckboxComponent from './checkboxClusterComponent';
 import Variables from '../../data/searchVariables';
-import Informants from '../../data/informanter';
+import Informants from '../../data/informers';
 
 import '../../styles/checkbox.css';
 

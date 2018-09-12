@@ -8,8 +8,8 @@ class popUp extends React.Component {
             text: this.props.text,
             btn1: this.props.btn1,
             btn2: this.props.btn2,
-            btn3: "Annet",
-            inf: this.props.inf,
+            btn3: "Anna",
+            // inf: this.props.inf,
             activeButton: this.props.activeButton,
             mouseX: this.props.mouseX // So that more than one popUp can be showed
         };
@@ -23,7 +23,7 @@ class popUp extends React.Component {
     }
 
     render(){
-        // console.log("Active", this.state.activeButton);
+
         return (
             <div className="popUpWrapper" style={{left: this.state.mouseX + 170 + 340}}>
                 <p>{this.state.text}</p>

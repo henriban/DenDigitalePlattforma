@@ -30,9 +30,7 @@ const variables = {
         { value: 'elev',        label: 'Elev' },
         { value: 'primær',      label: 'Primær' },
         { value: 'sekundær',    label: 'Sekundær' },
-        { value: 'tertiær',     label: 'Tertiær' },
-        { value: 'toppleiar',   label: 'Toppleiar' },
-        { value: 'pensjonist ', label: 'Pensjonist ' }
+        { value: 'tertiær',     label: 'Tertiær' }
     ],
     parents_background: [
         { value: 'ingen',   label: 'Ingen frå Sogndal' },
@@ -53,13 +51,3 @@ const variables = {
 };
 
 export default variables;
-
-// { value: 'Ungdom 13 – 25',      label: 'Ungdom 13 – 25' },
-// { value: 'Ung 26 – 40',         label: 'Ung 26 – 40' },
-// { value: 'Middelaldra 41 - 60', label: 'Middelaldra 41 - 60' },
-// { value: 'Eldre 61 –',          label: 'Eldre 61 –' },
-
-// { value: '1911 – 1940',       label: '1911 – 1940' },
-// { value: '1941 – 1970',       label: '1941 – 1970' },
-// { value: '1971 – 2000',       label: '1971 – 2000' },
-// { value: '2001 –',            label: '2001 –' }

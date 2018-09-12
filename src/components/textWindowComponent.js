@@ -1,7 +1,6 @@
 import React from 'react';
-import ReactAudioPlayer from 'react-audio-player';
 
-import Informanter from '../data/informanter';
+import Informers from '../data/informers';
 
 import InformantInfoText from './informantInfoTextComponent';
 import Word from './textWindowWordComponent';
@@ -10,7 +9,7 @@ import '../styles/textWindow.css';
 
 const REGEX = new RegExp("([@#*¤%¨‘~+§{}])", "g");
 
-let infLocalStorage;
+let infToStore;
 let isLocalStorageSet;
 let needBuildWordList = false;
 let clickableWordCount;
@@ -26,11 +25,13 @@ class Result extends React.Component {
             y: 0
         };
 
-        infLocalStorage = Informanter.find(x => x.id === this.props.inf).audio.split(".")[0];
-        isLocalStorageSet = this.isInformantsLocalStorageSet(infLocalStorage);
+        infToStore = Informers.find(x => x.id === this.props.inf).audio.split(".")[0];
+        isLocalStorageSet = this.isInformersLocalStorageSet(infToStore);
         console.log("Is Set ", isLocalStorageSet);
+        console.log("Inf number", infToStore);
+
         if(!isLocalStorageSet){
-            localStorage.setItem(infLocalStorage, JSON.stringify([]));
+            localStorage.setItem(infToStore, JSON.stringify([]));
             needBuildWordList = true;
         }
     }
@@ -60,12 +61,16 @@ class Result extends React.Component {
         if(event.key === 'Escape'){
             this.onCloseClick(event);
         }else if (event.code === "Space"){
+            event.preventDefault();
             console.log("Jump");
         }
     };
 
-    isInformantsLocalStorageSet(infID) {
-        return localStorage.getItem(infID) != null && !localStorage.getItem(infID).length > 0;
+    isInformersLocalStorageSet(infID) {
+        console.log("Not null?", localStorage.getItem(infID) != null);
+        console.log("Length over zero?", localStorage.getItem(infID).length > 0);
+
+        return localStorage.getItem(infID) != null && localStorage.getItem(infID).length > 0;
     }
 
     addWordInLocalStorage(infID){
@@ -78,7 +83,7 @@ class Result extends React.Component {
 
         const id = this.props.inf;
 
-        let inf1 = Informanter.find(x => x.id === id);
+        let inf1 = Informers.find(x => x.id === id);
         const text = inf1.text;
 
         let key = 0;
@@ -95,13 +100,13 @@ class Result extends React.Component {
                                 if(word.indexOf(word.match(REGEX)) !== -1){
 
                                     if(needBuildWordList){
-                                        this.addWordInLocalStorage(infLocalStorage);
+                                        this.addWordInLocalStorage(infToStore);
                                     }
 
                                     return <Word key={key++}
                                                  wordIndex={clickableWordCount++}
                                                  word={word}
-                                                 infLocalStorage={infLocalStorage}
+                                                 infToStore={infToStore}
                                                  inf={infNumber}
                                                  mouseX={this.state.x}/>;
                                 }else{
@@ -121,7 +126,7 @@ class Result extends React.Component {
         // const {x, y} = this.state;
         const id = this.props.inf;
 
-        let inf1 = Informanter.find(x => x.id === id);
+        let inf1 = Informers.find(x => x.id === id);
 
         // const text = inf1.text;
 
@@ -135,7 +140,7 @@ class Result extends React.Component {
             id2 = idString[0];
         }
 
-        let inf2 = Informanter.find(x => x.id === id2);
+        let inf2 = Informers.find(x => x.id === id2);
 
         // let key = 0;
         // let clickableWordCount = 0;
@@ -171,11 +176,10 @@ class Result extends React.Component {
                         </div>
                     </div>
 
-                    <ReactAudioPlayer
+                    <audio
                         src={url}
                         style={{width : 1000, margin: "auto", padding: 10}}
-                        controls 
-                        controlsList="nodownload"/> 
+                        controls controlsList="nodownload"/>
                 </div>  
             </div>
         )

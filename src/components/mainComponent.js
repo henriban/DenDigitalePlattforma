@@ -4,7 +4,7 @@ import Search from './searchComponent';
 import Result from './textWindowComponent';
 import Table from './tableComponent';
 
-import Informanter from '../data/informanter';
+import Informers from '../data/informers';
 
 import '../styles/main.css';
 
@@ -25,7 +25,7 @@ class Main extends React.Component {
  
     getRows(){
         let rows = [];
-        Informanter.map(item =>
+        Informers.map(item =>
             rows.push({
                 id: item.id,
                 place: item.place.trim(),

@@ -18,7 +18,7 @@ class Word extends React.Component{
             word: this.props.word, //Word + symbol (something*)
             inf: this.props.inf,
             wordIndex: this.props.wordIndex,
-            infLocalStorage: this.props.infLocalStorage,
+            infToStore: this.props.infToStore,
 
             showPopUp: false,
             popUpWord: "404",
@@ -65,14 +65,15 @@ class Word extends React.Component{
     }
 
     getActiveButtonFromLocalStorage(){
-        console.log("getActiveButtonFromLocalStorage", JSON.parse(localStorage.getItem(this.state.infLocalStorage))[this.state.wordIndex]);
-        let symbol = JSON.parse(localStorage.getItem(this.state.infLocalStorage))[this.state.wordIndex];
+        // console.log("getActiveButtonFromLocalStorage", JSON.parse(localStorage.getItem(this.state.infToStore))[this.state.wordIndex]);
+        // console.log("getActiveButtonFromLocalStorage", JSON.parse(localStorage.getItem(this.state.infToStore)));
+        let symbol = JSON.parse(localStorage.getItem(this.state.infToStore))[this.state.wordIndex];
         if(symbol === this.state.popUpAlternative1){
             return "btn1"
         }else if(symbol === this.state.popUpAlternative2){
             return "btn2"
-        }else if(symbol === "Annet"){
-            return "Annet"
+        }else if(symbol === "Anna"){
+            return "btnA"
         }
         return null;
     }
@@ -87,9 +88,13 @@ class Word extends React.Component{
         });
 
         // Register which button that is pressed
-        let wordList = JSON.parse(localStorage.getItem(this.state.infLocalStorage));
+        let wordList = JSON.parse(localStorage.getItem(this.state.infToStore));
         wordList[this.state.wordIndex] = symbol;
-        localStorage.setItem(this.state.infLocalStorage, JSON.stringify(wordList));
+        localStorage.setItem(this.state.infToStore, JSON.stringify(wordList));
+
+        this.setState({
+            showPopUp: !this.state.showPopUp
+        });
     };
 
     //TODO: showPopUp globally (only on window at the time)
@@ -104,6 +109,7 @@ class Word extends React.Component{
                        btn1={this.state.popUpAlternative1}
                        btn2={this.state.popUpAlternative2}
                        inf={this.state.inf}
+                       infToStore={this.state.infToStore}
                        activeButton={this.state.activeButton}
                        onButtonClicked={this.onButtonClicked}
                        mouseX={this.props.mouseX}
