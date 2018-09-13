@@ -3,6 +3,8 @@ import Symbols from '../data/symbols';
 
 import '../styles/popUp.css';
 
+const removeREGEX = new RegExp("[.,]", "g");
+
 class popUp extends React.Component {    
     constructor(props) {
         super(props);
@@ -18,10 +20,7 @@ class popUp extends React.Component {
     }
 
     componentWillMount(){
-        this.setUpButtons();
-    }
 
-    setUpButtons(){
         let symbol = this.props.symbol;
 
         let alternative1 = "";
@@ -47,7 +46,15 @@ class popUp extends React.Component {
             alternative2 = "rn";
         }
 
+        let word = this.state.word;
+
+        //trim word for "," and "."
+        if(word.match(removeREGEX)){
+            word = word.split(word.match(removeREGEX)[0])[0];
+        }
+
         this.setState({
+            word: word,
             btn1: alternative1,
             btn2: alternative2,
         });

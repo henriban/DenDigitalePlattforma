@@ -1036,6 +1036,7 @@ text_39og48 : "I: Fekk de høyra noko om skulen før de begynte sjølve?\n" +
     "39: Nei, det har eg heller. @Når eg skal *studera og sånn, så kjem eg sikkert til å *reisa ein heilt annan plass.\n" +
     "I: Ja, vil du koma att her?\n" +
     "39: Det kan *henda.",
+
 text_72og73: "I: Korleis var det når de gjekk der nede?\n" +
     "72: Alt, alt var så gamalt der nede i forhold til her oppe. \n" +
     "73: Ja. \n" +

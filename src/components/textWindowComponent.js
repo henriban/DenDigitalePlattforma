@@ -36,7 +36,7 @@ class Result extends React.Component {
 
     componentWillMount(){
         document.addEventListener("keydown", this.onKeyPushed);
-    }   
+    }
 
     componentWillUnmount(){
         document.removeEventListener("keydown", this.onKeyPushed);
@@ -60,7 +60,6 @@ class Result extends React.Component {
             this.onCloseClick(event);
         }else if (event.code === "Space"){
             event.preventDefault();
-            console.log("Jump");
         }
     };
 
@@ -177,7 +176,7 @@ class Result extends React.Component {
                         src={url}
                         style={{width : 1000, margin: "auto", padding: 10}}
                         controls controlsList="nodownload"/>
-                </div>  
+                </div>
             </div>
         )
     }

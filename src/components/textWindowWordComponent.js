@@ -10,7 +10,7 @@ let style = {
 class Word extends React.Component{
 
     constructor(props){
-        super(props);         
+        super(props);
 
         this.state = {
             word: this.trimWord(this.props.word, this.props.word.match(REGEX)[0]),
@@ -30,6 +30,10 @@ class Word extends React.Component{
     }
 
     trimWord(word, symbol){
+        if(word.split(symbol)[0] === ""){
+            return word.split(symbol)[1];
+        }
+
         return word.split(symbol)[0];
     }
 
