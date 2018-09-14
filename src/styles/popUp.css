@@ -14,6 +14,22 @@
     box-shadow: 0 0 1px #222222;
 }
 
+#closePopUpIcon{
+    position: absolute;
+    right: 0;
+
+    padding: 3px 15px;
+    background: #ff122d;
+    border-radius: 2px;
+    border: 1px solid #ec5f47;
+    cursor: pointer;
+    color: #FAFAFA;
+}
+
+#closePopUpIcon:hover{
+    background: #ff3c52;
+}
+
 .popUpButtonContainer{
     display: flex;
     justify-content: space-around;

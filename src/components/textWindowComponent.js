@@ -27,8 +27,6 @@ class Result extends React.Component {
 
         infToStore = Informers.find(x => x.id === this.props.inf).audio.split(".")[0];
         isLocalStorageSet = this.isInformersLocalStorageSet(infToStore);
-        console.log("Is Set ", isLocalStorageSet);
-        console.log("Inf number", infToStore);
 
         if(!isLocalStorageSet){
             localStorage.setItem(infToStore, JSON.stringify([]));
@@ -38,7 +36,7 @@ class Result extends React.Component {
 
     componentWillMount(){
         document.addEventListener("keydown", this.onKeyPushed);
-    }   
+    }
 
     componentWillUnmount(){
         document.removeEventListener("keydown", this.onKeyPushed);
@@ -62,14 +60,10 @@ class Result extends React.Component {
             this.onCloseClick(event);
         }else if (event.code === "Space"){
             event.preventDefault();
-            console.log("Jump");
         }
     };
 
     isInformersLocalStorageSet(infID) {
-        console.log("Not null?", localStorage.getItem(infID) != null);
-        console.log("Length over zero?", localStorage.getItem(infID).length > 0);
-
         return localStorage.getItem(infID) != null && localStorage.getItem(infID).length > 0;
     }
 
@@ -159,14 +153,16 @@ class Result extends React.Component {
                             <h2 id="headline">{inf1.age.split(" ")[0]} {inf1.gender.toLowerCase()} frå {inf1.place}</h2>
                             <InformantInfoText informant={inf1}/>
 
-                            {!this.state.showSecondInf &&
-                            <span className="secondInfPanel" onClick={() => this.onInfClick()}><b>{inf2.id.split("p")[0]}: {inf2.age.split(" ")[0]} {inf2.gender.toLowerCase()} frå {inf2.place}</b></span>
+                            {
+                                !this.state.showSecondInf &&
+                                <span className="secondInfPanel" onClick={() => this.onInfClick()}><b>{inf2.id.split("p")[0]}: {inf2.age.split(" ")[0]} {inf2.gender.toLowerCase()} frå {inf2.place}</b></span>
                             }
-                            {this.state.showSecondInf &&
-                            <div className="secondInfPanel" onClick={() => this.onInfClick()}>
-                                <span><b>{inf2.id.split("p")[0]}: {inf2.age.split(" ")[0]} {inf2.gender.toLowerCase()} frå {inf2.place}</b></span>
-                                <InformantInfoText informant={inf2}/>
-                            </div>
+                            {
+                                this.state.showSecondInf &&
+                                <div className="secondInfPanel" onClick={() => this.onInfClick()}>
+                                    <span><b>{inf2.id.split("p")[0]}: {inf2.age.split(" ")[0]} {inf2.gender.toLowerCase()} frå {inf2.place}</b></span>
+                                    <InformantInfoText informant={inf2}/>
+                                </div>
                             }
                         </div>
 
@@ -180,7 +176,7 @@ class Result extends React.Component {
                         src={url}
                         style={{width : 1000, margin: "auto", padding: 10}}
                         controls controlsList="nodownload"/>
-                </div>  
+                </div>
             </div>
         )
     }

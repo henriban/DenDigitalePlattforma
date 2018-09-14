@@ -1,8 +1,6 @@
 import React from 'react';
 import PopUp from './popUpComponent';
 
-import Symbols from '../data/symbols';
-
 const REGEX = new RegExp("([@#*¤%¨‘~+§{}])", "g");
 
 let style = { 
@@ -12,112 +10,73 @@ let style = {
 class Word extends React.Component{
 
     constructor(props){
-        super(props);         
+        super(props);
 
         this.state = {
-            word: this.props.word, //Word + symbol (something*)
+            word: this.trimWord(this.props.word, this.props.word.match(REGEX)[0]),
+            symbol: this.props.word.match(REGEX)[0],
             inf: this.props.inf,
             wordIndex: this.props.wordIndex,
             infToStore: this.props.infToStore,
 
             showPopUp: false,
-            popUpWord: "404",
-            popUpAlternative1: "",
-            popUpAlternative2: "",
-
-            buttonClicked: "null",
         };
     }
 
-    onWordClick(symbol, word){
-        word = Word.trimWord(word, symbol);
-
-        let alternative1 = "";
-        let alternative2 = "";
-
-        if(symbol === Symbols.infinitiv_a || symbol === Symbols.infinitiv_e){
-            alternative1 = "a";
-            alternative2 = "e";
-        }else if(symbol === Symbols.ao || symbol === Symbols.å){
-            alternative1 = "ao";
-            alternative2 = "å";
-        }else if(symbol === Symbols.bundanForm_i || symbol === Symbols.bundanForm_a){
-            alternative1 = "i";
-            alternative2 = "a";
-        }else if(symbol === Symbols.adnedn || symbol === Symbols.aneene){
-            alternative1 = "adn/edn";
-            alternative2 = "ane/ene";
-        }else if(symbol === Symbols.dl || symbol === Symbols.ll){
-            alternative1 = "dl";
-            alternative2 = "ll";
-        }else if(symbol === Symbols.dn || symbol === Symbols.rn){
-            alternative1 = "dn";
-            alternative2 = "rn";
-        }
-
+    openPopUp(){
         this.setState({
             showPopUp: !this.state.showPopUp,
-            popUpWord: word,
-            popUpAlternative1: alternative1,
-            popUpAlternative2: alternative2,
-            activeButton: this.getActiveButtonFromLocalStorage(),
         });
     }
 
-    getActiveButtonFromLocalStorage(){
-        // console.log("getActiveButtonFromLocalStorage", JSON.parse(localStorage.getItem(this.state.infToStore))[this.state.wordIndex]);
-        // console.log("getActiveButtonFromLocalStorage", JSON.parse(localStorage.getItem(this.state.infToStore)));
-        let symbol = JSON.parse(localStorage.getItem(this.state.infToStore))[this.state.wordIndex];
-        if(symbol === this.state.popUpAlternative1){
-            return "btn1"
-        }else if(symbol === this.state.popUpAlternative2){
-            return "btn2"
-        }else if(symbol === "Anna"){
-            return "btnA"
+    trimWord(word, symbol){
+        if(word.split(symbol)[0] === ""){
+            return word.split(symbol)[1];
         }
-        return null;
-    }
 
-    static trimWord(word, symbol){
         return word.split(symbol)[0];
     }
 
-    onButtonClicked = (symbol, button) =>{
-        this.setState({
-            activeButton: button
-        });
+    // symbol = ao, e, a ...
+    onButtonClicked = (symbol) =>{
 
         // Register which button that is pressed
         let wordList = JSON.parse(localStorage.getItem(this.state.infToStore));
         wordList[this.state.wordIndex] = symbol;
         localStorage.setItem(this.state.infToStore, JSON.stringify(wordList));
 
-        this.setState({
-            showPopUp: !this.state.showPopUp
-        });
+        this.closePopUp();
     };
+
+    closePopUp(){
+        this.setState({
+            showPopUp: false
+        });
+    }
 
     //TODO: showPopUp globally (only on window at the time)
     render(){
 
-        let symbol = this.state.word.match(REGEX)[0];
+        // let symbol = this.state.word.match(REGEX)[0];
+        let symbol = this.state.symbol;
 
         return(
             <span>
                 {this.state.showPopUp &&
-                <PopUp text={this.state.popUpWord}
-                       btn1={this.state.popUpAlternative1}
-                       btn2={this.state.popUpAlternative2}
+                <PopUp word={this.state.word}
+                       symbol={symbol}
                        inf={this.state.inf}
                        infToStore={this.state.infToStore}
-                       activeButton={this.state.activeButton}
+                       wordIndex={this.state.wordIndex}
+
                        onButtonClicked={this.onButtonClicked}
+                       onCloseClick={this.closePopUp.bind(this)}
                        mouseX={this.props.mouseX}
                 />}
                 {/*OnClick find symbol and remove/trim word from symbol(ends up with symbol and word)*/}
-                <span onClick={() => this.onWordClick(symbol, this.state.word)}
+                <span onClick={() => this.openPopUp()}
                       style={style}
-                      key={this.id}>{Word.trimWord(this.state.word, symbol)} </span>
+                      key={this.id}>{this.state.word} </span>
             </span>
         );
     }

@@ -81,8 +81,8 @@
 .text{
     margin: 10px 0;
 
-    display: flex;
-    flex-wrap: nowrap;
+    /*display: flex;*/
+    /*flex-wrap: nowrap;*/
     justify-content: space-around;
 
     width: 66%;

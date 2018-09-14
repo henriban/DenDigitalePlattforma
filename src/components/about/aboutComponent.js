@@ -20,7 +20,7 @@ class About extends React.Component {
             <div>
                 <div className="startPageImageContainer">
                     <img className="startPageImage" src="/sogndal_by_night.jpg" alt="sogndal_by_night" />
-                    <img className="logo" src="#" alt="logo"/>
+                    {/*<img className="logo" src="#" alt="logo"/>*/}
                 </div>
 
                 <div className="about" >
