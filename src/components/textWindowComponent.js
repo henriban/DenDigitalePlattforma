@@ -14,6 +14,8 @@ let isLocalStorageSet;
 let needBuildWordList = false;
 let clickableWordCount;
 
+let audioPlayer;
+
 class Result extends React.Component {       
 
     constructor(props) {
@@ -38,6 +40,10 @@ class Result extends React.Component {
         document.addEventListener("keydown", this.onKeyPushed);
     }
 
+    componentDidMount(){
+        audioPlayer = document.getElementById("audioPlayer");
+    }
+
     componentWillUnmount(){
         document.removeEventListener("keydown", this.onKeyPushed);
     }
@@ -48,7 +54,6 @@ class Result extends React.Component {
     }
 
     _onMouseMove(e) {
-        // this.setState({ x: e.nativeEvent.offsetX, y: e.nativeEvent.offsetY });
         this.setState({ x: e.clientX, y: e.clientY });
     }
 
@@ -61,6 +66,7 @@ class Result extends React.Component {
             this.onCloseClick(event);
         }else if (event.code === "Space"){
             event.preventDefault();
+            audioPlayer.paused ? audioPlayer.play() : audioPlayer.pause();
         }
     };
 
@@ -174,7 +180,7 @@ class Result extends React.Component {
                         </div>
                     </div>
 
-                    <audio
+                    <audio id="audioPlayer"
                         src={url}
                         style={{width : 1000, margin: "auto", padding: 10}}
                         controls controlsList="nodownload"/>
