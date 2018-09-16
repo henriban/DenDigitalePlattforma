@@ -72,6 +72,7 @@ class Word extends React.Component{
                        onButtonClicked={this.onButtonClicked}
                        onCloseClick={this.closePopUp.bind(this)}
                        mouseX={this.props.mouseX}
+                       mouseY={this.props.mouseY}
                 />}
                 {/*OnClick find symbol and remove/trim word from symbol(ends up with symbol and word)*/}
                 <span onClick={() => this.openPopUp()}

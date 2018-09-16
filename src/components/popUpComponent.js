@@ -15,7 +15,8 @@ class popUp extends React.Component {
             btn3: "Anna",
             // inf: this.props.inf,
 
-            mouseX: this.props.mouseX // So that more than one popUp can be showed
+            mouseX: this.props.mouseX, // So that more than one popUp can be showed
+            mouseY: this.props.mouseY
         };
     }
 
@@ -83,7 +84,7 @@ class popUp extends React.Component {
         let activeButton = this.getActiveButtonFromLocalStorage();
 
         return (
-            <div className="popUpWrapper" style={{left: this.state.mouseX + 170 + 340}}>
+            <div className="popUpWrapper" style={{left: this.state.mouseX, top: this.state.mouseY > 250 ? this.state.mouseY - 130 :this.state.mouseY + 10 }}>
                 <button id="closePopUpIcon" onClick={() => this.props.onCloseClick()}>x</button>
                 <p>{this.state.word}</p>
                 <div className="popUpButtonContainer">

@@ -14,6 +14,8 @@ let isLocalStorageSet;
 let needBuildWordList = false;
 let clickableWordCount;
 
+let audioPlayer;
+
 class Result extends React.Component {       
 
     constructor(props) {
@@ -38,6 +40,10 @@ class Result extends React.Component {
         document.addEventListener("keydown", this.onKeyPushed);
     }
 
+    componentDidMount(){
+        audioPlayer = document.getElementById("audioPlayer");
+    }
+
     componentWillUnmount(){
         document.removeEventListener("keydown", this.onKeyPushed);
     }
@@ -48,7 +54,7 @@ class Result extends React.Component {
     }
 
     _onMouseMove(e) {
-        this.setState({ x: e.nativeEvent.offsetX, y: e.nativeEvent.offsetY });
+        this.setState({ x: e.clientX, y: e.clientY });
     }
 
     onInfClick(e){
@@ -60,6 +66,7 @@ class Result extends React.Component {
             this.onCloseClick(event);
         }else if (event.code === "Space"){
             event.preventDefault();
+            audioPlayer.paused ? audioPlayer.play() : audioPlayer.pause();
         }
     };
 
@@ -77,7 +84,7 @@ class Result extends React.Component {
 
         const id = this.props.inf;
 
-        let inf1 = Informers.find(x => x.id === id);
+        let inf1 = Informers.find(inf => inf.id === id);
         const text = inf1.text;
 
         let key = 0;
@@ -102,7 +109,8 @@ class Result extends React.Component {
                                                  word={word}
                                                  infToStore={infToStore}
                                                  inf={infNumber}
-                                                 mouseX={this.state.x}/>;
+                                                 mouseX={this.state.x}
+                                                 mouseY={this.state.y}/>;
                                 }else{
                                     return <span key={key++}>{word} </span>
                                 }
@@ -172,7 +180,7 @@ class Result extends React.Component {
                         </div>
                     </div>
 
-                    <audio
+                    <audio id="audioPlayer"
                         src={url}
                         style={{width : 1000, margin: "auto", padding: 10}}
                         controls controlsList="nodownload"/>
