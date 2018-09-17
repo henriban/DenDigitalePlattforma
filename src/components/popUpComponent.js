@@ -13,7 +13,9 @@ class popUp extends React.Component {
             btn1: "",
             btn2: "",
             btn3: "Anna",
-            // inf: this.props.inf,
+
+            inf: this.props.inf,
+            wordIndex: this.props.wordIndex,
 
             mouseX: this.props.mouseX, // So that more than one popUp can be showed
             mouseY: this.props.mouseY
@@ -75,8 +77,8 @@ class popUp extends React.Component {
         }
     }
 
-    buttonClicked(symbol, btn){
-        this.props.onButtonClicked(symbol, btn);
+    buttonClicked(symbol){
+        this.props.onButtonClicked(symbol, this.state.inf);
     }
 
     render(){
@@ -88,10 +90,10 @@ class popUp extends React.Component {
                 <button id="closePopUpIcon" onClick={() => this.props.onCloseClick()}>x</button>
                 <p>{this.state.word}</p>
                 <div className="popUpButtonContainer">
-                    <button onClick={() => this.buttonClicked(this.state.btn1, "btn1")} className={activeButton === ("btn1") ? "activeButton" : "defaultButton"}>{this.state.btn1}</button>
-                    <button onClick={() => this.buttonClicked(this.state.btn2, "btn2")} className={activeButton === ("btn2") ? "activeButton" : "defaultButton"}>{this.state.btn2}</button>
+                    <button onClick={() => this.buttonClicked(this.state.btn1)} className={activeButton === ("btn1") ? "activeButton" : "defaultButton"}>{this.state.btn1}</button>
+                    <button onClick={() => this.buttonClicked(this.state.btn2)} className={activeButton === ("btn2") ? "activeButton" : "defaultButton"}>{this.state.btn2}</button>
                 </div>
-                <button id="btnA" onClick={() => this.buttonClicked(this.state.btn3, "btnA")} className={activeButton === ("btnA") ? "activeButton" : "defaultButton"}>{this.state.btn3}</button>
+                <button id="btnA" onClick={() => this.buttonClicked(this.state.btn3)} className={activeButton === ("btnA") ? "activeButton" : "defaultButton"}>{this.state.btn3}</button>
             </div>
         );
     }

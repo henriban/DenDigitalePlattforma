@@ -38,12 +38,15 @@ class Word extends React.Component{
     }
 
     // symbol = ao, e, a ...
-    onButtonClicked = (symbol) =>{
+    onButtonClicked = (symbol, inf) =>{
 
-        // Register which button that is pressed
-        let wordList = JSON.parse(localStorage.getItem(this.state.infToStore));
-        wordList[this.state.wordIndex] = symbol;
-        localStorage.setItem(this.state.infToStore, JSON.stringify(wordList));
+        if(inf !== "I") {
+
+            // Register which button that is pressed
+            let wordList = JSON.parse(localStorage.getItem(this.state.infToStore));
+            wordList[this.state.wordIndex] = symbol;
+            localStorage.setItem(this.state.infToStore, JSON.stringify(wordList));
+        }
 
         this.closePopUp();
     };
