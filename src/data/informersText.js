@@ -446,7 +446,7 @@ text_5pog6p : "I: Jammen hen skal dei få ny viss dei skal utvida det då?\n" +
 text_7og8 : "7: Det eg tykkjer er mest moro, det var om @våren. Du veit at @då var det hestebrøyting, og så @då\n" +
     "begynte å *@tåna 1 etter ~stabbesteinane. Og me sprang rundt dei. @Då tykte me det var @vår, og\n" +
     "@då var det moro. Det er eit minne som sit i meg, altså.\n" +
-    "8: Dreiv og sprang rundt ~steinane &lt;humrar&gt;. Det kan ikkje *vera så moro.\n" +
+    "8: Dreiv og sprang rundt ~steinane <humrar>. Det kan ikkje *vera så moro.\n" +
     "7: Jau, det var interessant for meg og gild det blei @tåflekker.\n" +
     "………………………………………………………………………..\n" +
     "I: Kva gjorde de då før de gjekk heim att om dagen?\n" +
@@ -469,7 +469,7 @@ text_7og8 : "7: Det eg tykkjer er mest moro, det var om @våren. Du veit at @då
     "var det til å *leggja §heller, og så steikte me §hellekaker av lauvblad, kokte av sand og drit, kan eg\n" +
     "*seia.\n" +
     "I: Kven som såg etter dykk når de var småe då?\n" +
-    "7: &lt;latter&gt; Var ikkje nokon.\n" +
+    "7: <latter> Var ikkje nokon.\n" +
     "8: Mm. Det var no den eldste @måtte *passa den yngste. Eg for min del så var eg på §stølen med ho\n" +
     "mor heile sommaren. @Då første ~somrane så var ho der med sju @småe ungar. Så rann det ei elv\n" +
     "nett forbi selet @vårt. Så var det for oss eldste til å *sitja å *passa på dei yngste, hadde no atten\n" +
@@ -483,7 +483,7 @@ text_7og8 : "7: Det eg tykkjer er mest moro, det var om @våren. Du veit at @då
     "mølla å *mala mjøl og …\n" +
     "7: Så kokte dei graut ut av dette mjølet. Det vart slik som ei, eg veit ikkje om det er §kalla for\n" +
     "sammale, slik at @~#kornsåene dei kom i lag med i mjølet. Så kokte graut utav. Når me hatt graut, så\n" +
-    "kjende me berre kor det raspa nedetter halsen &lt;humrar&gt; av desse @~#kornsåene eller det skalet på\n" +
+    "kjende me berre kor det raspa nedetter halsen <humrar> av desse @~#kornsåene eller det skalet på\n" +
     "#kornet kan du *seia.\n" +
     "I: Ja.\n" +
     "7: Det var kokt graut ein kveld og så var det @påhita att kvelden etter.\n" +
@@ -506,7 +506,7 @@ text_7og8 : "7: Det eg tykkjer er mest moro, det var om @våren. Du veit at @då
     "@då gjekk det rutebil som me seier eller.\n" +
     "8: Nei.\n" +
     "7: Gjekk det kyrkjebuss, jau.\n" +
-    "8: Ja, ja @når du var ung #gjerne. Eg er mykje eldre eg. &lt;latter&gt;.\n" +
+    "8: Ja, ja @når du var ung #gjerne. Eg er mykje eldre eg. <latter>.\n" +
     "7: Ja, @då køyrde dei med hest @då men.\n" +
     "8: Ja.\n" +
     "7: @Då var det til å *møta opp og …\n" +
@@ -515,7 +515,7 @@ text_7og8 : "7: Det eg tykkjer er mest moro, det var om @våren. Du veit at @då
     "\n" +
     "8: Køyrde med hestar. Og @då, og så hadde me @då ~§dombjøllene. ~Ungane i dag dei kjenner bilar,\n" +
     "men me kjende ~hestane. Me kjende ikkje berre ~hestane, men me kjende §bjølla til kvar enkelt.\n" +
-    "&lt;nøler&gt;\n" +
+    "<nøler>\n" +
     "7: Bonde frammi.\n" +
     "8: Bonde frammi. Då var det høgtidssamt altså når ~dalingane fór nedkøyrande til kyrkje juledag.\n" +
     "Somme ~tidene @såg ein gneistrande kaldt at du høyrde berre kor det kvein under slede,\n" +
@@ -628,7 +628,7 @@ text_11og12 : "11: Hugsar ikkje, men me var i §alle fall ein gjeng. Då var me 
     "12: det berre først på dagen? \n" +
     "11: Nei, eg trur det var først på dagen, eg, @då me kom. \n" +
     "12: Ja, så @måtte me *§stilla opp i ei sånn rekke @då før me gjekk inn. To og to og … \n" +
-    "11: &lt;latter&gt; \n" +
+    "11: <latter> \n" +
     "12: Verkeleg sånt opplegg. \n" +
     "11: Ja, det var … \n" +
     "I: Når de slutta om dagen då? Var det …? \n" +
@@ -637,11 +637,11 @@ text_11og12 : "11: Hugsar ikkje, men me var i §alle fall ein gjeng. Då var me 
     "I: Ja. \n" +
     "12: Ein fire, fem stykke @då som @måtte @gå bort på hi sida att. @Då var det … \n" +
     "I: Kva fann de på då? \n" +
-    "12: Nei, det var alt det. &lt;humrar&gt; Stort sett det meste. \n" +
+    "12: Nei, det var alt det. <humrar> Stort sett det meste. \n" +
     "11: Kom vel ikkje heim att så tidleg antakeleg. \n" +
     "12: Nei, det gjekk ikkje nett så fort. Om vinteren @då laga me #gjerne snøholer rundt §alle plassar og \n" +
     "siglde på ~gymposane ned for ¤brua og … \n" +
-    "11: &lt;latter&gt; Huff og meg. \n" +
+    "11: <latter> Huff og meg. \n" +
     "12: Mamma og dei begynte ofte å *lura på kvar me blei av eigentleg @då. Så hadde me sånn fast viss \n" +
     "me kom oss ned for ¤brua @då til dess posten for oppover, så fekk me *sitja på med ho. Av og til så \n" +
     "venta ho på oss @då viss ikkje me var komne, så ho @såg oss oppi. \n" +
@@ -652,22 +652,22 @@ text_11og12 : "11: Hugsar ikkje, men me var i §alle fall ein gjeng. Då var me 
     "11: Me hadde ein sånn … Det var ein ifrå Dalen som køyrde den me … \n" +
     "…………………………………………………………………………………… \n" +
     "I: Var de alltid rolege på skulen då? \n" +
-    "11: Nei. &lt;latter&gt; \n" +
-    "12: Nei, eg blei kasta på gangen ein gong. &lt;humrar&gt; Det var sånn … \n" +
+    "11: Nei. <latter> \n" +
+    "12: Nei, eg blei kasta på gangen ein gong. <humrar> Det var sånn … \n" +
     "11: Huff og meg. Nei, me var no bra sånn @bråkegjeng. \n" +
     "12: Men eigentleg så trur eg det var roleg der @då mot så #gjerne i større klassar @då. \n" +
     "11: Sende på gangen og litt slik, men ja. \n" +
     "12: Eg hugsa eg blei kasta på gangen, for at me ~jentene sat bakarst @då og så prata. Heile tida. @Då \n" +
-    "ville ho *flytta oss fram @då. Det nekta eg @på, for eg ville ikkje *sitja framme. &lt;humrar&gt; Så @då \n" +
-    "var det rett på gangen @då, fæle. &lt;humrar&gt; Det er det einaste eg hugsar. \n" +
+    "ville ho *flytta oss fram @då. Det nekta eg @på, for eg ville ikkje *sitja framme. <humrar> Så @då \n" +
+    "var det rett på gangen @då, fæle. <humrar> Det er det einaste eg hugsar. \n" +
     "I: Fekk du skjenn nokon sinne? \n" +
-    "11: Jau det, &lt;latter&gt; det hugsar eg. Eg skreiv på veggen ute. Det var i eit friminutt og @då skreiv eg. \n" +
-    "&lt;nøler&gt; Eg hugsar ikkje kven det var eg @då, men i §alle fall at nokon var kjærastar @då. Så @då \n" +
+    "11: Jau det, <latter> det hugsar eg. Eg skreiv på veggen ute. Det var i eit friminutt og @då skreiv eg. \n" +
+    "<nøler> Eg hugsar ikkje kven det var eg @då, men i §alle fall at nokon var kjærastar @då. Så @då \n" +
     "hadde dei kvisla til ~lærarane @då, veit du. @Då veit du eg @måtte *stoppa @då @når me stilte oss \n" +
     "i kø for å *koma inn att @då. Eg fekk jo den ¤overhalinga. Det … \n" +
     "12: Og så ein gong @då laga me til streik. Me hengde opp plakatar @då før ~lærarane var komne \n" +
     "@på skulen at me ville *streika, for me at fekk ikkje lønn eller eit eller anna sånt. \n" +
-    "11: &lt;latter&gt; \n" +
+    "11: <latter> \n" +
     "12: Det var heilt … Nekta å @gå inn og … \n" +
     "………………………………………………….. \n" +
     "I: Hugsar de korleis, nesten sagt, jenteromet dykkar såg ut? \n" +
@@ -690,10 +690,10 @@ text_11og12 : "11: Hugsar ikkje, men me var i §alle fall ein gjeng. Då var me 
     "I: Kva de gjorde når de kom fram att om dagane då elles? \n" +
     "11: @Då var det å *hiva @på seg sånne gamle klede, eller kvardagsklede @då, så var det ut å *leika \n" +
     "og *sykla og … \n" +
-    "12: *Herja ute. &lt;humrar&gt; \n" +
-    "11: Ja. &lt;humrar&gt; \n" +
+    "12: *Herja ute. <humrar> \n" +
+    "11: Ja. <humrar> \n" +
     "12: *Dritna seg mest mogleg til og … \n" +
-    "11: Og @då var mamma ganske blid me kom inn att. &lt;humrar&gt; \n" +
+    "11: Og @då var mamma ganske blid me kom inn att. <humrar> \n" +
     "12: Hvert fall aldri snakk om noko ned i Fjøra eller noko sånt. \n" +
     "11: Nei. \n" +
     "12: Det var alltid at du hadde meir enn nok å *gjera på heime @då, *driva på med der. \n" +
@@ -705,7 +705,7 @@ text_11og12 : "11: Hugsar ikkje, men me var i §alle fall ein gjeng. Då var me 
     "11: Ja. \n" +
     "12: @Då, @då blei det #gjerne litt meir. \n" +
     "11: Ja. @Då vart me jo meir kjende, men elles så har ikkje me … \n" +
-    "12: Elles har det liksom vore &lt;nøler&gt;. Det har jo alltid vore ~dalingane og ~fjøringane @då og. \n" +
+    "12: Elles har det liksom vore <nøler>. Det har jo alltid vore ~dalingane og ~fjøringane @då og. \n" +
     "11: Mm. \n" +
     "I: Korleis kom de dykk i Fjøra før då heldt eg på å seia? \n" +
     "12: Før me fekk lappen? Nei, @då var det mamma og pappaen som måtte *køyra @då, eller me \n" +
@@ -716,7 +716,7 @@ text_11og12 : "11: Hugsar ikkje, men me var i §alle fall ein gjeng. Då var me 
     "12: Frå me var seksten, @då gjekk det ein del på det. Nokre gonger @når det var heilt krise, \n" +
     "11: Ja. \n" +
     "12: … så gjekk me ned i Fjøra òg. \n" +
-    "11: &lt;latter&gt; \n" +
+    "11: <latter> \n" +
     "12: Frå meg @då og ned. \n" +
     "11: Det var, det var krise.",
 
@@ -776,7 +776,7 @@ text_11pog12p : "I: Kvar gjekk de hen då?\n" +
     "………………………….\n" +
     "I: Kjenner, kjenner alle alle?\n" +
     "11: Ikkje no meir.\n" +
-    "12: Eg kjenner ikkje §alle. &lt;humrar&gt;\n" +
+    "12: Eg kjenner ikkje §alle. <humrar>\n" +
     "11: Ikkje no meir. Det var vel før meir at ein visste kven §alle var, liksom. Men no …\n" +
     "Men eg ser i hvert fall det at @når sommaren er, og ~studentane er vekke, så er det rimeleg daudt i\n" +
     "…\n" +
@@ -820,7 +820,7 @@ text_11pog12p : "I: Kvar gjekk de hen då?\n" +
     "11: Ja.\n" +
     "I: Kvifor det ?\n" +
     "11: Nei.\n" +
-    "12: Irritera ~austlendingane. &lt;humrar&gt;\n" +
+    "12: Irritera ~austlendingane. <humrar>\n" +
     "11: Men du skal faktisk ikkje *reisa så valdsamt langt før du ...\n" +
     "12: Nei.\n" +
     "11: Eg var til Førde i ¤helga @på laurdagen, og så sa eg «saukjan». Eg skulle *seia telefonnummeret\n" +
@@ -912,9 +912,9 @@ text_13og14 : "13: Det er nok litt forskjell på mitt, min oppvekst og, og hans.
 
 text_15og16 : "16: Ja.\n" +
     "I: Var de kvar dag de var på skulen?\n" +
-    "16: &lt;kremtar&gt;\n" +
+    "16: <kremtar>\n" +
     "15: Var vel ikkje det? Det var vel annakvar hæ?\n" +
-    "16: Nei det var annakvar, veit du fordi at det var &lt;nøler&gt;\n" +
+    "16: Nei det var annakvar, veit du fordi at det var <nøler>\n" +
     "15: Minste og største klasse.\n" +
     "16: Minste og største klassen, ja.\n" +
     "15: Det var vel slik første og andre og tredje.\n" +
@@ -936,18 +936,18 @@ text_15og16 : "16: Ja.\n" +
     "16: Ja.\n" +
     "15: Eg stod rett bakom han Torleif, og @då fekk eg ¤sleiva her, veit du … @Då var det vekk.\n" +
     "16: Nei, ~kropssøvingtimane dei …\n" +
-    "15: Det hadde ikkje me, men &lt;kremtar&gt; @på timeplanen, men det hadde me vel i praksis.\n" +
+    "15: Det hadde ikkje me, men <kremtar> @på timeplanen, men det hadde me vel i praksis.\n" +
     "16: Ja, dei blei ofte lange.\n" +
     "15: Yes.\n" +
     "I: Korleis var det dei fekk dykk inn att då til time?\n" +
-    "16: Nei, han, &lt;klappar&gt; han klappa i ~hendene.\n" +
+    "16: Nei, han, <klappar> han klappa i ~hendene.\n" +
     "\n" +
     "15: Stemmer. Det gjorde han.\n" +
     "16: Han klappa i ~hendene.\n" +
     "15: Det, det hugsar eg no, ja.\n" +
     "16: Det §small godt, så me høyrde det.\n" +
-    "15: &lt;kremtar&gt;\n" +
-    "16: &lt;latter&gt;\n" +
+    "15: <kremtar>\n" +
+    "16: <latter>\n" +
     "I: Så de var så nær alltid de at …\n" +
     "16: Ja @då. Var ikkje meir enn ein …\n" +
     "15: Kor mange var me der @då? Ein @åtte, ti, tolv stykke?\n" +
@@ -958,8 +958,8 @@ text_15og16 : "16: Ja.\n" +
     "sjette og sjuande var …\n" +
     "16: Neste.\n" +
     "15: … dei andre ~dagane.\n" +
-    "16: Ja. &lt;kremtar&gt;\n" +
-    "15: Så minste og største klassen som dei §kalla det. &lt;latter&gt;\n" +
+    "16: Ja. <kremtar>\n" +
+    "15: Så minste og største klassen som dei §kalla det. <latter>\n" +
     "16: Ja.\n" +
     "15: Så slik var det.\n" +
     "I: Kva, hadde de noko sånn spesielt ritual før de starta timane om morgonen, eller?\n" +
@@ -1001,7 +1001,7 @@ text_15og16 : "16: Ja.\n" +
     "15: Det var eitt gir.\n" +
     "16: Vart det for tungt, så @måtte me av å @gå.\n" +
     "15: Ja, det var no, det var no vanleg …\n" +
-    "16: &lt;humrar&gt;\n" +
+    "16: <humrar>\n" +
     "15: … at du @måtte @gå ein del.\n" +
     "16: Ja, ja @då det var det.\n" +
     "I: Korleis trur de det vil vera å bu her i Sogndal ja sei om tjue år då?\n" +
@@ -1009,12 +1009,12 @@ text_15og16 : "16: Ja.\n" +
     "brakk her med gule bøar og langt gras og … Det er eg redd for, at @då blir det ikkje så kjekt å bu her.\n" +
     "15: Det skjer før, før tjue @år.\n" +
     "\n" +
-    "16: &lt;kremtar&gt; Det skjer #gjerne før heller tjue @år det.\n" +
+    "16: <kremtar> Det skjer #gjerne før heller tjue @år det.\n" +
     "15: Ja.\n" +
     "I: Kva trur, trur du vil, korleis trur du det vil vera?\n" +
     "15: Nei, der er eg einig med han.",
 
-text_15pog16p : "15. Det er masse studentar. Er ikkje det ein tre, fire tusen studentar @då? I §alle fall tre #gjerne, slik\n" +
+text_15pog16p : "15: Det er masse studentar. Er ikkje det ein tre, fire tusen studentar @då? I §alle fall tre #gjerne, slik\n" +
     "cirka? Du veit at hadde ikkje ~skulane vore i Sogndal, så hadde det vore ganske stilt her nede.\n" +
     "16: Ja. Ja.\n" +
     "15: Det er i §alle fall greitt.\n" +
@@ -1095,7 +1095,7 @@ text_15pog16p : "15. Det er masse studentar. Er ikkje det ein tre, fire tusen st
     "15: Ja.\n" +
     "I: Mm.\n" +
     "16: Eg trur det er slik §alle ~stadene.\n" +
-    "15: Ja. &lt;humrar&gt; Det er ein fare for det.\n" +
+    "15: Ja. <humrar> Det er ein fare for det.\n" +
     "16: men me har det godt her framme, stilt og roleg og …\n" +
     "15: Ja.\n" +
     "I: Ja, hadde du villa budd ein annan plass?\n" +
@@ -1227,13 +1227,13 @@ text_35og58 : "I: Hugsar de nokon episodar frå de var mindre?\n" +
     "58: Ja, eg hugsar ein gong i #barnehagen. Så, eg og besteveninna mi, me var alltid ute i regnet. Me\n" +
     "dreiv og, me var dei einaste ute i regnet som huska og sånt og. Me, me fekk eigentleg ikkje lov å\n" +
     "*vera ute, og så var me alltid ute.\n" +
-    "35: &lt;humrar&gt; Nei, eg hugsar ein gong @då @når me skulle *begynna i førsteklasse så, så kom me og\n" +
+    "35: <humrar> Nei, eg hugsar ein gong @då @når me skulle *begynna i førsteklasse så, så kom me og\n" +
     "@då stod ~klassane a og b klassen for seg sjølv. Og så sa rektor at no kunne me *koma inn og så fekk\n" +
     "me @sjå klasserommet første gong og hugsar mamma og pappaen sat baki klasserommet og @såg\n" +
     "fram @på oss og skikkeleg stolte.\n" +
     "58: Ja, og så me fekk, av klassestyraren så fekk me ein blomster kvar, fordi at §alle var ~blomstrane\n" +
     "hennar @då liksom til klassestyraren @vår.\n" +
-    "I: &lt;nøler&gt; Trefte de nokon jamaldringar før de begynte i skulen nokon plass?\n" +
+    "I: <nøler> Trefte de nokon jamaldringar før de begynte i skulen nokon plass?\n" +
     "35: Det var jo i #barnehagen @då, men.\n" +
     "58: Ja.\n" +
     "35: Så var det no litt sånn som du var på ferie og sånt.\n" +
@@ -1254,7 +1254,7 @@ text_35og58 : "I: Hugsar de nokon episodar frå de var mindre?\n" +
     "35: Ja, og så fekk den som hadde bursdag *bestemma kven som skulle *sitja attmed han.\n" +
     "58: Ja.\n" +
     "35: He\n" +
-    "58: &lt;humrar&gt; og kva, kva skulle ha til mat @då.\n" +
+    "58: <humrar> og kva, kva skulle ha til mat @då.\n" +
     "35: Ja.\n" +
     "I: Når de begynte på skulen då, kva gjorde de då når nokon hadde bursdag?\n" +
     "58: Då song me. Me har songe heile ¤tida liksom og.\n" +
@@ -1299,7 +1299,7 @@ text_35og58 : "I: Hugsar de nokon episodar frå de var mindre?\n" +
     "58: Det var veldig populært blant §alle.\n" +
     "35: Ja.\n" +
     "I: Var det noko foreldra masa om då de var mindre, om kvelden og?\n" +
-    "35: Det var sånn pussa godt ~tennene og *vaska godt i augo &lt;ler&gt; og *kamma @håret og sånt.\n" +
+    "35: Det var sånn pussa godt ~tennene og *vaska godt i augo <ler> og *kamma @håret og sånt.\n" +
     "\n" +
     "58: Eg hugsar ein gong eg nekta å *leggja meg, @då blei mamma og pappa skikkeleg sinte for det at\n" +
     "eg ville ikkje *sova berre @på, @på grunn av at eg ville @sjå @på TV og sånn. Det hugsar eg så godt.\n" +
@@ -1307,7 +1307,7 @@ text_35og58 : "I: Hugsar de nokon episodar frå de var mindre?\n" +
     "58: Ja.\n" +
     "…………………………………………………………………………\n" +
     "I: Hugsar de noko de har gjort, opplevd?\n" +
-    "35: &lt;nøler&gt; Me har vore @på leirskule i lag. Me har vore i masse bursdagar.\n" +
+    "35: <nøler> Me har vore @på leirskule i lag. Me har vore i masse bursdagar.\n" +
     "58: Ja.\n" +
     "I: Kan de fortelja noko ifrå det? Nokon sånne småting?\n" +
     "58: For eksempel første bursdagen min @då, eller, eller i @sjuårsbursdagen min @då @når ho kom\n" +
@@ -1316,11 +1316,11 @@ text_35og58 : "I: Hugsar de nokon episodar frå de var mindre?\n" +
     "som høyrer @på og. Det er så komisk.\n" +
     "35: Mm, @då @når me var @på leirskule så @låg me og sov, og så om ¤natta klokka fem så ringjer\n" +
     "brannalarmen sant. Og §alle spring ut veit du og livredde heile gjengen, veit du. Så nei, det var falsk\n" +
-    "alarm, seier dei. Og så time @etterpå så ringjer han ein gong til &lt;humrar&gt;.\n" +
+    "alarm, seier dei. Og så time @etterpå så ringjer han ein gong til <humrar>.\n" +
     "58: Og så ringjer han @endå ein gong.\n" +
     "35: Ja, og så nei det var falsk alarm det òg, og me så sinte, veit du, og ville *sova.\n" +
     "58: @Står og skjeller ut, ut ~lærarane.\n" +
-    "35: Å, og så ti minutt @etterpå, så ringjer han ein gong til, sant &lt;ler&gt;.\n" +
+    "35: Å, og så ti minutt @etterpå, så ringjer han ein gong til, sant <ler>.\n" +
     "58: Tre gonger den ¤natta.\n" +
     "35: Ja, og me veit du, så sinte og. Eg lo eigentleg mest av det @då @etterpå.\n" +
     "58: Ja, @då fekk me *sova ein time ekstra @då så.\n" +
@@ -1579,7 +1579,7 @@ text_41og42 : "I: Hugsar de nokon episodar frå de var mindre? \n" +
     "@åt ungar og litt sånn forskjellig. \n" +
     "I: Dikta opp eventyr? \n" +
     "41: Ja. \n" +
-    "42: &lt;nøler&gt; Ja, @når eg gjekk i #barnehagen @frampå Notsete frami Dalen, så pleidde eg alltid å … \n" +
+    "42: <nøler> Ja, @når eg gjekk i #barnehagen @frampå Notsete frami Dalen, så pleidde eg alltid å … \n" +
     "Det var eit sånn vepsebol som hang oppi eit tre i ein krok i ei sånn grus … fotballbane no, men eg veit \n" +
     "ikkje om det var det @då. Og der hugsar eg, eg fekk med meg §alle dei som var liksom litt yngre enn \n" +
     "meg bort der. Og så var det … Eg var valdsamt rask @då, så eg kasta stein @på det slik at det datt \n" +
@@ -1599,7 +1599,7 @@ text_41og42 : "I: Hugsar de nokon episodar frå de var mindre? \n" +
     "42: Eg trur me, me song om morgonen, og så song me til maten, og så lurer eg på om me song @når \n" +
     "me reiste òg, men eg er ikkje sikker. \n" +
     "41: Ja, av og til song me @når me reiste òg. Me song kvar dag til maten. \n" +
-    "I: Ja. Korleis set de Sogndal på kartet? &lt;nøler&gt; Kva fortel de til andre når de skal forklara Sogndal kvar \n" +
+    "I: Ja. Korleis set de Sogndal på kartet? <nøler> Kva fortel de til andre når de skal forklara Sogndal kvar \n" +
     "det ligg hen? \n" +
     "41: Det er ved Noregs lengste fjord. Det er ein fin liten, det er fin lita bygd med masse eple og, ja. \n" +
     "42: Fin natur, masse §fjell rundt her. \n" +
@@ -1607,7 +1607,7 @@ text_41og42 : "I: Hugsar de nokon episodar frå de var mindre? \n" +
     "41: Ja, \n" +
     "42: Ikkje så mykje folk her. Dei fleste kjenner kvarandre. \n" +
     "I: Kva seier du om naturen då? \n" +
-    "41: &lt;nøler&gt; Det er noko av det flottaste med Sogndal det. Det er så fin sånn, @gå på tur om @vår og \n" +
+    "41: <nøler> Det er noko av det flottaste med Sogndal det. Det er så fin sånn, @gå på tur om @vår og \n" +
     "haust og sommar. Om vinteren kan du @gå på ski og sånn, så det er ... Så er det valdsamt fine §fjell \n" +
     "du kan *velja om du vil @gå i bratt terreng, flatt terreng eller sånn midt i §mellom. \n" +
     "I: Mm. \n" +
@@ -1634,7 +1634,7 @@ text_41og42 : "I: Hugsar de nokon episodar frå de var mindre? \n" +
     "Me overlevde no. \n" +
     "I: Mm. Korleis trur de det vil vera å vera ungdom her om, ja lat oss seia om tjue år då? \n" +
     "41: Æss, @då kjem … Eg veit ikkje om det, trur ikkje det kjem til å bli så valdsamt mykje forskjellig. \n" +
-    "@Då kjem &lt;stammar&gt;. Eg synest denne ¤bygda kjem til å, trur denne kjem til å &lt;stammar&gt;, trur \n" +
+    "@Då kjem <stammar>. Eg synest denne ¤bygda kjem til å, trur denne kjem til å <stammar>, trur \n" +
     "denne ¤bygda kjem til å *utvikla seg mykje meir sånn teknisk og sett og, sant. For no har det vore \n" +
     "masse utvikling her dei siste ¤åra. Med masse nye butikkar og sånt og det elektriske og sånt. \n" +
     "42: Nei, eg veit ikkje. Me kan vel i grunnen ikkje *tenkja seg korleis det kan bli om tjue @år. Anten så \n" +
@@ -1649,7 +1649,7 @@ text_41og42 : "I: Hugsar de nokon episodar frå de var mindre? \n" +
     "41: Så kjem det til å bli mykje meir sånn datamaskinbruk og sånn til skulearbeidet.",
 
 
-text_44og65: "I: &lt;nøler&gt; Hugsar de nokon episodar frå de var mindre?\n" +
+text_44og65: "I: <nøler> Hugsar de nokon episodar frå de var mindre?\n" +
     "44: Ja, eg, @når eg var ein fem, seks @år, så var eg borte @hjå kompisen min. Så hadde me ikkje\n" +
     "nokon ting å *gjera @på, så me tenkte me skulle *kasta noko sånn stein @då @på kvarandre. Så me\n" +
     "fann kvar sin sånn pappkasse som me skal ha og *verna oss med, så samla me saman masse stein\n" +
@@ -1678,16 +1678,16 @@ text_44og65: "I: &lt;nøler&gt; Hugsar de nokon episodar frå de var mindre?\n" 
     "I: Hugsar de nokon, nokon episodar ifrå de gjekk der nede?\n" +
     "65: Ja. Det var … Me hadde @§slåball, og så var det ein i klassen som skulle @slå @då. Og så var det\n" +
     "ei som stod for langt, ho stod ikkje nærme, for langt bak han, sånn at han skulle @slå, så bomma han\n" +
-    "@på §ballen, så fekk ho §kølla midt i trynet. &lt;humrar&gt; @Då, det var ikkje godt.\n" +
+    "@på §ballen, så fekk ho §kølla midt i trynet. <humrar> @Då, det var ikkje godt.\n" +
     "I: Kjem du på noko de dreiv med?\n" +
     "44: Nei, me var no på epleslang @då @hjå naboen, og så det gjekk no bra heilt til me … Det var ein\n" +
     "gong me skulle @gå hit, så @då hadde me vore der mange gonger, så var ikkje så redde lenger. Gjekk\n" +
     "me hit, og så plukka me nokre eple, og så høyrde me ein som stod og ropte etter oss. Han stod og\n" +
     "vatna ¤epla, og så @då dukka me fort @då, og så gøymde me oss bakom nokre tre. Han @står og ser\n" +
     "\n" +
-    "etter oss, og så begynner han å *vatna vidare, og så me berre @går hit att, &lt;humrar&gt; men etter det\n" +
+    "etter oss, og så begynner han å *vatna vidare, og så me berre @går hit att, <humrar> men etter det\n" +
     "så trur ikkje eg me var hit der meir.\n" +
-    "I: &lt;nøler&gt; De, gjekk de i same klassen de?\n" +
+    "I: <nøler> De, gjekk de i same klassen de?\n" +
     "65: Nei.\n" +
     "44: Nei, eg var på ~Norane, eg.\n" +
     "I: Og du gjekk?\n" +
@@ -1696,7 +1696,7 @@ text_44og65: "I: &lt;nøler&gt; Hugsar de nokon episodar frå de var mindre?\n" 
     "………………………………………………………..\n" +
     "I: Ja. Er det nokon typiske trekk ved naturen her de vil trekkja fram?\n" +
     "44: §Fjell.\n" +
-    "65: Ja, dal, dal. &lt;humrar&gt;\n" +
+    "65: Ja, dal, dal. <humrar>\n" +
     "44: §Fjell. Masse skog.\n" +
     "I: Ja.,\n" +
     "44: Masse fine sånne turområde som du kan @gå i så.\n" +
@@ -1712,22 +1712,22 @@ text_44og65: "I: &lt;nøler&gt; Hugsar de nokon episodar frå de var mindre?\n" 
     "@åtte neste morgon.\n" +
     "44: Det var vanskeleg.\n" +
     "65: Det var ofte sånn at du ikkje gadd å *sova, så du berre var oppe heile ¤natta.\n" +
-    "44: Ja, me hoppa … Eller det rommet eg var @på, me hoppa jo ut glaset. Og så &lt;humrar&gt; stakk me\n" +
+    "44: Ja, me hoppa … Eller det rommet eg var @på, me hoppa jo ut glaset. Og så <humrar> stakk me\n" +
     "opp @på ~trampolinene og hoppa me der midt på ¤natta, det var i tre, fire ¤tida eller noko. Og så\n" +
     "kjem presten ut. Han skulle @sjå etter nokon. Og så ser han, så spring me langt, langt oppi, og så\n" +
     "gløymer me att ~skorne @våre der, og så spring me berre @på ~sokkane oppover. Men me laut ned\n" +
     "att, eller @når me ikkje ser att presten, så ville me ned att. Og så @då sprang me no ned att @då, så\n" +
     "henta me ~skorne på ~trampolinene. Så sprang me ned att. Og så opna me glaset, og så nokre kom\n" +
     "seg inn før presten kom springande rundt hjørnet med nokre han hadde funne oppi skogen der. Så\n" +
-    "det var ikkje så mykje vits i. &lt;humrar&gt;\n" +
+    "det var ikkje så mykje vits i. <humrar>\n" +
     "\n" +
-    "65: &lt;humrar&gt;\n" +
+    "65: <humrar>\n" +
     "I: Hadde de nokon sånne?\n" +
     "65: Ja, me for no uti vindauget og sprang rundt heile huset. Og så skulle me *sova på trampolinen,\n" +
     "men det gjekk ikkje.\n" +
     "44: Me hadde noko sånn jenter @innpå rommet, og så presten kom, han kom no inn av og til viss han\n" +
     "høyrde noko lyd. Kjem han inn, og så prøver me å *gøyma dei @då. Så fann han som regel dei. Så\n" +
-    "@då @måtte dei inn att @på rommet. &lt;nøler&gt; Så berre gjekk dei ut att glaset og inn att glaset\n" +
+    "@då @måtte dei inn att @på rommet. <nøler> Så berre gjekk dei ut att glaset og inn att glaset\n" +
     "@vårt, så sånn dreiv me @på heile ¤natta så.",
 
 text_49og61: "I: Trefte de nokon jamaldringar før de begynte i skulen då? \n" +
@@ -1743,13 +1743,13 @@ text_49og61: "I: Trefte de nokon jamaldringar før de begynte i skulen då? \n" 
     "61: Nei, eg høyrde ikkje så mykje om det, for dei eg var med var jo yngre enn meg og like gamle, så \n" +
     "fekk ikkje *høyra så masse. \n" +
     "I: Så var veldig spennande når de starta sjølve då? \n" +
-    "61: Ja. &lt;humrar&gt; \n" +
-    "49: &lt;humrar&gt; Ja. \n" +
-    "I: &lt;nøler&gt; Kva gjorde de på i friminutta? \n" +
+    "61: Ja. <humrar> \n" +
+    "49: <humrar> Ja. \n" +
+    "I: <nøler> Kva gjorde de på i friminutta? \n" +
     "61: Me pleidde å *gøyma oss inni ~gangane, og så sprang me opp @på loftet på Trudvang. Og der \n" +
     "gøymde me oss for ~lærarane så. Me sat der og var nervøse kvar gong dei kom opp ¤trappa. \n" +
     "49: Nei, me hadde sånn vanlege ting i ¤friminutta. Politi og tjuv, og så var det ikkje lov å *vera inni \n" +
-    "~gangane. Så var litt inni ~gangane, og så vart jaga ut og. Gutar, nei. &lt;humrar&gt; Dei var vel med dei \n" +
+    "~gangane. Så var litt inni ~gangane, og så vart jaga ut og. Gutar, nei. <humrar> Dei var vel med dei \n" +
     "òg, litt. \n" +
     "61: Dei spente som oftast §fotball … \n" +
     "49: Ja. \n" +
@@ -1762,7 +1762,7 @@ text_49og61: "I: Trefte de nokon jamaldringar før de begynte i skulen då? \n" 
     "49: Det er det vanlege. Det er seng og @klesskåp og skatoll og §hyller. \n" +
     "\n" +
     "I: Er det heilt nake? \n" +
-    "49: Ja, &lt;humrar&gt; heng eigentleg ikkje så mykje @på ~veggane. \n" +
+    "49: Ja, <humrar> heng eigentleg ikkje så mykje @på ~veggane. \n" +
     "61: Eg har overfylt rom med masse §hyller og plakatar, bilete @frå turar me har vore @på og. Og så \n" +
     "er det lys i §alle §hyllene. \n" +
     "I: Hugsar de nokon sånne turar de har vore på? \n" +
@@ -1770,14 +1770,14 @@ text_49og61: "I: Trefte de nokon jamaldringar før de begynte i skulen då? \n" 
     "61: Og Osloturen. \n" +
     "49: Mm. \n" +
     "I: Ja, kan de fortelja litt om dei, ein av dei turane? \n" +
-    "49: &lt;nøler&gt; Turen til Avdalen, det var jo ganske så mykje @gåing. &lt;humrar&gt; \n" +
+    "49: <nøler> Turen til Avdalen, det var jo ganske så mykje @gåing. <humrar> \n" +
     "61: Veldig bratt der. \n" +
     "49: Mm. \n" +
     "61: Så @då me endeleg kom opp, så samlast §alle ~jentene i fjøsen der, og så sat me der, og så fekk \n" +
     "me besøk av ~gutane og så gjekk me @på besøk til dei mens ~lærarane sat inni hovudhuset. \n" +
     "49: Så vakna eg veldig tidleg om morgonen, sånn ¤sekstida. \n" +
     "61: Me sov vel ikkje i det heile teke. \n" +
-    "49: Nei, &lt;humrar&gt; trur det var mange som ikkje sov i heile teke. Så dreiv og prøvde å *vekkja \n" +
+    "49: Nei, <humrar> trur det var mange som ikkje sov i heile teke. Så dreiv og prøvde å *vekkja \n" +
     "~lærarane klokka seks, sju om morgonen, men det greidde ikkje dei. Det var sånn §bjølle inni huset \n" +
     "@då, sant, som dreiv og ringde @på. Men det hjelpte ikkje. \n" +
     "I: Kva elles var det de gjorde på den turen? \n" +
@@ -1786,12 +1786,12 @@ text_49og61: "I: Trefte de nokon jamaldringar før de begynte i skulen då? \n" 
     "kjemiprosessar eitt eller anna. Eg hugsar ikkje kva det handla om. \n" +
     "……………………………………………………….. \n" +
     "I: Ja, er det noko med naturen som gjer det spesielt å bu her eller? \n" +
-    "49: Det er jo fjord og §fjell &lt;humrar&gt; \n" +
+    "49: Det er jo fjord og §fjell <humrar> \n" +
     "I: Mm. \n" +
     "49: … og sånn. Typisk norsk. \n" +
     "I: Ja, kva meiner du om det? \n" +
     "61: Nei, eg veit ikkje om eg meiner noko spesielt. \n" +
-    "49: &lt;humrar&gt; \n" +
+    "49: <humrar> \n" +
     "61: Det er er jo mogelegheit for å @gå @på §fjellet @på om sommaren og vinteren og … Så kan du \n" +
     "*vera @utpå med @båt og … \n" +
     "…………………………………………….. \n" +
@@ -1931,13 +1931,13 @@ text_94og95: "I: Hadde de noko musikk og slikt når de var i barnehagen?\n" +
     "rektor trur eg ropte opp ¤namna på dei i ~klassane, trur eg. Og så gjekk me bort. Det var litt\n" +
     "skummelt.\n" +
     "95: Hugsar det var sånn tredje eller fjerde klasse. @Då kom dei der #skorne med hjul under.\n" +
-    "94: Ja. &lt;humrar&gt;\n" +
+    "94: Ja. <humrar>\n" +
     "95: @Då brukte §alle dei. Og så var det så mange som slo seg. Dei datt bakover og slo hovudet.\n" +
     "94: Mm.\n" +
     "95: Og så sa skulen at det der var ikkje lov og, og så slutta mesteparten med det.\n" +
-    "94: &lt;humrar&gt;\n" +
+    "94: <humrar>\n" +
     "95: For det var ein sånn periode der §alle saman berre flaut forbi.\n" +
-    "94: Ja. &lt;humrar&gt;\n" +
+    "94: Ja. <humrar>\n" +
     "95: Det var ingen som gjekk.\n" +
     "94: Ingen gjekk, ja. Eg veit ikkje. Eg fekk sko eg òg. Til slutt.\n" +
     "95: Eg …\n" +
@@ -2010,7 +2010,7 @@ text_96og97: "96: Gjekk ikkje me i #barnehage i lag?\n" +
     "97: Å, eg gjekk i Stedje.\n" +
     "96: Nei, eg gjekk i Kyrkjebakken.\n" +
     "I: Men kva gjorde de då før de begynte på skulen?\n" +
-    "96: Eg gjekk i #barnehagen, me leika òg … Me lærte songar &lt;latter&gt;\n" +
+    "96: Eg gjekk i #barnehagen, me leika òg … Me lærte songar <latter>\n" +
     "I: Hadde de noko sånn samlingsstund?\n" +
     "96: Ja, me hadde eller, hvert fall min #barnehage hadde alltid, samlast alltid i ein sånn ring på\n" +
     "begynnelsen eller midten av dagen.\n" +
@@ -2025,7 +2025,7 @@ text_96og97: "96: Gjekk ikkje me i #barnehage i lag?\n" +
     "og elles er det ganske nake, kvite vegger som lyser fint opp.\n" +
     "………………………………………………………………….\n" +
     "I: Mm. Kjem de på nokon episodar frå de gjekk i Trudvang?\n" +
-    "96: Ja, &lt;nøler&gt; i femteklasse så sprang me alltid, eller. Det var jo, me @måtte jo, det var veldig\n" +
+    "96: Ja, <nøler> i femteklasse så sprang me alltid, eller. Det var jo, me @måtte jo, det var veldig\n" +
     "strengt @på Trudvang @då, så me @måtte alltid ut i liksom ¤friminutta. Men det var sånn der masse\n" +
     "sånn gangar under, eller under der me hadde klasserom, sånn i §kjellaren, så me var alltid liksom\n" +
     "nede i ~gangane og leikte tikken og gøymde oss liksom der, og @når ~lærarane kom, så gøymde me\n" +
@@ -2050,11 +2050,11 @@ text_96og97: "96: Gjekk ikkje me i #barnehage i lag?\n" +
     "…………………………………………………………\n" +
     "I: Er det noko som, som gjev dykk andre tankar etter de har vore der?\n" +
     "97: Ja, det var ganske tøft. Det var ikkje noko fint å @sjå @på akkurat. Men eg hadde forventa\n" +
-    "@endå litt meir … Me var der @når det var litt sol @då, &lt;nøler&gt; sol og fint vêr, så det var ikkje\n" +
-    "akkurat den &lt;stammar&gt; eller følelsen å *vera der. Men det var framleis veldig tøft å @sjå @på for\n" +
+    "@endå litt meir … Me var der @når det var litt sol @då, <nøler> sol og fint vêr, så det var ikkje\n" +
+    "akkurat den <stammar> eller følelsen å *vera der. Men det var framleis veldig tøft å @sjå @på for\n" +
     "eksempel @hår og sko og alt det.\n" +
     "I: Ja.\n" +
-    "96: Me var jo inni dei ~brakkene dei sov i i hvert fall i Birkeneau &lt;nøler&gt;, og det var liksom det å\n" +
+    "96: Me var jo inni dei ~brakkene dei sov i i hvert fall i Birkeneau <nøler>, og det var liksom det å\n" +
     "*tenkja på at det var jo sjølvsagt like, @på dei ~dagane så var det jo like varmt, kanskje varmare òg,\n" +
     "der dei @måtte eller me gjekk jo berre der @på ein @måtte og @såg, men dei @måtte jo *jobba\n" +
     "heile ~dagane og fekk, fekk ikkje vatn og eller mat. Det var veldig sterkt å *vera der @då.\n" +
@@ -2067,7 +2067,7 @@ text_96og97: "96: Gjekk ikkje me i #barnehage i lag?\n" +
     "fordi du, det var liksom man fekk @sjå §alle ~fengselscellene. Og liksom, det var liksom fortsatt\n" +
     "kloremerker @på ~veggane og sånn.\n" +
     "…………………………………………………………………..\n" +
-    "I: &lt;nøler&gt; Det er jo andre ting som er typisk for Sogndal òg. Viss de treffer nokon utanfor Sogndal og\n" +
+    "I: <nøler> Det er jo andre ting som er typisk for Sogndal òg. Viss de treffer nokon utanfor Sogndal og\n" +
     "skal beskriva plassen de kjem frå, kva vil de seia då?\n" +
     "97: Høge §fjell, fjord.\n" +
     "I: Ja.\n" +
@@ -2080,7 +2080,7 @@ text_96og97: "96: Gjekk ikkje me i #barnehage i lag?\n" +
     "@må ta eller heime i USA liksom så @måtte me ha betalt for og kome inn.\n" +
     "97: Men @då viss me ikkje har eple @då for eksempel.\n" +
     "I: Ja.\n" +
-    "97: Så blir det litt dumt å *§kalla seg ¤saftbygda. &lt;humrar&gt;",
+    "97: Så blir det litt dumt å *§kalla seg ¤saftbygda. <humrar>",
 
 text_98og99: "I: Men kvar, kvar var de hen før de begynte I skulen?\n" +
     "98: #Barnehagen. Kva me gjorde I #barnehagen @då? Leikte.\n" +
@@ -2130,7 +2130,7 @@ text_98og99: "I: Men kvar, kvar var de hen før de begynte I skulen?\n" +
     "98: Ja, den @såg eg òg. Litt artig.\n" +
     "I: Mm. Og så kva hende meir då?\n" +
     "99: Nei, på slutten @då @når dei var komne fram til der dei skal @då, @då kjem jo politiet. Og så dei\n" +
-    "har jo ein slik taxivan @då, slik med sånn heis @på. Og den fekk ikkje dei opp, så han &lt;nøler&gt; sat jo i\n" +
+    "har jo ein slik taxivan @då, slik med sånn heis @på. Og den fekk ikkje dei opp, så han <nøler> sat jo i\n" +
     "§rullestolen ute der fordi han ville ikkje *visa til dei andre at han kunne @gå og slik. Så han @måtte\n" +
     "jo berre *«faka» at han var lam @då òg. Så han sat i §rullestolen der ute, og @då @måtte dei *køyra\n" +
     "vekk @ifrå politiet.\n" +
@@ -2141,7 +2141,7 @@ text_98og99: "I: Men kvar, kvar var de hen før de begynte I skulen?\n" +
     "99: §Fjellet og ~fjordane og …\n" +
     "98: §Fjell og fjordar. Fine, fint på ski her spesielt. Fint å @gå turar her, ikkje så langt frå nokon\n" +
     "plassar, men samtidig så er det valdsamt roleg her, liksom midt i blinken. Valdsamt annleis no for,\n" +
-    "enn for nokre @år sidan &lt;nøler&gt; med §alle ~hyttene og to nye trekk.\n" +
+    "enn for nokre @år sidan <nøler> med §alle ~hyttene og to nye trekk.\n" +
     "I: Dei driv no på andre sida av fjorden òg nesten sagt borte på Loftesnes og …\n" +
     "98: Ja, dei byggjer ny bru, ja.\n" +
     "99: Det er vel for den gamle den er jo begynt å bli §gamal, og så er ho litt lita og …\n" +
@@ -2152,7 +2152,7 @@ text_98og99: "I: Men kvar, kvar var de hen før de begynte I skulen?\n" +
     "99: … under ein meter, og @når det kjem ein lastebil over der, @då kjenner du liksom at heile ¤brua\n" +
     "ristar.\n" +
     "98: Folk vel å ikkje, ikkje *reisa på sykletur til utover #Kjørnes der @på grunn av det. Og det er jo litt\n" +
-    "dumt @då at den ¤brua skal *stoppa det, pluss at ho er jo over femti @år §gamal &lt;stammar&gt;, trur\n" +
+    "dumt @då at den ¤brua skal *stoppa det, pluss at ho er jo over femti @år §gamal <stammar>, trur\n" +
     "eg. Det er på tide med ei ny ei før det @går gale med ho.\n" +
     "I: Så har de fått noko nedmed fjorden òg som er ganske nytt.\n" +
     "99: Fjordstien.\n" +
@@ -2190,7 +2190,7 @@ text_100og101: "100: Her oppe så har det vel vorte meir vennegjengar, vil eg *s
     "Så var me @på besøk i ~saltgruvene, trur eg. Det, det var utruleg kjekt @då. Me gjekk jo kjempelangt\n" +
     "ned i dei ~saltgruvene, og så @etterpå fekk me *vita at det var fire prosent av ~saltgruvene.\n" +
     "I: Fekk de sjå inne på konsentrasjonsleiren kva som var frå den tida?\n" +
-    "100: &lt;nøler&gt; Me fekk @sjå ~brakkene der dei levde, eller der dei var @då @når dei ikkje jobba. Og så\n" +
+    "100: <nøler> Me fekk @sjå ~brakkene der dei levde, eller der dei var @då @når dei ikkje jobba. Og så\n" +
     "fekk me @sjå, ja dei ~sovebrakkene dei var jo heilt … Det var … Eg trur det var litt større enn mi seng,\n" +
     "kanskje to gonger tre meter eller noko sånn. Og der var det fem eller seks folk som skulle oppi.\n" +
     "101: På Auschwitz 1, så var det sånne, eller dei gamle ~jobbebrakkene, så var det sånne … Dei hadde\n" +
@@ -2201,9 +2201,9 @@ text_100og101: "100: Her oppe så har det vel vorte meir vennegjengar, vil eg *s
     "2\n" +
     "I: Men viss de skal beskriva heimstaden dykkar for nokon som ikkje er herifrå, kva vil de trekkja fram\n" +
     "då? Kva er det de seier om plassen?\n" +
-    "100: &lt;nøler&gt; Om plassen?\n" +
+    "100: <nøler> Om plassen?\n" +
     "I: Ja.\n" +
-    "100: Det er utruleg fint. &lt;nøler&gt; På ~vintrane så er det jo ganske bra skiforhold oppi §Hodlekve. Og\n" +
+    "100: Det er utruleg fint. <nøler> På ~vintrane så er det jo ganske bra skiforhold oppi §Hodlekve. Og\n" +
     "@nedpå kaien så er det vorte sånn der, kva det heiter att? Sånn …\n" +
     "101: Fjordsti?\n" +
     "100: Ja, fjordsti og så det der SUP.\n" +
@@ -2221,7 +2221,7 @@ text_100og101: "100: Her oppe så har det vel vorte meir vennegjengar, vil eg *s
     "100: Ja, eg, eg i hvert fall synest det er valdsamt flott at me har, har ein så, eller har tre fine kinosalar\n" +
     "her @då, og at me har liksom dei ~moglegheitene òg til å @gå @på film.\n" +
     "I: Har de sett nokon no i det siste?\n" +
-    "100: Eg @såg ein skrekkfilm for to veker sidan eller noko sånn. &lt;humrar&gt;\n" +
+    "100: Eg @såg ein skrekkfilm for to veker sidan eller noko sånn. <humrar>\n" +
     "I: Å, ja.\n" +
     "101: Men eg skal i alle fall @sjå film i ¤helga. @Då er det sånn …\n" +
     "100: Store kinodagen.\n" +

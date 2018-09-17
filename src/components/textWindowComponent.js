@@ -12,7 +12,8 @@ const REGEX = new RegExp("([@#*¤%¨‘~+§{}])", "g");
 let infToStore;
 let isLocalStorageSet;
 let needBuildWordList = false;
-let clickableWordCount;
+let clickableWordCountInf1;
+let clickableWordCountInf2;
 
 let audioPlayer;
 
@@ -21,17 +22,26 @@ class Result extends React.Component {
     constructor(props) {
         super(props);
         this.onCloseClick = this.onCloseClick.bind(this);
+
+        infToStore = Informers.find(x => x.id === this.props.inf).audio.split(".")[0];
+        let splitInfToStore = infToStore.split("inf_")[1].split("og");
+        let inf1 = splitInfToStore[0];
+        let inf2 = splitInfToStore[1];
+
+
         this.state = {
             showSecondInf: false,
             x: 0,
-            y: 0
+            y: 0,
+            inf1: inf1,
+            inf2: inf2
         };
 
-        infToStore = Informers.find(x => x.id === this.props.inf).audio.split(".")[0];
-        isLocalStorageSet = this.isInformersLocalStorageSet(infToStore);
+        isLocalStorageSet = this.isInformersLocalStorageSet();
 
         if(!isLocalStorageSet){
-            localStorage.setItem(infToStore, JSON.stringify([]));
+            localStorage.setItem(this.state.inf1, JSON.stringify([]));
+            localStorage.setItem(this.state.inf2, JSON.stringify([]));
             needBuildWordList = true;
         }
     }
@@ -70,8 +80,9 @@ class Result extends React.Component {
         }
     };
 
-    isInformersLocalStorageSet(infID) {
-        return localStorage.getItem(infID) != null && localStorage.getItem(infID).length > 0;
+    isInformersLocalStorageSet() {
+        return localStorage.getItem(this.state.inf1) != null && localStorage.getItem(this.state.inf1).length > 0 &&
+            localStorage.getItem(this.state.inf2) != null && localStorage.getItem(this.state.inf2).length > 0;
     }
 
     addWordInLocalStorage(infID){
@@ -88,26 +99,41 @@ class Result extends React.Component {
         const text = inf1.text;
 
         let key = 0;
-        clickableWordCount = 0;
+        clickableWordCountInf1 = 0;
+        clickableWordCountInf2 = 0;
+
+        let index = 0;
+
+        let infNumber = "";
+
 
         return(
             // Splits the line on br and check if line contains a symbol.
             <div>{text.split("\n").map(line => {
                 if(line.match(REGEX)) {
-                    let infNumber = line.split(":")[0].trim();  // Find the informant number to the line
+
+                    // Find the informant number to the line or use the last registered inf id
+                    if(line.split(":")[0] != null && line.split(":")[0].trim().split(" ").length === 1){
+                        infNumber = line.split(":")[0].trim();
+                        infNumber = this.state.inf1.includes(infNumber) ? this.state.inf1 : this.state.inf2;
+                    }
+
                     return <div key={key++}>{
                         line.split(" ")
                             .map(word => {
                                 if(word.indexOf(word.match(REGEX)) !== -1){
 
                                     if(needBuildWordList){
-                                        this.addWordInLocalStorage(infToStore);
+                                        this.addWordInLocalStorage(infNumber);
                                     }
 
+                                    index = this.state.inf1.includes(infNumber) ? ++clickableWordCountInf1 : ++clickableWordCountInf2;
+
                                     return <Word key={key++}
-                                                 wordIndex={clickableWordCount++}
+                                                 wordIndex={index - 1}
                                                  word={word}
-                                                 infToStore={infToStore}
+                                                 infToStore={infNumber}
+
                                                  inf={infNumber}
                                                  mouseX={this.state.x}
                                                  mouseY={this.state.y}/>;
@@ -143,9 +169,6 @@ class Result extends React.Component {
         }
 
         let inf2 = Informers.find(x => x.id === id2);
-
-        // let key = 0;
-        // let clickableWordCount = 0;
 
         return(
             <div className="resultBackground" >
