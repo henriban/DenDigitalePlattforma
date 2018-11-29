@@ -17,27 +17,27 @@ let graphSearchResult = [
 ];
 
 
-let data = [
-    [
-        {x: 1, y: 5},
-        {x: 2, y: 3},
-        {x: 3, y: 1},
-        {x: 4, y: 2}
-    ],
-    [
-        {x: 1, y: 1},
-        {x: 2, y: 2},
-        {x: 3, y: 4},
-        {x: 4, y: 2}
-    ],
-    [
-        {x: 1, y: 2},
-        {x: 2, y: 5},
-        {x: 3, y: 2},
-        {x: 4, y: 2}
-    ],
-
-];
+// let data = [
+//     [
+//         {x: 1, y: 5},
+//         {x: 2, y: 3},
+//         {x: 3, y: 1},
+//         {x: 4, y: 2}
+//     ],
+//     [
+//         {x: 1, y: 1},
+//         {x: 2, y: 2},
+//         {x: 3, y: 4},
+//         {x: 4, y: 2}
+//     ],
+//     [
+//         {x: 1, y: 2},
+//         {x: 2, y: 5},
+//         {x: 3, y: 2},
+//         {x: 4, y: 2}
+//     ],
+//
+// ];
 
 let informersData = {};
 
@@ -50,12 +50,12 @@ class GraphPage extends React.Component {
             tickFormat: [], // labels for Victory Axis
             tickValues: [], // number of different labels ex: [1,2,3]
 
-            data1: data,
-            data2: data,
-            data3: data,
-            data4: data,
-            data5: data,
-            data6: data,
+            data1: [],
+            data2: [],
+            data3: [],
+            data4: [],
+            data5: [],
+            data6: [],
         };
     }
 
@@ -120,7 +120,12 @@ class GraphPage extends React.Component {
         }
 
         this.setState({
-            data1: data
+            data1: data,
+            data2: data,
+            data3: data,
+            data4: data,
+            data5: data,
+            data6: data,
         });
     }
 

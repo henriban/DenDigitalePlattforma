@@ -10,19 +10,22 @@ class graph extends React.Component{
             <div className="graph">
                 <p className="graphLabel">{this.props.title}</p>
 
-                <VictoryChart domainPadding={{x: 50}} animate={{duration: 300}}>
+                <VictoryChart domainPadding={{x: 50}} /*animate={{duration: 300}}*/>
 
-                    {/*<VictoryLegend x={150} y={100}*/}
-                                   {/*orientation="horizontal"*/}
-                                   {/*gutter={20}*/}
-                                   {/*data={[*/}
-                                       {/*{ name: "One" },*/}
-                                       {/*{ name: "Two" },*/}
-                                       {/*{ name: "Anna" }*/}
-                                   {/*]}*/}
-                    {/*/>*/}
+                    <VictoryLabel>
+                    <VictoryLegend x={150} y={100}
+                                   orientation="horizontal"
+                                   gutter={20}
+                                   data={[
+                                       { name: "One" },
+                                       { name: "Two" },
+                                       { name: "Anna" }
+                                   ]}
+                    />
+                    </VictoryLabel>
                     {/* Generate bar charts from number of different variables (items in data list)*/}
-                    <VictoryGroup offset={20} colorScale={"qualitative"}>
+                    <VictoryGroup offset={20} colorScale={["#4AACC5", "#77a033", "#e07676"]}>
+
                         {this.props.data.map(data => {
                             return(<VictoryBar key={key++} data={data} />);
                         })}
