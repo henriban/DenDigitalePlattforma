@@ -9,10 +9,10 @@ const variables = {
         { value: 'mann',    label: 'Mann' },
     ],
     age: [
-        { value: 'Ungdom',      label: 'Ungdom 13 – 25' },
-        { value: 'Ung ',         label: 'Ung 26 – 40' },
-        { value: 'Middelaldra', label: 'Middelaldra 41 - 60' },
-        { value: 'Eldre',          label: 'Eldre 61 –' },
+        { value: 'Ungdom',      label: 'Ungdom \n13 – 25' },
+        { value: 'Ung ',         label: 'Ung \n26 – 40' },
+        { value: 'Middelaldra', label: 'Middelaldra \n41 - 60' },
+        { value: 'Eldre',          label: 'Eldre \n61 –' },
     ],
     date_of_recording: [
         { value: '1996',       label: '1996' },
@@ -33,10 +33,10 @@ const variables = {
         { value: 'tertiær',     label: 'Tertiær' }
     ],
     parents_background: [
-        { value: 'ingen',   label: 'Ingen frå Sogndal' },
-        { value: 'mor',     label: 'Mor frå Sogndal' },
-        { value: 'far',     label: 'Far frå Sogndal' },
-        { value: 'begge',   label: 'Begge frå Sogndal' }
+        { value: 'ingen',   label: 'Ingen frå \nSogndal' },
+        { value: 'mor',     label: 'Mor frå \nSogndal' },
+        { value: 'far',     label: 'Far frå \nSogndal' },
+        { value: 'begge',   label: 'Begge frå \nSogndal' }
     ],
     birth: [
         { value: '1911',       label: '1911 – 1940' },

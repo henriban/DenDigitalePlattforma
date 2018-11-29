@@ -78,6 +78,12 @@ class popUp extends React.Component {
     }
 
     buttonClicked(symbol){
+
+        // To distinguish between the "Anna"
+        if(symbol === "Anna"){
+            symbol = symbol + "_" + this.state.btn1 + "_" + this.state.btn2;
+        }
+
         this.props.onButtonClicked(symbol, this.state.inf);
     }
 

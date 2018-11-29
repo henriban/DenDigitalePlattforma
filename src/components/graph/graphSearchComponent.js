@@ -2,7 +2,7 @@ import React from 'react';
 
 import CheckboxComponent from './checkboxClusterComponent';
 import Variables from '../../data/searchVariables';
-import Informants from '../../data/informers';
+import Informers from '../../data/informers';
 
 import '../../styles/checkbox.css';
 
@@ -31,7 +31,7 @@ class graphSearchComponent extends React.Component{
 
     initAllInf(){
         let rows = [];
-        Informants.map(item =>
+        Informers.map(item =>
             rows.push({
                 id: item.id,
                 place: item.place.trim(),
@@ -64,41 +64,49 @@ class graphSearchComponent extends React.Component{
 
         if(isChecked){
 
-            // Filter the rows, if the filter is empty don't do anything. If not empty, iterate through Informants and find matches
+            // Filter the rows, if the filter is empty don't do anything. If not empty, iterate through Informers and find matches
             if(filteredInfList.length > 0){
                 this.state.filterRows[res].map(filter => !filter.length ? null :
                     filteredInfList.map(inf => inf[res].includes(filter) ? newFilteredRows.push(inf) : null ));
                 // activeRows.map(inf => inf[res].includes(filter) ? this.pushToList(newFilteredRows, inf) : null ));
             }else{
                 this.state.filterRows[res].map(filter => !filter.length ? null :
-                    Informants.map(inf => inf[res].includes(filter) ? newFilteredRows.push(inf) : null ));
+                    Informers.map(inf => inf[res].includes(filter) ? newFilteredRows.push(inf) : null ));
             }
         }else{
             for(let i in this.state.filterRows){
                 if(this.state.filterRows.hasOwnProperty(i) && i.length > 0) {
                     this.state.filterRows[i].map(filter => !filter.length ? null :
-                        Informants.map(inf => inf[i].includes(filter) ? newFilteredRows.push(inf) : null));
+                        Informers.map(inf => inf[i].includes(filter) ? newFilteredRows.push(inf) : null));
                 }
             }
         }
 
         filteredInfList = newFilteredRows;
-        console.log("ActiveRow", filteredInfList);
-        console.log("State FilterRow", this.state.filterRows);
+        // console.log("ActiveRow", filteredInfList);
+        // console.log("State FilterRow", this.state.filterRows);
+
+        // let totalNumberOfInf = 0;
+        // Informers.map(inf => totalNumberOfInf++);
+        // console.log("totalNumberOfInf: ", totalNumberOfInf);
+
+        this.props.setFilter(filteredInfList, this.state.filterRows);
     };
 
     render(){
         return(
-            <div className="checkboxSearchWrapper">
-                <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Stad"               data={Variables.place}              res="place"/>
-                <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Kjønn"              data={Variables.gender}             res="gender"/>
-                <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Alder"              data={Variables.age}                res="age"/>
-                <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Fødselstidspunkt"   data={Variables.birth}              res="birth"/>
-                <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Opptakstidspunkt"   data={Variables.date_of_recording}  res="date_of_recording"/>
-                <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Utdanning"          data={Variables.education}          res="education"/>
-                <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Yrke"               data={Variables.occupation}         res="occupation"/>
-                <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Foreldrebakgrunn"   data={Variables.parents_background} res="parents_background"/>
-                <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Type informant"     data={Variables.panel}              res="panel"/>
+            <div className="graphSearchArea">
+                <div className="checkboxSearchWrapper">
+                    <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Stad"               data={Variables.place}              res="place"/>
+                    <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Kjønn"              data={Variables.gender}             res="gender"/>
+                    <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Alder"              data={Variables.age}                res="age"/>
+                    <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Fødselstidspunkt"   data={Variables.birth}              res="birth"/>
+                    <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Opptakstidspunkt"   data={Variables.date_of_recording}  res="date_of_recording"/>
+                    <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Utdanning"          data={Variables.education}          res="education"/>
+                    <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Yrke"               data={Variables.occupation}         res="occupation"/>
+                    <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Foreldrebakgrunn"   data={Variables.parents_background} res="parents_background"/>
+                    <CheckboxComponent onCheckUpdate={this.toggleCheckbox} label="Type informant"     data={Variables.panel}              res="panel"/>
+                </div>
             </div>
         );
     }

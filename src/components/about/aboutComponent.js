@@ -19,7 +19,7 @@ class About extends React.Component {
         return(
             <div>
                 <div className="startPageImageContainer">
-                    <img className="startPageImage" src="/sogndal_by_night.jpg" alt="sogndal_by_night" />
+                    <img className="startPageImage" src="logo_gjennomsiktig.png" alt="sogndal_by_night" />
                     {/*<img className="logo" src="#" alt="logo"/>*/}
                 </div>
 
@@ -157,6 +157,21 @@ class About extends React.Component {
                         språkbrukaren har endinga <i>-en</i> (t.d. tiden). For dei andre variablane vil <i>anna</i>
                         vera mest aktuelt som alternativ viss du ikkje oppfattar kva språkbrukarane
                         seier.
+                    </p>
+
+                    <br/>
+                    <br/>
+                    <p>
+                        Kontaktinformasjon: <br/>
+                        Fagleg ansvarleg for dialektbasen: Ragnhild Lie Anderson <br/>
+                        <a href="https://www.uib.no/personer/Ragnhild.Lie.Anderson">www.uib.no/personer/Ragnhild.Lie.Anderson</a> <br/>
+                        E-post: ragnhild.anderson@uib.no <br/>
+                        <br/>
+                        Digital utviklar og tilretteleggjar: <br/>
+                        Henrik Bjelke Anderson <br/>
+                        <br/>
+                        Logo: <br/>
+                        Ida Torkildsen
                     </p>
                 </div>
             </div>
